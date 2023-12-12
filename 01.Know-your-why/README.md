@@ -7,7 +7,7 @@
 - You only have to invest time
 - Grow you connection
 - Never be scared of failure, asking questions and insult(as a student)
-- why learn from me (20 years old boy)
+- why learn from me and what's my credibility
 - hadeed (try your best and don't say i could have done this or that)
 - Change your mindset of "No one else but I'm responsible for my failures"
 - Why organization like saylani though of teaching IT?

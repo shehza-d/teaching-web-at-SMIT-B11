@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        background-color: rgb(168, 166, 166);
+        min-height: 80vh;
+        width: 97vw;
+        border: 5px solid black;
+        margin: 2px;
+        padding: 2px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* align-content: center; */
+        gap: 30px;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        border: 2px solid brown;
+        /* margin: 2px; */
+        padding: 2px;
+        /* margin-right: 30px; */
+      }
+
+      #box1 {
+        background-color: aqua;
+        /* order: 500; */
+        /* flex-shrink: 4; */
+        /* flex-grow: 1; */
+        /* align-self: end; */
+      }
+      #box2 {
+        background-color: blue;
+        /* flex-grow: 1; */
+      }
+      /* #box2 > span {
+  background-color: black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+      #box3 {
+        background-color: orange;
+        /* flex-grow: 1; */
+      }
+
+      #box4 {
+        background-color: brown;
+        /* order: -1; */
+        /* flex-grow: 1; */
+        /* flex-basis: 400px; */
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FlexBox</h1>
+
+    <div class="container">
+      <div class="box" id="box1">Box 1</div>
+      <div class="box" id="box2">Box 2</div>
+      <div class="box" id="box3">Box 3</div>
+      <div class="box" id="box4">Box 4</div>
+      <div class="box" id="box4">Box 4</div>
+      <div class="box" id="box4">Box 4</div>
+      <div class="box" id="box4">Box 4</div>
+    </div>
+  </body>
+</html>

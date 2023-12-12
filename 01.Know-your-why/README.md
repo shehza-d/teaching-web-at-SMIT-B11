@@ -10,6 +10,8 @@
 - why learn from me (20 years old boy)
 - hadeed (try your best and don't say i could have done this or that)
 - Change your mindset of "No one else but I'm responsible for my failures"
+- Why organization like saylani though of teaching IT?
+- What's the mission of Hazrat Molana Bashir farooqi?
 
 ### Trust in God and pray
 

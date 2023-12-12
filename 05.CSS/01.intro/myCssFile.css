@@ -1,0 +1,71 @@
+/* Using External CSS */
+/* page 236 */
+body {
+  height: 500px;
+  border: 2px solid green;
+}
+
+* {
+  font-style: italic;
+}
+h1,
+h3 {
+  color: red;
+  background-color: chartreuse;
+}
+
+.my-Heading-2 {
+  color: darkkhaki;
+  background-color: aqua;
+}
+
+h2 {
+  color: blue;
+}
+/* Selectors */
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+/* selects any p element that has example class */
+p.example {
+  background-color: blue;
+}
+
+.example {
+  background-color: blue;
+}
+
+/* parent > child element */
+div > h2,
+div > h3 {
+  background-color: blue;
+}
+
+/* Descendant Selector (same as child selector but might have some diffrences) */
+div h2 {
+  background-color: blue;
+}
+
+#my-id {
+  background-color: darkseagreen;
+}
+
+h1 + p {
+  text-indent: 5%;
+}
+
+h1 + p:first-letter {
+  font-size: 50px;
+  text-transform: capitalize;
+  display: inline;
+}
+
+/* applies to all siblings */
+h1 ~ p {
+  background-color: blue;
+}

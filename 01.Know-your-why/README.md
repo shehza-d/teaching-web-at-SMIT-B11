@@ -12,6 +12,7 @@
 - Change your mindset of "No one else but I'm responsible for my failures"
 - Why organization like saylani though of teaching IT?
 - What's the mission of Hazrat Molana Bashir farooqi?
+- Why learn to code while ChatGPT can code?
 
 ### Trust in God and pray
 

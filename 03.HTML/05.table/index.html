@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* table {
+        border: 2px solid black;
+      } */
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Table</h1>
+
+    <h2>table 1</h2>
+    <table border="2">
+      <tr>
+        <td>15</td>
+        <td>15</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>60</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>90</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>90</td>
+        <td>90</td>
+      </tr>
+    </table>
+
+    <h2>table 2</h2>
+
+    <table border="2">
+      <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+      </tr>
+      <tr>
+        <th scope="row">Tickets sold:</th>
+        <td>120</td>
+        <td>135</td>
+      </tr>
+      <tr>
+        <th scope="row">Total sales:</th>
+        <td>$600</td>
+        <td>$675</td>
+      </tr>
+    </table>
+
+    <h2>table 3</h2>
+
+    <table border="2" cellpadding="100" >
+      <thead>
+        <tr>
+          <th>Days/Time</th>
+          <th>9am</th>
+          <th>10am</th>
+          <th>11am</th>
+          <th>12am</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Monday</th>
+          <td colspan="2">Geography</td>
+          <!-- col = column  -->
+          <td>Math</td>
+          <td rowspan="2">Art</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td colspan="3">Gym</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

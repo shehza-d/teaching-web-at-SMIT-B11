@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Forms</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <form id="myBioDataForm">
+      <input required type="text" maxlength="10" placeholder="Enter you name" />
+      <input required type="number" placeholder="Age..." />
+      <input required type="password" placeholder="password" />
+      <input type="date" />
+      <!-- <input type="submit" /> -->
+      <br />
+      <p>Give your profile photo</p>
+      <input type="file" accept="image/*" />
+      <br />
+      <input type="file" accept="video/*" />
+      <br />
+      <p>Give your assignment</p>
+      <input type="file" accept=".html" />
+
+      <select name="devices" multiple="multiple" selected="selected">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+
+      <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+      <button type="submit">My Button</button>
+    </form>
+  </body>
 </html>

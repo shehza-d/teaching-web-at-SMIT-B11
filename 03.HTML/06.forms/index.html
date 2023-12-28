@@ -9,18 +9,41 @@
     <h1>Forms</h1>
 
     <form id="myBioDataForm">
-      <input required type="text" maxlength="10" placeholder="Enter you name" />
-      <input required type="number" placeholder="Age..." />
+      <input
+        required
+        value="shehzaddd"
+        name="fullName"
+        type="text"
+        maxlength="10"
+        minlength="3"
+        placeholder="Enter you name"
+      />
+
+      <input required type="text" name="fatherName" placeholder="Age..." />
+      <input required name="age" type="number" placeholder="Age..." />
+
+      <input required disabled type="text" name="city" value="interior sindh" />
+
+      <input type="email" autocomplete="email" />
+
       <input required type="password" placeholder="password" />
       <input type="date" />
-      <!-- <input type="submit" /> -->
+      <input type="hidden" />
+
       <br />
+
       <p>Give your profile photo</p>
+
       <input type="file" accept="image/*" />
+
       <br />
+
       <input type="file" accept="video/*" />
+
       <br />
+
       <p>Give your assignment</p>
+
       <input type="file" accept=".html" />
 
       <select name="devices" multiple="multiple" selected="selected">
@@ -32,5 +55,57 @@
       <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
       <button type="submit">My Button</button>
     </form>
+
+    <hr />
+    <hr />
+
+    <form>
+      Courses <br />
+      <input
+        checked="checked"
+        type="radio"
+        name="courses"
+        value="web"
+        id="web"
+      />
+      <label for="web"> Web </label>
+
+      <label>
+        <input type="radio" name="courses" value="graphic" />
+        graphic
+      </label>
+
+      <input
+        type="radio"
+        name="courses"
+        value="videoEditing"
+        id="videoEditing"
+      />
+      <label for="videoEditing"> Video Editing </label>
+
+      <!-- male<input type="radio" name="gender" value="male">
+
+      female<input type="radio" name="gender" value="female"> -->
+
+      <button>Cancel</button>
+      <button type="submit">Save</button>
+    </form>
+
+    <!--
+      this is how data is sent to server
+      {
+  "fullName":"shehzaddd",
+  "fatherName":"Iqbal",
+  "age":34,
+  city:"interior sindh",
+  password:123456
+} -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>

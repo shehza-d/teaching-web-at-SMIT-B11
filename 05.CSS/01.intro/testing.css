@@ -1,0 +1,20 @@
+/* Universal Selector */
+* {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: red;
+  border: 2px solid orange;
+  background-color: black;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(221, 193, 158);
+  background-image: linear-gradient(red, yellow);
+}
+
+p {
+  font-weight: 700;
+}

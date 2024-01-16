@@ -1,0 +1,55 @@
+/* * {
+  color: red;
+} */
+
+/* h2 {
+  color: green;
+  font-size: 20px;
+}
+
+.myName {
+  color: orange;
+  letter-spacing: 30px;
+
+  color: aqua;
+  background-color: black;
+}
+
+h1 {
+  color: purple;
+  font-size: 50px;
+}
+
+ul > li > a {
+  color: pink;
+} */
+
+.parent {
+  color: purple;
+  text-decoration: none;
+  background-color: #f7972f;
+  background-color: rgb(250, 250, 250);
+  border: 2px solid green;
+}
+
+.parent > * {
+  color: inherit;
+  border: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.heading1 {
+  color: green;
+  background-color: greenyellow;
+  opacity: 40%;
+  /* ye element ki opacity kam karta hy  */
+}
+
+.heading2 {
+  color: green;
+  background-color: rgba(164, 243, 46, 0.4);
+  /* ye color ki opacity kam karta hy  */
+}

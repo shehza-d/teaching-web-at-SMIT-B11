@@ -1,0 +1,39 @@
+/* Download font */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,400&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap");
+
+* {
+  /* font-family: sans-serif; */
+  /* letter-spacing: 3px; */
+
+  /* Font ko apply kiya hy */
+  font-family: "Rubik Burned";
+}
+
+body {
+  background-color: #0071e3;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  /* san-serif is fallback font */
+  font-size: 48px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  line-height: 25px;
+  word-spacing: 15px;
+}
+
+span {
+  text-transform: none;
+  font-family: sans-serif;
+}
+h1 {
+  color: white;
+  text-decoration: line-through;
+}
+
+/* rem left */

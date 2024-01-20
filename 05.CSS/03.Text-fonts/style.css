@@ -4,27 +4,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap");
 
 * {
-  /* font-family: sans-serif; */
+  font-family: sans-serif;
   /* letter-spacing: 3px; */
 
   /* Font ko apply kiya hy */
-  font-family: "Rubik Burned";
+  /* font-family: "Rubik Burned"; */
+}
+
+p::selection {
+  color: red;
+  background-color: black;
 }
 
 body {
   background-color: #0071e3;
+  /* background-color: black; */
 }
 
 p {
   font-family: "Roboto", sans-serif;
   /* san-serif is fallback font */
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: 400;
   font-style: italic;
-  text-transform: lowercase;
   text-transform: capitalize;
-  line-height: 25px;
-  word-spacing: 15px;
+  text-transform: lowercase;
+  /* line-height: 25px; */
+  /* word-spacing: 15px; */
+  text-align: justify;
+  text-indent: 30px;
+}
+
+p::first-letter {
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 span {
@@ -36,4 +49,46 @@ h1 {
   text-decoration: line-through;
 }
 
+span {
+  text-align: center;
+}
+
 /* rem left */
+
+h2 {
+  text-shadow: -2px 2px 5px rgb(7, 231, 7);
+}
+
+ul > li > a {
+  text-decoration: none;
+}
+
+ul > li > a:link {
+  color: black;
+}
+
+ul > li > a:visited {
+  color: green;
+  border: 1px solid red !important;
+  background-color: red;
+  /* why is border not wokring */
+}
+
+ul > li > a:hover {
+  color: yellow;
+  border: 2px solid red;
+  background-color: aliceblue;
+}
+
+.testing:hover {
+  color: yellow;
+  text-transform: uppercase;
+  /* cursor: ; */
+}
+
+button:active {
+  border: 3px solid red;
+  /* background-color: green; */
+}
+
+/* :focus */

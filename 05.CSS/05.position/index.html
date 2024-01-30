@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        /* display: none; */
+        /* visibility: hidden; */
+        border: 2px solid green;
+
+        /* border-radius: -50px; */
+
+        /* Clockwise */
+        border-radius: 5px 0 50px 0px;
+
+        /* https://getcssscan.com/css-box-shadow-examples */
+        box-shadow: rgba(222, 22, 22, 0.24) 0px 3px 8px;
+      }
+
+      .mera-box {
+        display: flex;
+
+        row-gap: 5px;
+        column-gap: 15px;
+      }
+      .my-input {
+        border-radius: 10px;
+        /* margin: 15px; */
+        padding: 5px;
+        font-size: 70%;
+      }
+      .my-input:focus {
+        border: 3px solid orange;
+        outline: none;
+      }
+      .my-input::placeholder {
+        text-align: center;
+      }
+
+      .box {
+        height: 60px;
+        width: 60px;
+        /* border-radius: 50px; */
+        background-color: rgb(8, 235, 20);
+        border: 2px solid red;
+
+        /* Positions */
+        position: sticky; /* absolute se element body se bhar aajata */
+        /* top: 20px; */
+        bottom: 20px;
+        /* 
+        right: 20px; */
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Testing</h1>
+
+    <input class="my-input" type="text" placeholder="Enter your name" />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      cupiditate quos ea ipsum inventore mollitia magnam laborum accusantium
+      sit? Quisquam, illum autem! Optio autem molestiae nobis, corrupti
+      voluptatibus in beatae.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      cupiditate quos ea ipsum inventore mollitia magnam laborum accusantium
+      sit? Quisquam, illum autem! Optio autem molestiae nobis, corrupti
+      voluptatibus in beatae.
+    </p>
+    <div class="box">My box</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      cupiditate quos ea ipsum inventore mollitia magnam laborum accusantium
+      sit? Quisquam, illum autem! Optio autem molestiae nobis, corrupti
+      voluptatibus in beatae.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      cupiditate quos ea ipsum inventore mollitia magnam laborum accusantium
+      sit? Quisquam, illum autem! Optio autem molestiae nobis, corrupti
+      voluptatibus in beatae.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      cupiditate quos ea ipsum inventore mollitia magnam laborum accusantium
+      sit? Quisquam, illum autem! Optio autem molestiae nobis, corrupti
+      voluptatibus in beatae.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      cupiditate quos ea ipsum inventore mollitia magnam laborum accusantium
+      sit? Quisquam, illum autem! Optio autem molestiae nobis, corrupti
+      voluptatibus in beatae.
+    </p>
+  </body>
+</html>

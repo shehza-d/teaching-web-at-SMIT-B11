@@ -1,5 +1,9 @@
 # Intro to Programming with `JavaScript`
 
+<p align="center">
+<img width="100" height="100" src="https://skillicons.dev/icons?i=js" />
+</p>
+
 ## [JS Free course with Certificate](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures)
 
 ## [Chai aur JavaScript](https://youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37)

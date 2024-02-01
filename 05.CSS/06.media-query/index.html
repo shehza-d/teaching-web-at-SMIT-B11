@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* min is better */
+      body {
+        background-color: blue;
+      }
+      h1 {
+        font-size: 16px;
+      }
+
+      /* max 500 se kam  */
+      /* @media screen and (max-width: 500px) {} */
+
+      /* i prefer min width */
+      @media screen and (min-width: 500px) {
+        body {
+          background-color: red;
+        }
+        .class {
+          font-size: 24px;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: green;
+        }
+        h1 {
+          color: #fff;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Media Query</h1>
+  </body>
+</html>

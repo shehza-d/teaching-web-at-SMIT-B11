@@ -43,18 +43,37 @@
       }
 
       .box {
-        height: 60px;
-        width: 60px;
+        height: 80px;
+        width: 80px;
         /* border-radius: 50px; */
         background-color: rgb(8, 235, 20);
         border: 2px solid red;
 
         /* Positions */
-        position: sticky; /* absolute se element body se bhar aajata */
-        /* top: 20px; */
+        position: fixed; /* absolute se element body se bhar aajata */
+        left: 20px;
         bottom: 20px;
+        z-index: -10;
         /* 
         right: 20px; */
+      }
+
+      .container {
+        background-color: rgb(142, 243, 147);
+        border: 2px solid red;
+        height: 300px;
+        position: relative;
+      }
+
+      .childdd {
+        border: 2px solid purple;
+        background-color: purple;
+        height: 60px;
+        width: 60px;
+
+        position: absolute;
+        bottom: -10px;
+        z-index: -1;
       }
     </style>
     <title>Document</title>
@@ -101,5 +120,9 @@
       sit? Quisquam, illum autem! Optio autem molestiae nobis, corrupti
       voluptatibus in beatae.
     </p>
+
+    <div class="container">
+      <div class="childdd"></div>
+    </div>
   </body>
 </html>

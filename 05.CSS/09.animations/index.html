@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        /* border: 2px solid red; */
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+
+      .card {
+        padding: 20px;
+        border: 2px solid red;
+        width: 300px;
+      }
+      .card:hover img {
+        transform: scale(1.2);
+      }
+      .card:hover > h2 {
+        color: red;
+      }
+
+      .image-animation {
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+        transition-duration: 300ms;
+      }
+
+      /* img:hover { */
+      /* transform: scale(1.2); */
+      /* width: 100%; */
+      /* } */
+    </style>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 class="animateanimated animate__rubberBand">Animation</h1>
+
+    <div class="card">
+      <div class="image-animation">
+        <img
+          src="https://img.freepik.com/free-photo/summer-daisy-beauty-petal-close-up-purple-outdoors-generative-ai_188544-8633.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+      </div>
+      <h2>Flower Card Title</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+        deleniti maiores voluptate omnis minima tenetur totam fugit itaque iusto
+        eos earum ducimus praesentium sint dignissimos cupiditate excepturi
+        odit, vel ea.
+      </p>
+    </div>
+  </body>
+</html>

@@ -5,17 +5,19 @@
 
 * {
   margin: 0;
+  padding: 0;
   font-family: Arial;
   border: border-box;
 }
 
 .navbar {
-  height: 60px;
+  min-height: 60px;
   color: white;
   background: #0f1111;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .nav-logo {
   width: 100px;
@@ -124,16 +126,26 @@ span {
 }
 .panel {
   height: 40px;
-  display: flex;
   background-color: var(--nav-color);
   color: white;
+
+  display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  overflow-x: scroll;
+  overflow-y: scroll;
   gap: 15px;
 }
+/* width */
+.panel::-webkit-scrollbar {
+  height: 4px;
+}
+/* Handle */
+.panel::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
 .panel-all {
   font-weight: 600;
+  flex-shrink: 0;
 }
 .panel-all i {
   margin-left: 20px;
@@ -174,6 +186,7 @@ span {
   font-size: 0.85rem;
   min-height: 40px;
 
+  padding: 10px;
   width: 85%;
   margin-bottom: 25px;
 }
@@ -191,7 +204,7 @@ span {
 }
 .box {
   flex-basis: 100%;
-  height: 400px;
+  min-height: 400px;
   min-width: 200px;
   max-width: 400px;
   background-color: white;
@@ -231,18 +244,24 @@ footer {
 .foot-panel2 {
   background-color: var(--nav-color);
   color: white;
-  height: 600px;
+  min-height: 400px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 ul a {
   display: block;
-  margin: 10px;
+  /* margin: 10px; */
   font-size: 0.95rem;
   color: #dddddd;
 }
-ul {
+.foot-panel2 > ul {
+  width: 200px;
   margin-top: 45px;
+
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 ul p {
   font-weight: 600;
@@ -276,10 +295,20 @@ ul p {
 }
 
 /* 420 ki need nhi pari */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
+  .foot-panel2 > ul {
+    /* border: 2px solid red; */
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 720px) {
+  .nav-search {
+    order: 10;
+    /* display: inline-block; */
+    width: 90%;
+  }
   .box {
     max-width: 600px;
   }

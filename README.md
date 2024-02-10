@@ -1,6 +1,10 @@
-# Teaching Web at SMIT Batch 11
+# Teaching Web at `SMIT` Batch 11
 
 ## Class code Repo for students
+
+Code Your Way to Success: Join Our Web Dev Journey!
+
+<!-- "Learn Web Development Essentials and Empower Your Skills!" -->
 
 ![Class Poster](./imgs/class-poster.jpeg)
 

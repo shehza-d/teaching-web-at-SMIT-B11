@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* CSS Variables */
+  --primary: rgb(193, 222, 232);
+  --secondary: rgb(251, 217, 185);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 250);
+  border-radius: 70px;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.pages > ul {
+  display: flex;
+  gap: 50px;
+  background-color: rgba(254, 254, 255, 1);
+  padding: 1rem;
+  border-radius: 40px;
+}
+.pages > ul > li {
+  list-style-type: none;
+}
+
+.contact-details > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact-details > ul > li {
+  /* border: 1px solid red; */
+  list-style-type: none;
+  color: black;
+}
+.contact {
+  border: 1px solid rgba(190, 190, 190, 1);
+  background-color: rgba(254, 254, 255, 1);
+  padding: 1rem;
+  border-radius: 40px;
+}
+
+.head {
+  display: flex;
+  background: linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
+}

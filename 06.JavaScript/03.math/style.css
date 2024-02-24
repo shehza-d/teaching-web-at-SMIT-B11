@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Code+Pro&family=Ubuntu+Mono&display=swap");
+
+body {
+  height: 97vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 223, 251);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px rgb(79, 74, 74);
+}
+
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 5rem;
+  }
+}

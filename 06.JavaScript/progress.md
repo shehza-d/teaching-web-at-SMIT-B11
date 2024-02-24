@@ -5,7 +5,7 @@
 ## ❎ Quiz 1
 
 - [x] alert, prompt and console.
-- [ ] Variables
+- [ ] Variables and Data types
 - [ ] Converting strings to numbers (Parsing numbers)
 - [ ] Operators
   - [ ] Comparison operators

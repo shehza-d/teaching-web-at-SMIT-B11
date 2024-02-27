@@ -5,15 +5,15 @@
 ## ❎ Quiz 1
 
 - [x] alert, prompt and console.
-- [ ] Variables and Data types
+- [x] Variables and Data types
 - [ ] Converting strings to numbers (Parsing numbers)
 - [ ] Operators
   - [ ] Comparison operators
   - [ ] Logical operators
-  - [ ] Assignment operators
-  - [ ] Arithmetic operators
-- [ ] Precedence (BODMAS)
-- [ ] Concatenating text strings
+  - [x] Assignment operators
+  - [x] Arithmetic operators
+- [x] Precedence (BODMAS)
+- [x] Concatenating text strings
 - [ ] if else statements
   - [ ] else if / nested if else
 - [ ] Array

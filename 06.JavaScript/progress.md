@@ -6,15 +6,15 @@
 
 - [x] alert, prompt and console.
 - [x] Variables and Data types
-- [ ] Converting strings to numbers (Parsing numbers)
-- [ ] Operators
-  - [ ] Comparison operators
+- [x] Converting strings to numbers (Parsing numbers)
+- [x] Operators
+  - [x] Comparison operators
   - [ ] Logical operators
   - [x] Assignment operators
   - [x] Arithmetic operators
 - [x] Precedence (BODMAS)
 - [x] Concatenating text strings
-- [ ] if else statements
+- [x] if else statements
   - [ ] else if / nested if else
 - [ ] Array
   - [ ] Adding and removing elements

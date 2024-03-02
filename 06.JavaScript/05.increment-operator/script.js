@@ -4,7 +4,6 @@ let balance1;
 let $balance1;
 let _balance1;
 
-
 const zakat = 2.5;
 
 // zakat++ // error
@@ -17,7 +16,7 @@ console.log("2nums ", balance);
 balance++; // increment operator
 balance++; // unary operator
 
-balance = balance * 10
+balance = balance * 10;
 
 console.log("nums ", balance);
 

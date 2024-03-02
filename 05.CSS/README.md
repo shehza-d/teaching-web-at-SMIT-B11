@@ -22,5 +22,4 @@ https://resources.github.com
 
 [Grid attack](https://codingfantasy.com/games/css-grid-attack/play)
 
-
 ### [Responsive_Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)

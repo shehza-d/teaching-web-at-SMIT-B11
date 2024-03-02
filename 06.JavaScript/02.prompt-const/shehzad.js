@@ -14,16 +14,8 @@ console.log(myName);
 
 myName = "testing";
 
-
-
-
-
 let userName = prompt("what is your name");
 alert("Welcome " + userName);
-
-
-
-
 
 // Prompt se hum user se input lete hyn
 let num1 = prompt("enter first number");

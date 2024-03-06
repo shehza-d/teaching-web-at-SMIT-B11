@@ -1,7 +1,7 @@
-// let myButtonElement = document.querySelector("#myButton");
 let myInput = document.querySelector("#myInput");
 let screenParagraph = document.querySelector("#myPara");
 let form = document.querySelector("#weatherForm");
+
 // let text = "<h1>hello</h1>"; //prompt("enter you name");
 
 // screenParagraph.innerHTML = text;
@@ -18,7 +18,7 @@ form.addEventListener("submit", (event) => {
 
   let condition = temp > 25;
 
-  // console.log("🚀 ~ condition:", condition);
+  console.log("🚀 ~ condition:", condition);
 
   if (condition) {
     screenParagraph.innerText = "Garmi";

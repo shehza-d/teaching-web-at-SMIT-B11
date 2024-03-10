@@ -4,14 +4,14 @@
 
 ## ❎ Quiz 1
 
-- [x] alert, prompt and console.
+- [x] alert, prompt and console
 - [x] Variables and Data types
 - [x] Converting strings to numbers (Parsing numbers)
 - [x] Operators
-  - [x] Comparison operators
-  - [ ] Logical operators
-  - [x] Assignment operators
   - [x] Arithmetic operators
+  - [x] Comparison operators
+  - [x] Assignment operators
+  - [ ] Logical operators
 - [x] Precedence (BODMAS)
 - [x] Concatenating text strings
 - [x] if else statements

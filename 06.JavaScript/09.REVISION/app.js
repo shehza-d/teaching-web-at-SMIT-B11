@@ -15,7 +15,7 @@ let student;
 
 console.log(student);
 
-student = "shehzad";// assigning value
+student = "shehzad"; // assigning value
 
 console.log(student);
 

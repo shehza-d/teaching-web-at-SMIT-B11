@@ -11,7 +11,7 @@ let form = document.querySelector("#weatherForm");
 // console.log("Input ki value: ", myInput.value);
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault();// page refresh nhi hota
+  event.preventDefault(); // page refresh nhi hota
   //
 
   let temp = Number(myInput.value); // temperature

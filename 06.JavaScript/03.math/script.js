@@ -35,4 +35,4 @@ console.log("Power ", 3 * 5 ** 4 * 2); // 3750
 
 console.log((3 + 4) * 5); // 35
 
-console.log(4 * (4 - 55) + 60 / 4);
+console.log(4 * (4 - 55) + 60 / (-4 * 55));

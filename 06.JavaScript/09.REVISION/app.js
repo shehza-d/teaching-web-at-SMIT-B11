@@ -13,6 +13,12 @@ let isPresent = false;
 // undefined
 let student;
 
+console.log(student);
+
+student = "shehzad";// assigning value
+
+console.log(student);
+
 // null
 let empty = null;
 

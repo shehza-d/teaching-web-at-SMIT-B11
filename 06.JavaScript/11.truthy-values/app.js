@@ -1,6 +1,5 @@
-
-Boolean(0)
-Boolean("car")
+Boolean(0);
+Boolean("car");
 
 // if (boolean) {
 // if ki body
@@ -26,12 +25,11 @@ let weather = Number(prompt("Enter temp"));
 
 // let a = weather < 20;
 
-if (weather<10) {
+if (weather < 10) {
   console.log("Sardi hy 🥶 ");
-}else if (weather <  32 || weather >= 28 ){
-  console.log("moderate")
-}
- else {
+} else if (weather < 32 || weather >= 28) {
+  console.log("moderate");
+} else {
   console.log("Garmi hy 🌞");
 }
 

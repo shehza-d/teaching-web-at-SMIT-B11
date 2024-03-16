@@ -11,11 +11,11 @@
   - [x] Arithmetic operators
   - [x] Comparison operators
   - [x] Assignment operators
-  - [ ] Logical operators
+  - [x] Logical operators
 - [x] Precedence (BODMAS)
 - [x] Concatenating text strings
 - [x] if else statements
-  - [ ] else if / nested if else
+  - [x] else if / nested if else
 - [ ] Array
   - [ ] Adding and removing elements
   - [ ] push, pop, shift, unshift, slice, splice

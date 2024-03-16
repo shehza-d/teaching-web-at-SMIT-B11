@@ -13,8 +13,8 @@
   - [x] Assignment operators
   - [x] Logical operators
 - [x] Precedence (BODMAS)
-- [x] Concatenating text strings
-- [x] if else statements
+- [x] Concatenating text strings ``
+- [ ] if else statements (ternary)
   - [x] else if / nested if else
 - [ ] Array
   - [ ] Adding and removing elements

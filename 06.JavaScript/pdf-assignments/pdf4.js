@@ -3,18 +3,18 @@
 let a, b, c;
 
 // q2
-let name
-let tree1
-let t2ree
-let $tree
-let _tree
+let name;
+let tree1;
+let t2ree;
+let $tree;
+let _tree;
 
 // q3
-let let
-let user name;
-let 1user
-let user@
-let "dfdfdf"
+// let let
+// let user name;
+// let 1user
+// let user@
+// let "dfdfdf"
 
 let myNumber = 7;
 

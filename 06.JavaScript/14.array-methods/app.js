@@ -7,6 +7,7 @@ if (card === true && fee === true) {
   console.log("study");
 }
 
+// Nested if
 if (card === true) {
   if (fee === true) {
     if (assignment === true) {

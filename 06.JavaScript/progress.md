@@ -1,8 +1,6 @@
 # Progress
 
-<!-- ✅ -->
-
-## ❎ Quiz 1
+## ✅ Quiz 1
 
 - [x] alert, prompt and console
 - [x] Variables and Data types
@@ -17,11 +15,11 @@
 - [ ] if else statements (ternary)
   - [x] else if / nested if else
 - [x] Array
-  - [ ] Adding and removing elements
+  - [x] Adding and removing elements
   - [x] push, pop, shift, unshift, slice, splice
-- [ ] Loops
-  - [ ] For loops
-  - [ ] Flags, array length, break;
+- [x] Loops
+  - [x] For loops
+  - [x] Flags, array length, break;
   - [ ] Nested for loops
   - [x] Quiz 1 perp done here
   - [ ] while/do while loops

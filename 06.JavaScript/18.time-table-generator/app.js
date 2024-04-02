@@ -4,6 +4,7 @@ let table = document.querySelector(".time-table");
 
 // https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 // https://developer.mozilla.org/en-US/docs/Web/Events
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
 inputForm.addEventListener("submit", (event) => {
   event.preventDefault();

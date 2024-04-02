@@ -9,6 +9,7 @@ a = +a; // 4
 
 let b = 4;
 
+b.toString();
 b = String(b);
 
 console.log(a);

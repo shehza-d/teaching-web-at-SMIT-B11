@@ -33,7 +33,3 @@ for (let i = 0; i < 3; i++) {
     console.log(`Shehzad i:${i} j:${j}`);
   }
 }
-
-// nested if else
-// event listener
-// nested for

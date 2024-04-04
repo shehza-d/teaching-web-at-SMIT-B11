@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .dark {
+        background-color: black;
+        color: red;
+        --test1: blue;
+      }
+      .light {
+        --test1: yellow;
+      }
+
+      .testing1 {
+        color: var(--test1);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="">
+    <h1>revison</h1>
+    <h1 class="testing1">Testing</h1>
+
+    <button id="themeMode">dark mode</button>
+
+    <button draggable="true" id="myBtn">Click me</button>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

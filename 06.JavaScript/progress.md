@@ -20,7 +20,7 @@
 - [x] Loops
   - [x] For loops
   - [x] Flags, array length, break;
-  - [ ] Nested for loops
+  - [x] Nested for loops
   - [x] Quiz 1 perp done here
   - [ ] while/do while loops
 
@@ -50,11 +50,11 @@
 
 ### Other
 
-- [ ] Pass by Value and Pass by reference
-- [ ] Modules
 - [ ] Array.Map
-- [ ] Promises
+- [ ] Pass by Value and Pass by reference
 - [ ] Async/Await
+- [ ] Modules
+- [ ] Promises
 - [ ] Closure
 - [ ] Higher-order function
 - [ ] CallBack

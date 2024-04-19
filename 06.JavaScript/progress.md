@@ -12,7 +12,7 @@
   - [x] Logical operators
 - [x] Precedence (BODMAS)
 - [x] Concatenating text strings ``
-- [ ] if else statements (ternary)
+- [x] if else statements (ternary)
   - [x] else if / nested if else
 - [x] Array
   - [x] Adding and removing elements
@@ -27,7 +27,7 @@
 ## ❎ Quiz 2
 
 - [ ] Strings manipulation (LeetCode)
-- [ ] Date and time
+- [ ] Date and time (clock n stopwatch)
 - [ ] Functions
 - [ ] Local vs. global variables
 - [ ] Switch statement
@@ -50,7 +50,9 @@
 
 ### Other
 
+- [ ] Pass by Value and Pass by reference
 - [ ] Modules
+- [ ] Array.Map
 - [ ] Promises
 - [ ] Async/Await
 - [ ] Closure

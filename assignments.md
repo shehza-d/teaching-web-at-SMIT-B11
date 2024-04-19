@@ -14,7 +14,7 @@ Personal portfolio after react and tailwind => https://stars.github.com/profiles
 
 https://github.com/EnverX-Inc/enverx-be-developer-assignment
 
-time table cal
+time table cal after date and time
 stop watch
 digital clock
 brute force

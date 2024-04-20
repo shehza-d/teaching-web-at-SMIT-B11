@@ -8,32 +8,39 @@ let matrix2 = [
   [7, 6, 3],
   [7, 9, 8],
 ];
-// result = [
+
+// example result = [
 //   [10, 4, 6],
 //   [14, 8, 6],
 //   [8, 9, 13],
 // ];
 
-// for (let i = 0; i < 3; i++) {
-//   for (let j = 0; j < 3; j++) {
-//     console.log(matrix1[i][j] + matrix2[i][j]);
-//   }
-// }
-// result ka array banana left hy 
+let result = [];
+
+for (let i = 0; i < 3; i++) {
+  result[i] = [];
+
+  for (let j = 0; j < 3; j++) {
+    const sum = matrix1[i][j] + matrix2[i][j];
+
+    result[i].push(sum);
+  }
+}
+console.log(result);
 
 // Printing array dynamically
-// let myArr = [
-//   [2, 3, 4, 4, 4, 9],
-//   [5, 5],
-//   [5],
-//   [9, 8, 7],
-//   [8, 76, 5, 43, 8, 76, 5, 43],
-// ]; // 2D array
+let myArr = [
+  [2, 3, 4, 4, 4, 9],
+  [5, 5],
+  [5],
+  [9, 8, 7],
+  [8, 76, 5, 43, 8, 76, 5, 43],
+]; // 2D array
 
-// for (let i = 0; i < myArr.length; i++) {
-//   console.log(myArr[i].length);
+for (let i = 0; i < myArr.length; i++) {
+  console.log(myArr[i].length);
 
-//   for (let j = 0; j < myArr[i].length; j++) {
-//     console.log(myArr[i][j]);
-//   }
-// }
+  for (let j = 0; j < myArr[i].length; j++) {
+    console.log(myArr[i][j]);
+  }
+}

@@ -24,18 +24,18 @@
 // 6 Sunday
 
 const months = [
-  " January",
-  " February",
-  " March",
-  " April",
-  " May",
-  " June",
-  " July",
-  " August",
-  " Sep",
-  " Out",
-  " Nov",
-  " December",
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "Sep",
+  "Out",
+  "Nov",
+  "December",
 ];
 
 // console.log("test: ", months[new Date().getMonth()]);
@@ -56,3 +56,54 @@ const months = [
 // 1. Wed 24-Apr 7:45 PM
 // 2. April 5th 07:45 PM
 // floor and ceil ko yaad kese rakhe (room se)(floor is preferd)
+
+// https://www.youtube.com/@jsconf_/videos
+
+const days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sun"];
+
+let a = new Date();
+
+let din = days[a.getDay()];
+let month = months[a.getMonth()];
+let hour = a.getHours();
+
+let ampm = "";
+
+if (hour === 0) {
+  hour = 12;
+  ampm = "AM";
+} else if (hour < 12) {
+  ampm = "AM";
+} else {
+  hour = hour - 12;
+  ampm = "PM";
+}
+
+let task1 = `${din} ${a.getDate()}-${month.slice(
+  0,
+  3,
+)} ${hour}:${a.getMinutes()} ${ampm}`;
+
+let date = a.getDate();
+
+if (date === 1 || date === 21) {
+  date = `${date}st`;
+} else if (date === 2 || date === 22) {
+  date = `${date}nd`;
+} else if (date === 3) {
+  date = `3rd`;
+} else if (date > 3) {
+  date = `${a.getDate()}th`;
+}
+
+let task2 = `${month} ${date} ${String(hour).padStart(
+  2,
+  0,
+)}:${a.getMinutes()} ${ampm}`;
+
+console.log("🚀 ~ date1:", task2);
+
+// let b = Math.floor(Math.random() * 20);
+
+// setInterval(() => console.log("Shehzad"), 1000);
+String("shehzad").padStart(5, ":");

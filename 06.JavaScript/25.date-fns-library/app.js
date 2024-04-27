@@ -3,9 +3,17 @@
 
 let myTime = dateFns.format(new Date(2014, 1, 11), "E MMM dd/yy");
 
-console.log("🚀 ~ myTime:", myTime);
+// April 5th 07:45 PM
+let myTime2 = dateFns.format(new Date(), "MMMM do hh:mm a");
 
 const dates = [new Date(1995, 6, 2), new Date(), new Date(1989, 6, 10)];
 
-console.log(dates.sort());
 console.log(dates.sort(dateFns.compareAsc));
+
+let myText = dateFns.formatDistance(
+  "2023-09-23T20:37:13.090+00:00",
+  new Date(),
+  { addSuffix: true },
+);
+
+console.log(myText);

@@ -33,8 +33,8 @@ message = `gate is ${isOpen ? "open" : "close"} and it is ${
 condition
   ? "if phali condition true hy tw ya return hoga"
   : condition
-  ? "2nd condition true"
-  : "dono false hyn";
+    ? "2nd condition true"
+    : "dono false hyn";
 
 console.log("message: ", message);
 

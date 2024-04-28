@@ -4,17 +4,19 @@
 
 1. https://www.figma.com/file/jXS8tYJ5sRMC6u2xQ9CdNI/Ride-sharing-web-ui---bootstrap-guide-lines-(Community)?type=design&node-id=0-1&mode=design&t=OmK7osnv8Yw9e3Sq-0
 
-https://spotfinder.app
+- https://spotfinder.app
 
-Text editor => MS Word
+- Text editor => MS Word
 
-After html and firebase => offer businesses to make a site for them
+- Time Table Generator
+- Digital Clock
+- Birthday finder
+- stop watch
+- Leetcode
+- brute force
 
-Personal portfolio after react and tailwind => https://stars.github.com/profiles/adrianhajdin
+- After html and firebase => offer businesses to make a site for them
 
-https://github.com/EnverX-Inc/enverx-be-developer-assignment
+- Personal portfolio after react and tailwind => https://stars.github.com/profiles/adrianhajdin
 
-time table cal after date and time
-stop watch
-digital clock
-brute force
+- https://github.com/EnverX-Inc/enverx-be-developer-assignment

@@ -27,7 +27,7 @@
 ## ❎ Quiz 2
 
 - [ ] Strings manipulation (LeetCode)
-- [ ] Date and time (clock n stopwatch)
+- [x] Date and time (date-fns)
 - [ ] Functions
 - [ ] Local vs. global variables
 - [ ] Switch statement

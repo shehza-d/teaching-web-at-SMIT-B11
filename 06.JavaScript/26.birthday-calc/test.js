@@ -28,7 +28,7 @@ document.querySelector("#dateForm").addEventListener("submit", (e) => {
   let timeLeftInNextBirthday = nextBirthday.getTime() - now.getTime();
 
   let daysLeftInBirthday = Math.floor(
-    timeLeftInNextBirthday / (1000 * 60 * 60 * 24)
+    timeLeftInNextBirthday / (1000 * 60 * 60 * 24),
   );
 
   let remainderOfDays = timeLeftInNextBirthday % (1000 * 60 * 60 * 24);

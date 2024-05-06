@@ -10,10 +10,8 @@ Code Your Way to Success: Join Our Web Dev Journey!
 
 Bahadurabad campus 11 to 1 | DEC 2023
 
-[Pakistan`s Largest NGO | New Documentary](https://youtu.be/MIpmnJG0yyc)
+[Pakistan's Largest NGO | New Documentary](https://youtu.be/MIpmnJG0yyc)
 
 [Empower Your Tech Journey with SMIT](https://youtu.be/VcV841p85Ew)
 
 [Saylani Mega I.T Entrance Exam 2023](https://youtu.be/uaaVCBPHOp8)
-
-<!-- Start from Page 363 -->

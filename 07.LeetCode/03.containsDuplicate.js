@@ -10,3 +10,8 @@ function containsDuplicate(nums) {
   }
   return false;
 }
+
+console.log(containsDuplicate([2, 3, 1, 3]));
+console.log(containsDuplicate([2, 1, 3]));
+console.log(containsDuplicate(["shehzad", "", "shehzad"]));
+console.log(containsDuplicate(["a", "b", "c"]));

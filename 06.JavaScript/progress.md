@@ -26,10 +26,10 @@
 
 ## ❎ Quiz 2
 
-- [ ] Strings manipulation (LeetCode)
+- [ ] Strings manipulation (LeetCode) chp 22-24
 - [x] Date and time (date-fns)
-- [ ] Functions
-- [ ] Local vs. global variables
+- [x] Functions
+- [x] Local vs. global variables
 - [ ] Switch statement
 
 ## ❎ Quiz 3

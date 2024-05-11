@@ -1,6 +1,6 @@
 # Progress
 
-## ✅ Quiz 1
+## ✅ Quiz 1 (Chap `1` - `20`)
 
 - [x] alert, prompt and console
 - [x] Variables and Data types
@@ -21,24 +21,23 @@
   - [x] For loops
   - [x] Flags, array length, break;
   - [x] Nested for loops
-  - [x] Quiz 1 perp done here
-  - [ ] while/do while loops
 
-## ❎ Quiz 2
+## ❎ Quiz 2 (Chap `20` - `40`)
 
-- [ ] Strings manipulation (LeetCode) chp 22-24
+- [x] Strings manipulation (LeetCode) chp 22-24
 - [x] Date and time (date-fns)
 - [x] Functions
 - [x] Local vs. global variables
-- [ ] Switch statement
+- [x] Switch statement
 
-## ❎ Quiz 3
+## ❎ Quiz 3 (Chap `40` - `60`)
 
+- [ ] while/do-while loops
 - [ ] Placing scripts and comments (smarter way)
 - [ ] Events
 - [ ] DOM
 
-## ❎ Quiz 4
+## ❎ Quiz 4 (Chap `60` - `book end`)
 
 - [ ] Objects {}
 - [ ] Local Storage

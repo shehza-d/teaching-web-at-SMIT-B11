@@ -24,7 +24,7 @@
 
 ## ❎ Quiz 2 (Chap `20` - `40`)
 
-- [x] Strings manipulation (LeetCode) chp 22-24
+- [x] Strings manipulation (LeetCode)
 - [x] Date and time (date-fns)
 - [x] Functions
 - [x] Local vs. global variables
@@ -33,7 +33,7 @@
 ## ❎ Quiz 3 (Chap `40` - `60`)
 
 - [ ] while/do-while loops
-- [ ] Placing scripts and comments (smarter way)
+- [ ] Placing scripts and comments
 - [ ] Events
 - [ ] DOM
 
@@ -43,9 +43,7 @@
 - [ ] Local Storage
 - [ ] window.location
 - [ ] history.back();
-- [ ] Exceptions
-  - [ ] try / catch
-  - [ ] throw
+- [ ] Exceptions (try / catch / throw)
 
 ### Other
 

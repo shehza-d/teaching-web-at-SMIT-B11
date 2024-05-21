@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .temp {
+        font-size: 40px;
+        color: red;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Weather app</h1>
+
+    <form id="myForm">
+      <input type="text" id="cityInput" />
+      <button type="submit">get Weather</button>
+    </form>
+
+    <div>
+      <p class="temp" id="temp"></p>
+      <p id="humidity"></p>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

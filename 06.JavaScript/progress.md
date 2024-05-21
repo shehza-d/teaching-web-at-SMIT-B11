@@ -49,7 +49,7 @@
 
 - [ ] Array.Map
 - [ ] Pass by Value and Pass by reference
-- [ ] Async/Await
+- [x] Async/Await
 - [ ] Modules
 - [ ] Promises
 - [ ] Closure

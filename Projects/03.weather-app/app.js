@@ -1,34 +1,57 @@
-// const form = document.querySelector("#myForm");
-// const cityInput = document.querySelector("#cityInput");
-// // https://home.openweathermap.org/api_keys
-// const API_KEY = "add-Key-Here";
-// const temp = document.querySelector("#temp");
-// const humidity = document.querySelector("#humidity");
+const form = document.querySelector("#myForm");
+const cityInput = document.querySelector("#cityInput");
+// https://home.openweathermap.org/api_keys
+const API_KEY = "21b776b8f103d8742f43ac6f5928e618";
+const temp = document.querySelector("#temp");
+const humidity = document.querySelector("#humidity");
+const message = document.querySelector("#message");
 
-// const formHandler = async (event) => {
-//   event.preventDefault();
+const formHandler = async (event) => {
+  try {
+    event.preventDefault(); // prevents page refresh
 
-//   const city = cityInput.value;
+    message.innerText = "";
 
-//   const response = await fetch(
-//     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
-//   );
-//   const data = await response.json();
+    const city = cityInput.value;
 
-//   temp.innerText = data.main.temp;
-//   humidity.innerText = data.main.humidity;
+    const response = await axios(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+    );
+    const data = response.data; // await response.json();// converting data into JSON
 
-//   console.log("🚀 ~ formHandler ~ response:", data);
-// };
+    temp.innerText = data.main.temp;
+    humidity.innerText = data.main.humidity;
 
-// form.addEventListener("submit", formHandler);
+    console.log("🚀 ~ formHandler ~ response:", data);
+  } catch (err) {
+    console.log(err);
+    message.innerText = err?.response?.data?.message || "unknown error";
+  }
+};
 
-try {
+form.addEventListener("submit", formHandler);
 
-	dfdfdf;
+// error handling
+// try {
+//   try {
+//     dfdfdf;
+//   } catch (error) {
+//     karim;
+//   }
+// } catch (shehzad) {
+//   console.log("🚀 ~ shehzad:", shehzad);
+// }
 
-} catch (error) {
+// console.log("code pura last tak chal raha hy");
 
-	console.log(error);
+// try {
+//   const myApi = "https://api.github.com/users/shehdijdfijdza-d";
 
-}
+//   const response = await axios(myApi);
+
+//   console.log("🚀 ~ response:", response.data);
+// } catch (error) {
+//   console.log(error.response.data.message);
+// }
+
+console.log("end");

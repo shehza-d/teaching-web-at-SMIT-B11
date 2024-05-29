@@ -6,7 +6,7 @@ Code Your Way to Success: Join Our Web Dev Journey!
 
 <!-- "Learn Web Development Essentials and Empower Your Skills!" -->
 
-![Class Poster](./imgs/class-poster.jpeg)
+![Class Poster](./students/imgs/class-poster.jpeg)
 
 Bahadurabad campus 11 to 1 | DEC 2023
 

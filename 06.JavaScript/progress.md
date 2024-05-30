@@ -22,24 +22,24 @@
   - [x] Flags, array length, break;
   - [x] Nested for loops
 
-## ❎ Quiz 2 (Chap `20` - `40`)
+## ✅ Quiz 2 (Chap `20` - `40`)
 
 - [x] Strings manipulation (LeetCode)
 - [x] Date and time (date-fns)
 - [x] Functions
-- [x] Local vs. global variables
+- [x] Local vs global variables
 - [x] Switch statement
 
 ## ❎ Quiz 3 (Chap `40` - `60`)
 
 - [ ] while/do-while loops
-- [ ] Placing scripts and comments
+- [x] Placing scripts and comments
 - [ ] Events
 - [ ] DOM
 
 ## ❎ Quiz 4 (Chap `60` - `book end`)
 
-- [ ] Objects {}
+- [x] Objects {}
 - [ ] Local Storage
 - [ ] window.location
 - [ ] history.back();

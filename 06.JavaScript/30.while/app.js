@@ -23,7 +23,5 @@ do {
   if (randomNum === 0) console.log("you lose");
   if (randomNum === 1) console.log("you win");
 
-  let result = confirm("do you want to play again")
-
+  let result = confirm("do you want to play again");
 } while (result);
-

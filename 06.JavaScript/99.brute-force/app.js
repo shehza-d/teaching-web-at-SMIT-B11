@@ -11,10 +11,8 @@ const ALPHABETS = "abcdefghijklmnopqrstuvwxyz";
 
 for (let i = 0; i < password2.length; i++) {
   for (let j = 0; j < ALPHABETS.length; j++) {
-   if(password2[i]===ALPHABETS[j]){
-    
-   }
-    
+    if (password2[i] === ALPHABETS[j]) {
+    }
   }
 }
 

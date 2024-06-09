@@ -11,49 +11,54 @@ const originalObj = {
   address: { city: "Wonderland", zip: 12345 },
 };
 
-// console.log(typeof JSON.parse("[0,34,5]"));
+console.log(typeof JSON.parse("[0,34,5]"));
 
 // shallow copy
-// const copyObj = { ...originalObj };
+const copyObj = { ...originalObj };
 // deep copy
 const copyObj = JSON.parse(JSON.stringify(originalObj));
 
-// console.log(copyObj);
+console.log(copyObj);
 
-// copyObj.address.city = "baldia";
+copyObj.address.city = "baldia town";
 
-// console.log(originalObj?.address?.city);
-// console.log(copyObj.address.city);
+console.log(originalObj.address.city);
+console.log(copyObj.address.city);
 
-// console.log(JSON.parse("{\"name\":\"shehzad\",\"age\":4}"));
+console.log(JSON.parse('{"name":"shehzad","age":4}'));
 
 // Template literals
-// console.log(`this is 3+3 ${JSON.stringify(copyObj)}!`)
+console.log(`this is 3+3 ${JSON.stringify(copyObj)}!`);
 
-// const student = ["shehzad", 21];
+const student = ["shehzad", 21];
 
-// const myName = student[0]
-// const age = student[1]
+const myName = student[0]; // assigning array values to variables
+const age = student[1]; // assigning array values to variables
 
 // Destructuring
-// const [myName, age] = ["shehzad", 21, "something"];
+const [myName, age] = ["shehzad", 21, "something"]; // short way of assigning array values to variables (this is equivalent to above code)
 
-// console.log(myName);
-// console.log(age);
+console.log(myName);
+console.log(age);
 
-// const { name, age } = { name: "shehzad", age: 21 };
+// Destructuring in object
+const { test, age } = { test: "shehzad", age: 21 };
 
-// console.log(name);
-// console.log(age);
+console.log(test);
+console.log(age);
 
-// function myFun(...shahab) {
-//   // rest
-//   console.log(shahab);
-// }
-// console.log(myFun("shehzad", "inamullah"));
+//
 
-const fruits = ["mango","banana"]
-const copy = ["shehzad",...fruits, 567]
+function myFun(...shahab) {
+  // rest operator
+  console.log(shahab);
+}
+console.log(myFun("shehzad", "inamullah"));
 
+//
+
+const fruits = ["mango", "banana"];
+console.log("shehzad", ...fruits, 45);
+
+const copy = ["shehzad", ...fruits, 567];
 console.log(copy);
-// console.log("shehzad", ...fruits ,45)

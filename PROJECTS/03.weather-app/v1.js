@@ -13,7 +13,7 @@ const btn = document.querySelector("#getWeatherBtn");
 
 // swal("welcome", "you are welcome to smit additioal details", "success");
 
-const formHandler =  (event) => {
+const formHandler = (event) => {
   try {
     event.preventDefault(); // prevents page refresh
 
@@ -24,8 +24,8 @@ const formHandler =  (event) => {
 
     const city = cityInput.value;
 
-    const response = await ffetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+    const response = fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`,
     );
 
     form.reset(); // to clear input value only if form is submitted successfully

@@ -32,9 +32,9 @@
 
 ## ❎ Quiz 3 (Chap `40` - `60`)
 
-- [ ] while/do-while loops
+- [x] while/do-while loops
 - [x] Placing scripts and comments
-- [ ] Events
+- [x] Events
 - [ ] DOM
 
 ## ❎ Quiz 4 (Chap `60` - `book end`)

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 100vh;
+      }
+      #testing {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="testing">
+      <p>12:47 <span>PM</span></p>
+      <p>Thursday</p>
+    </div> -->
+
+    <script type="module">
+      const body = document.querySelector("body");
+
+      const div = document.createElement("div");
+      div.setAttribute("id", "testing");
+
+      const p1 = document.createElement("p");
+      const p1Text = document.createTextNode("12:" + new Date().getMinutes());
+
+      const p2 = document.createElement("p");
+      const p2Text = document.createTextNode("Thursday");
+
+      const span = document.createElement("span");
+      const spanText = document.createTextNode("PM");
+      span.appendChild(spanText);
+
+      p1.appendChild(p1Text);
+      p1.appendChild(span);
+
+      p2.appendChild(p2Text);
+
+      div.appendChild(p1);
+      div.appendChild(p2);
+      body.appendChild(div);
+
+      //   const div = document.querySelector("#testing");
+
+      //   const p = document.createElement("p");
+      //   const paraText = document.createTextNode("this is para new text");
+
+      //   p.appendChild(paraText);
+      //   div.appendChild(p);
+    </script>
+  </body>
+</html>

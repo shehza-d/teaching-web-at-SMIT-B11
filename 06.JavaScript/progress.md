@@ -48,7 +48,7 @@
 ### Other
 
 - [ ] Array.Map
-- [ ] Pass by Value and Pass by reference
+- [x] Pass by Value and Pass by reference
 - [x] Async/Await
 - [ ] Modules
 - [ ] Promises

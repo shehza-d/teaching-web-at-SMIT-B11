@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ssimple</title>
+  </head>
+  <body>
+    <div>
+      <button id="myBtn">Show image</button>
+
+      <br />
+      <img
+        src="../../03.HTML/04.images/images/SMIT-Cover.jpg"
+        alt=""
+        width="500"
+        class="image-testing"
+      />
+    </div>
+
+    <script type="module">
+      //   console.log(document.childNodes[1].childNodes[2].childNodes[5]);
+
+      const myImg = document.querySelector("img");
+      const myBtn = document.querySelector("#myBtn");
+
+      const toggleImage = () => {
+        if (!myImg.style.display) {
+          myImg.style.display = "ghayab";
+
+          myImg.className += " shehzad";
+        } else {
+          myImg.style.display = "";
+        }
+      };
+
+      myBtn.addEventListener("click", toggleImage);
+    </script>
+  </body>
+</html>

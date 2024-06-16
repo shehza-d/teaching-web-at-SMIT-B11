@@ -1,5 +1,6 @@
 // cloning / reference thorna
 // deep copy vs shallow copy
+// https://youtu.be/4Ej0LwjCDZQ?si=5ntaTItekb7jEv_h
 // https://www.freecodecamp.org/news/clone-an-object-in-javascript/
 // https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy
 // https://www.freecodecamp.org/news/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd/

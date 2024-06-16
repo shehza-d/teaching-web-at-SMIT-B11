@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ssimple</title>
+
+    <title>simple</title>
   </head>
   <body>
     <div>
-      <button id="myBtn">Show image</button>
+      <button id="myBtn">Hide Image</button>
 
       <br />
       <img
@@ -27,10 +28,12 @@
       const toggleImage = () => {
         if (!myImg.style.display) {
           myImg.style.display = "ghayab";
+          myBtn.innerText = "Show Image";
 
           myImg.className += " shehzad";
         } else {
           myImg.style.display = "";
+          myBtn.innerText = "Hide Image";
         }
       };
 

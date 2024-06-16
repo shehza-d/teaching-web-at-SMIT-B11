@@ -14,6 +14,7 @@
 - stop watch
 - Leetcode
 - brute force
+- trello clone
 
 - After html and firebase => offer businesses to make a site for them
 

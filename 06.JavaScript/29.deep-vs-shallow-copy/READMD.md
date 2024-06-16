@@ -1,3 +1,5 @@
+# [Video](https://youtu.be/4Ej0LwjCDZQ?si=5ntaTItekb7jEv_h)
+
 ### Shallow Copy
 
 A shallow copy of an object is a copy whose properties share the same references (or memory addresses) as those in the original object. This means that if the original object contains references to other objects, the shallow copy will contain references to the same objects, rather than copies of those objects.

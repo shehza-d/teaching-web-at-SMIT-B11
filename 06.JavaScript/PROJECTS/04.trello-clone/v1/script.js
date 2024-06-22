@@ -1,27 +1,4 @@
-const columns = document.querySelectorAll(".column");
-
-const createTicket = (value) => {
-  //
-  const ticket = document.createElement("p");
-  const elementText = document.createTextNode(value);
-
-  ticket.setAttribute("draggable", "true");
-  ticket.appendChild(elementText);
-
-  return ticket;
-};
-
-let savedTasks = JSON.parse(localStorage.getItem("savedTasks"));
-
-if (!savedTasks) {
-  savedTasks = [];
-}
-
-for (let i = 0; i < savedTasks.length; i++) {
-  const p = createTicket(savedTasks[i]);
-
-  columns[0].insertBefore(p, columns[0].lastElementChild);
-}
+const column = document.querySelectorAll(".column");
 
 const addTask = (event) => {
   event.preventDefault();
@@ -33,35 +10,22 @@ const addTask = (event) => {
 
   parent.insertBefore(ticket, currentForm); // adding new task before the form
 
-  savedTasks.push(value);
-  localStorage.setItem("savedTasks", JSON.stringify(savedTasks));
-
   currentForm.reset(); // clearing form
 };
 
-for (let i = 0; i < columns.length; i++) {
-  const form = columns[i].lastElementChild; // selecting every column's form because form is last element
+for (let i = 0; i < column.length; i++) {
+  const form = column[i].lastElementChild; // selecting every column's form because form is last element
 
   form.addEventListener("submit", addTask);
 }
-// columns.forEach((column) => column.lastElementChild.addEventListener("submit", addTask));
 
-// const userMode = localStorage.getItem("mode");
+const createTicket = (value) => {
+  //
+  const ticket = document.createElement("p");
+  const elementText = document.createTextNode(value);
 
-// if (!userMode) {
-//   const mode = prompt("enter your mode preference?");
-//   localStorage.setItem("mode", mode);
-//   localStorage.setItem("name", "shehzad");
-// }
-// localStorage.removeItem("mode")
+  ticket.setAttribute("draggable", "true");
+  ticket.appendChild(elementText);
 
-// console.log("myName :>> ", userMode);
-
-// 2
-// const obj = {
-//   name: "shehzad",
-//   age: 222,
-// };
-
-// localStorage.setItem("myObj", JSON.stringify(obj));
-// console.log( localStorage.getItem("myObj"))
+  return ticket;
+};

@@ -11,17 +11,19 @@ const createTicket = (value) => {
   return ticket;
 };
 
-let savedTasks = JSON.parse(localStorage.getItem("savedTasks"));
+let savedTasks = JSON.parse(localStorage.getItem("savedTasks")); // fetching savedTasks obj and converting
 
 if (!savedTasks) {
-  savedTasks = [];
+  savedTasks = {};
 }
 
-for (let i = 0; i < savedTasks.length; i++) {
-  const p = createTicket(savedTasks[i]);
+// jo phale se save task hy localStorage ma wo display karwane ko
+// for (let i = 0; i < savedTasks.length; i++) {
+//   console.log(savedTasks[i]);
+//   const p = createTicket(savedTasks[i]);
 
-  columns[0].insertBefore(p, columns[0].lastElementChild);
-}
+//   columns[1].insertBefore(p, columns[1].lastElementChild);
+// }
 
 const addTask = (event) => {
   event.preventDefault();
@@ -33,8 +35,16 @@ const addTask = (event) => {
 
   parent.insertBefore(ticket, currentForm); // adding new task before the form
 
-  savedTasks.push(value);
-  localStorage.setItem("savedTasks", JSON.stringify(savedTasks));
+  const h3Value = parent.children[0].innerText;
+
+  if (!Array.isArray(savedTasks[h3Value])) {
+    // agar array nhi hy tw khali array set karwa do kyu ky undefined ma .push() nhi ho sagta
+    savedTasks[h3Value] = [];
+  }
+
+  savedTasks[h3Value].push(value);
+
+  localStorage.setItem("savedTasks", JSON.stringify(savedTasks)); // saving data after adding each task
 
   currentForm.reset(); // clearing form
 };
@@ -44,3 +54,9 @@ for (let i = 0; i < columns.length; i++) {
 
   form.addEventListener("submit", addTask);
 }
+
+// data structure of localStorage
+//  {
+//    "work todo": ["task 1", "task 2"],
+//    progress: ["task 3"],
+//  };

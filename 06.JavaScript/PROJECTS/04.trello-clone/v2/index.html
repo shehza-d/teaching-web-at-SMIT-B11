@@ -9,7 +9,7 @@
   </head>
   <body>
     <header draggable="false">
-      <h1>Trello Clone</h1>
+      <h1 onclick="console.log(event);">Trello Clone</h1>
     </header>
 
     <main id="main">
@@ -21,7 +21,14 @@
         </form>
       </div>
       <div class="column">
-        <h3>work todo</h3>
+        <h3>progress</h3>
+
+        <form>
+          <input type="text" placeholder="add task" />
+        </form>
+      </div>
+      <div class="column">
+        <h3>smit</h3>
 
         <form>
           <input type="text" placeholder="add task" />

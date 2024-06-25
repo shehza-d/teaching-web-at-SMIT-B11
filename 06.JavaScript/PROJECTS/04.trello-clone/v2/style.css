@@ -15,6 +15,7 @@ header {
 
 main {
   display: flex;
+  align-items: start;
   gap: 10px;
   overflow-x: auto;
   padding: 20px;

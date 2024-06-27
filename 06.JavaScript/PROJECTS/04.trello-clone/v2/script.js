@@ -1,4 +1,62 @@
-const columns = document.querySelectorAll(".column");
+const main = document.querySelector("#main");
+const addCardBtn = document.querySelector("#addCard");
+
+const addTask = (event) => {
+  event.preventDefault();
+
+  const currentForm = event.target; // current form element
+  const value = currentForm.elements[0].value; // value written in form's input
+  const parent = currentForm.parentElement; // parent of form i.e div.column
+  const ticket = createTicket(value); // div to be added
+
+  if (!value) return; // null check
+
+  parent.insertBefore(ticket, currentForm); // adding new task before the form
+
+  const h3Value = parent.children[0].innerText;
+
+  if (!Array.isArray(savedTasks[h3Value])) {
+    // agar array nhi hy tw khali array set karwa do kyu ky undefined ma .push() nhi ho sagta
+    savedTasks[h3Value] = [];
+  }
+
+  savedTasks[h3Value].push(value);
+
+  localStorage.setItem("savedTasks", JSON.stringify(savedTasks)); // saving data after adding each task
+
+  currentForm.reset(); // clearing form
+};
+
+const myCreateCard = (cardTitle) => {
+  // This function will return a div like one below
+  /* <div class="column">
+           <h3>smit</h3>
+  
+           <form>
+               <input type="text" placeholder="add task" />
+           </form>
+     </div> */
+
+  const myDiv = document.createElement("div");
+  const myH3 = document.createElement("h3");
+  const myForm = document.createElement("form");
+  const myInput = document.createElement("input");
+
+  const h3Text = document.createTextNode(cardTitle);
+
+  myDiv.setAttribute("class", "column");
+  myInput.setAttribute("type", "text");
+  myInput.setAttribute("placeholder", "add task");
+
+  myH3.appendChild(h3Text);
+  myForm.appendChild(myInput);
+  myDiv.appendChild(myH3);
+  myDiv.appendChild(myForm);
+
+  myForm.addEventListener("submit", addTask);
+
+  return myDiv;
+};
 
 const createTicket = (value) => {
   //
@@ -17,43 +75,20 @@ if (!savedTasks) {
   savedTasks = {};
 }
 
-// jo phale se save task hy localStorage ma wo display karwane ko
-// for (let i = 0; i < savedTasks.length; i++) {
-//   console.log(savedTasks[i]);
-//   const p = createTicket(savedTasks[i]);
+// Displaying the tasks already saved in localStorage
+for (const mainTask in savedTasks) {
+  const amDiv = myCreateCard(mainTask);
 
-//   columns[1].insertBefore(p, columns[1].lastElementChild);
-// }
-
-const addTask = (event) => {
-  event.preventDefault();
-
-  const currentForm = event.target; // current form element
-  const value = currentForm.elements[0].value; // value written in form's input
-  const parent = currentForm.parentElement; // parent of form i.e div.column
-  const ticket = createTicket(value); // div to be added
-
-  parent.insertBefore(ticket, currentForm); // adding new task before the form
-
-  const h3Value = parent.children[0].innerText;
-
-  if (!Array.isArray(savedTasks[h3Value])) {
-    // agar array nhi hy tw khali array set karwa do kyu ky undefined ma .push() nhi ho sagta
-    savedTasks[h3Value] = [];
-  }
-
-  savedTasks[h3Value].push(value);
-
-  localStorage.setItem("savedTasks", JSON.stringify(savedTasks)); // saving data after adding each task
-
-  currentForm.reset(); // clearing form
-};
-
-for (let i = 0; i < columns.length; i++) {
-  const form = columns[i].lastElementChild; // selecting every column's form because form is last element
-
-  form.addEventListener("submit", addTask);
+  main.insertBefore(amDiv, addCardBtn);
 }
+
+addCardBtn.addEventListener("click", () => {
+  const cardTitle = prompt("enter card name?");
+
+  const yourDiv = myCreateCard(cardTitle);
+
+  main.insertBefore(yourDiv, addCardBtn);
+});
 
 // data structure of localStorage
 //  {

@@ -2,14 +2,16 @@
 
 const userMode = localStorage.getItem("mode");
 
+console.log("🚀 ~ userMode:", userMode);
+
 if (!userMode) {
   const mode = prompt("enter your mode preference?");
   localStorage.setItem("mode", mode);
   localStorage.setItem("name", "shehzad");
 }
-localStorage.removeItem("name");
 
-console.log("myName :>> ", userMode);
+// removing something from localStorage
+localStorage.removeItem("name");
 
 // 2;
 const obj = {

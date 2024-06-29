@@ -76,10 +76,18 @@ if (!savedTasks) {
 }
 
 // Displaying the tasks already saved in localStorage
-for (const mainTask in savedTasks) {
-  const amDiv = myCreateCard(mainTask);
+for (const title in savedTasks) {
+  const card = myCreateCard(title);
 
-  main.insertBefore(amDiv, addCardBtn);
+  const arrayOfTasks = savedTasks[title];
+
+  for (let i = 0; i < arrayOfTasks.length; i++) {
+    const p = createTicket(arrayOfTasks[i]);// we are creating paras with each tasks
+
+    card.insertBefore(p, card.lastElementChild);
+  }
+
+  main.insertBefore(card, addCardBtn);
 }
 
 addCardBtn.addEventListener("click", () => {

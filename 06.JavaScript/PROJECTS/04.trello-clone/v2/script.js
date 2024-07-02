@@ -82,7 +82,7 @@ for (const title in savedTasks) {
   const arrayOfTasks = savedTasks[title];
 
   for (let i = 0; i < arrayOfTasks.length; i++) {
-    const p = createTicket(arrayOfTasks[i]);// we are creating paras with each tasks
+    const p = createTicket(arrayOfTasks[i]); // we are creating paras with each tasks
 
     card.insertBefore(p, card.lastElementChild);
   }

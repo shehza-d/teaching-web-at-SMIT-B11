@@ -1,6 +1,8 @@
 const main = document.querySelector("#main");
 const addCardBtn = document.querySelector("#addCard");
 
+let woElementJoUthaHuaHy = null;
+
 const addTask = (event) => {
   event.preventDefault();
 
@@ -54,7 +56,24 @@ const myCreateCard = (cardTitle) => {
   myDiv.appendChild(myForm);
 
   myForm.addEventListener("submit", addTask);
-  myDiv.addEventListener("????", () => {});
+
+  myDiv.addEventListener("dragleave", (event) => event.preventDefault());
+  myDiv.addEventListener("dragover", (event) => event.preventDefault());
+
+  myDiv.addEventListener("drop", (event) => {
+    const jisElementPerDropKiyaJaRahaHo = event.target;
+
+    if (jisElementPerDropKiyaJaRahaHo.className.includes("column")) {
+      // console.log("2");
+      jisElementPerDropKiyaJaRahaHo.appendChild(woElementJoUthaHuaHy);
+    }
+
+    if (jisElementPerDropKiyaJaRahaHo.className.includes("ticket")) {
+      jisElementPerDropKiyaJaRahaHo.parentElement.appendChild(
+        woElementJoUthaHuaHy
+      );
+    }
+  });
 
   return myDiv;
 };
@@ -65,11 +84,12 @@ const createTicket = (value) => {
   const elementText = document.createTextNode(value);
 
   ticket.setAttribute("draggable", "true");
+  ticket.setAttribute("class", "ticket");
   ticket.appendChild(elementText);
 
   ticket.addEventListener("mousedown", (event) => {
-    const woElementJoUthaHuaHy = event.target;
-    console.log("🚀 ~ woElementJoUthaHuaHy:", woElementJoUthaHuaHy);
+    woElementJoUthaHuaHy = event.target;
+    console.log("1");
   });
 
   return ticket;
@@ -98,6 +118,8 @@ for (const title in savedTasks) {
 
 addCardBtn.addEventListener("click", () => {
   const cardTitle = prompt("enter card name?");
+
+  if (!cardTitle) return;
 
   const yourDiv = myCreateCard(cardTitle);
 

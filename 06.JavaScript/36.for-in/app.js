@@ -13,7 +13,7 @@ console.log(myObj[myKeyy]); // array will be printed
 //
 
 for (const myKeyy in myObj) {
-  console.log("each values of obj :>> ", myKeyy);
+  console.log("each values of obj :>> ", myObj[myKeyy]);
 }
 
 const myArr = [2, 7, 2, 6, 5, 4];

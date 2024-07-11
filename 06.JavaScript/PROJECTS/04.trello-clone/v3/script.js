@@ -70,7 +70,7 @@ const myCreateCard = (cardTitle) => {
 
     if (jisElementPerDropKiyaJaRahaHo.className.includes("ticket")) {
       jisElementPerDropKiyaJaRahaHo.parentElement.appendChild(
-        woElementJoUthaHuaHy
+        woElementJoUthaHuaHy,
       );
     }
   });

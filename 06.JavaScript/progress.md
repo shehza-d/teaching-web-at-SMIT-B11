@@ -30,27 +30,27 @@
 - [x] Local vs global variables
 - [x] Switch statement
 
-## ❎ Quiz 3 (Chap `40` - `60`)
+## ✅ Quiz 3 (Chap `40` - `60`)
 
 - [x] while/do-while loops
 - [x] Placing scripts and comments
 - [x] Events
 - [ ] DOM
 
-## ❎ Quiz 4 (Chap `60` - `book end`)
+## ✅ Quiz 4 (Chap `60` - `book end`)
 
 - [x] Objects {}
-- [ ] Local Storage
+- [x] Local Storage
 - [ ] window.location
 - [ ] history.back();
 - [ ] Exceptions (try / catch / throw)
 
-### Other
+### ❎ Other
 
-- [ ] Array.Map
+- [x] Array.Map
 - [x] Pass by Value and Pass by reference
 - [x] Async/Await
-- [ ] Modules
+- [ ] Modules (db/ require and import)
 - [ ] Promises
 - [ ] Closure
 - [ ] Higher-order function

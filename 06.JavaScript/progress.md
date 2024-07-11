@@ -43,7 +43,7 @@
 - [x] Local Storage
 - [ ] window.location
 - [ ] history.back();
-- [ ] Exceptions (try / catch / throw)
+- [x] Exceptions (try / catch / throw)
 
 ### ❎ Other
 
@@ -51,7 +51,7 @@
 - [x] Pass by Value and Pass by reference
 - [x] Async/Await
 - [ ] Modules (db/ require and import)
-- [ ] Promises
+- [x] Promises
 - [ ] Closure
 - [ ] Higher-order function
 - [ ] CallBack

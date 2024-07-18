@@ -9,4 +9,7 @@ var userName = prompt("what is your name?");
 // if (userName === null) {
 //   userName = "shehzad";
 // }
-console.log("userName ", userName === null || userName === void 0 ? void 0 : userName.toUpperCase());
+console.log(
+  "userName ",
+  userName === null || userName === void 0 ? void 0 : userName.toUpperCase(),
+);

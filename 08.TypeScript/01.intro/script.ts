@@ -1,6 +1,6 @@
 let myName: string;
 
-myName = "shehzad"
+myName = "shehzad";
 
 console.log(myName);
 
@@ -18,4 +18,4 @@ let userName = prompt("what is your name?");
 
 console.log("userName ", userName?.toUpperCase());
 
-let num:number = 56
+let num: number = 56;

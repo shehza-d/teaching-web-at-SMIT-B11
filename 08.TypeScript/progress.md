@@ -4,12 +4,12 @@
 
 - [ ] TS Compiler
 - [ ] Type Annotations
-- [ ] Interfaces
+- [x] Interfaces
 - [ ] Enums
-- [ ] Type Inference
-- [ ] Union and Intersection Types
+- [x] Type Inference
+- [x] Union and Intersection Types
 - [ ] Type Guards
-- [ ] Generics
+- [x] Generics
 
 Advance Topics
 

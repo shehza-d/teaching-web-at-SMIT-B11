@@ -35,7 +35,7 @@
 - [x] while/do-while loops
 - [x] Placing scripts and comments
 - [x] Events
-- [ ] DOM
+- [x] DOM
 
 ## ✅ Quiz 4 (Chap `60` - `book end`)
 
@@ -50,7 +50,7 @@
 - [x] Array.Map
 - [x] Pass by Value and Pass by reference
 - [x] Async/Await
-- [ ] Modules (db/ require and import)
+- [x] Modules (db/ require and import)
 - [x] Promises
 - [ ] Closure
 - [ ] Higher-order function

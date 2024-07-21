@@ -4,9 +4,7 @@
 <img width="100" height="100" src="https://skillicons.dev/icons?i=ts" />
 </p>
 
-## If you want to learn more
-
-[**Best course on TS**](https://youtu.be/30LWjhZzg50?si=jnPXMbx3GGDmAHmz)
+## [Learn complete TS from Hitest](https://youtu.be/30LWjhZzg50?si=jnPXMbx3GGDmAHmz)
 
 ## Steps
 

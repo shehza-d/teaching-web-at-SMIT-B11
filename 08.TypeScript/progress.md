@@ -2,13 +2,13 @@
 
 ## ❎ Quiz
 
-- [ ] TS Compiler
-- [ ] Type Annotations
+- [x] TS Compiler
+- [x] Type Annotations
 - [x] Interfaces
-- [ ] Enums
+- [x] Enums
 - [x] Type Inference
 - [x] Union and Intersection Types
-- [ ] Type Guards
+- [x] Type Guards
 - [x] Generics
 
 Advance Topics

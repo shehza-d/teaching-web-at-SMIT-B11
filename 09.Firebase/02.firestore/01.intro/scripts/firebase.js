@@ -23,15 +23,9 @@ const firebaseConfig = {
   appId: "1:702098094497:web:5641fed3038bdc18e4f3e0",
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// def of authentication
-// the process or action of verifying the identity of a user or process.
 
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
-
-console.log("file running");
 
 export { db, collection, addDoc, serverTimestamp, getDocs, doc, onSnapshot };

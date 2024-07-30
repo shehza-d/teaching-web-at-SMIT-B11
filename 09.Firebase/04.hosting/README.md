@@ -36,7 +36,7 @@ Firebase Hosting provides fast and secure hosting for your web app, static and d
    - Set up automatic builds and deploys with GitHub? `No`
    - File .//index.html already exists. Overwrite? `No`
 
-2. Deploy your site
+1. Deploy your site
 
    ```bash
    firebase deploy

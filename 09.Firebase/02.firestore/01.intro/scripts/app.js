@@ -3,16 +3,18 @@ import {
   collection,
   addDoc,
   serverTimestamp,
-  getDocs, doc, onSnapshot
+  getDocs,
+  doc,
+  onSnapshot,
 } from "./firebase.js";
 
 const form = document.querySelector("#product-form");
 const productName = document.querySelector("#product-name");
 const productPrice = document.querySelector("#product-price");
 const productDetail = document.querySelector("#product-detail");
+const allProducts = document.querySelector(".allProducts");
 
-
-const myCollectionReference = collection(db, "products")
+const myCollectionReference = collection(db, "products");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -33,24 +35,33 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// 
-
-const allProducts = document.querySelector(".allProducts")
+//
 
 // 1
+const querySnapshot = await getDocs(myCollectionReference);
 
+querySnapshot.forEach((doc) => {
+  const product = doc.data();
 
-// const querySnapshot = await getDocs(myCollectionReference);
-
-onSnapshot(doc(db, "products"), (doc) => {
-// querySnapshot.forEach((doc) => {
-  const product = doc.data()
-    allProducts.innerHTML += `<div>
+  allProducts.innerHTML += `<div>
         <!-- <img src="" alt=""> -->
         <h3>${product.productName}</h3>
-        <p>${product.productPrice}</p>
+        <span>${product.createdAt?.toDate()}</span>
+        <p class="price">Rs.${product.productPrice}</p>
         <p>${product.productDetail}</p>
-      </div>`
-    // console.log(doc.data());
-//   console.log(`${doc.id} => ${doc.data()}`);
+      </div>`;
 });
+
+// 2 (working)
+// onSnapshot(myCollectionReference, (doc) => {
+//   doc.docs.forEach((eachDoc) => {
+//     const product = eachDoc.data();
+
+//     allProducts.innerHTML += `<div>
+//         <h3>${product.productName}</h3>
+//         <span>${product.createdAt?.toDate()}</span>
+//         <p class="price">Rs.${product.productPrice}</p>
+//         <p>${product.productDetail}</p>
+//       </div>`;
+//   });
+// });

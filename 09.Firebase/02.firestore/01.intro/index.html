@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,12 +6,27 @@
     <style>
       .allProducts {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
       }
       .allProducts > div {
         border: 2px solid black;
         width: 300px;
+        padding: 10px;
+      }
+      .allProducts > div > h3 {
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+      .allProducts > div > .price {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+      .allProducts > div > span {
+        font-size: 0.8rem;
+        font-weight: 400;
       }
     </style>
     <title>Document</title>

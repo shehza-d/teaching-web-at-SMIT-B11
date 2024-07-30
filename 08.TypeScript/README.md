@@ -6,6 +6,8 @@
 
 ## [Learn complete TS from Hitest](https://youtu.be/30LWjhZzg50?si=jnPXMbx3GGDmAHmz)
 
+### [TS learning repo by Sufiyan](https://github.com/InnoSufiyan/TypeScript)
+
 ## Steps
 
 1. Install NodeJs (lts version) from [here](https://nodejs.org/en/download/prebuilt-installer).

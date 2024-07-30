@@ -12,7 +12,14 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
 // Your web app's Firebase configuration
-const firebaseConfig = {};
+const firebaseConfig = {
+  apiKey: "AIzaSyC4N6Bpf6uEnUxCRI9-0ToijzwYLRTEVlw",
+  authDomain: "smit-shehzad.firebaseapp.com",
+  projectId: "smit-shehzad",
+  storageBucket: "smit-shehzad.appspot.com",
+  messagingSenderId: "433726123955",
+  appId: "1:433726123955:web:410a125ff7a0705e4de5c6",
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

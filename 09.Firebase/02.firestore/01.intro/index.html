@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .allProducts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .allProducts > div {
+        border: 2px solid black;
+        width: 300px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Firestore</h1>
+
+    <form id="product-form">
+      <input type="text" placeholder="productName" id="product-name" />
+      <input type="text" placeholder="productPrice" id="product-price" />
+      <input type="text" placeholder="productDetail" id="product-detail" />
+      <!-- <input type="file" placeholder="productImg" id="product-img"> -->
+
+      <button type="submit">done</button>
+    </form>
+
+    <div class="allProducts"></div>
+
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>

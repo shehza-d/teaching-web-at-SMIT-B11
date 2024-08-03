@@ -3,42 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      .all-products {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-      }
-      .all-products > div {
-        border: 2px solid black;
-        width: 300px;
-        padding: 10px;
-      }
-      .all-products > div > h3 {
-        font-size: 2rem;
-        text-transform: capitalize;
-        font-weight: 700;
-      }
-      .all-products > div > .price {
-        font-size: 2.5rem;
-        font-weight: 500;
-      }
-      .all-products > div > span {
-        font-size: 0.8rem;
-        font-weight: 400;
-      }
-    </style>
+
     <title>Document</title>
   </head>
   <body>
-    <h1>Firestore</h1>
+    <h1>Firebase storage bucket</h1>
 
     <form id="product-form">
       <input type="text" placeholder="productName" id="product-name" />
       <input type="text" placeholder="productPrice" id="product-price" />
       <input type="text" placeholder="productDetail" id="product-detail" />
-      <!-- <input type="file" placeholder="productImg" id="product-img"> -->
+      <input type="file" placeholder="productImg" id="product-img" />
 
       <button type="submit">done</button>
     </form>

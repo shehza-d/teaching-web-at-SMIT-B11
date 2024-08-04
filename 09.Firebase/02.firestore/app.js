@@ -4,7 +4,6 @@ import {
   addDoc,
   serverTimestamp,
   getDocs,
-  doc,
   onSnapshot,
 } from "./firebase.js";
 
@@ -23,15 +22,15 @@ form.addEventListener("submit", async (e) => {
   const myProduct = {
     productName: productName.value,
     productPrice: Number(productPrice.value),
-    productImg: url,
+    productImg: null,
     productDetail: productDetail.value,
     createdAt: serverTimestamp(),
   };
 
   try {
-    const result = await addDoc(myCollectionReference, myProduct);
+    await addDoc(myCollectionReference, myProduct);
 
-    console.log("document add hogya hy ", result);
+    console.log("document add hogya hy");
   } catch (e) {
     console.log("Error adding document: ", e);
   }
@@ -40,41 +39,36 @@ form.addEventListener("submit", async (e) => {
 //
 
 // 1
-// const querySnapshot = await getDocs(myCollectionReference);
+const querySnapshot = await getDocs(myCollectionReference);
 
-// querySnapshot.forEach((doc) => {
-//   const product = doc.data();
+querySnapshot.forEach((doc) => {
+  const product = doc.data();
 
-//   // console.log("🚀 ~ querySnapshot.forEach ~ product:", product)
+  // date converted to "1 day ago | 20 min ago" (optional)
+  const date = product.createdAt
+    ? dateFns.formatDistance(product.createdAt?.toDate(), new Date(), {
+        addSuffix: true, // true means ago add karna hy
+      })
+    : "";
 
-//   const date = product.createdAt?.toDate();
-
-//   allProducts.innerHTML += `<div>
-//         <!-- <img src="" alt=""> -->
-//         <h3>${product.productName?.toUpperCase()}</h3>
-//         <span>${
-//           date
-//             ? dateFns.formatDistance(product.createdAt?.toDate(), new Date(), {
-//                 addSuffix: true,
-//               })
-//             : ""
-//         }</span>
-//         <p class="price">Rs.${product.productPrice}</p>
-//         <p>${product.productDetail}</p>
-//       </div>`;
-// });
+  allProducts.innerHTML += `<div>
+        <!-- <img src="" alt=""> -->
+        <h3>${product.productName?.toUpperCase()}</h3>
+        <span>${date}</span>
+        <p class="price">Rs.${product.productPrice}</p>
+        <p>${product.productDetail}</p>
+      </div>`;
+});
 
 // 2 (working)
 onSnapshot(myCollectionReference, (doc) => {
-  console.log("🚀 ~ onSnapshot ~ doc:", doc);
-
   allProducts.innerHTML = "";
 
   doc.docs.forEach((eachDoc, index) => {
     const product = eachDoc.data();
 
     allProducts.innerHTML += `<div>
-        ${index}
+        ${index + 1}
         <h3>${product.productName}</h3>
         <span>${product.createdAt?.toDate()}</span>
         <p class="price">Rs.${product.productPrice}</p>

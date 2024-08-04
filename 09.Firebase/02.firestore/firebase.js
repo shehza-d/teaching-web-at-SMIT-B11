@@ -9,7 +9,6 @@ import {
   addDoc,
   serverTimestamp,
   getDocs,
-  doc,
   onSnapshot,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
@@ -28,4 +27,4 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 
-export { db, collection, addDoc, serverTimestamp, getDocs, doc, onSnapshot };
+export { db, collection, addDoc, serverTimestamp, getDocs, onSnapshot };

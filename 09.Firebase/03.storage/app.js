@@ -1,7 +1,7 @@
 import { storage, ref, uploadBytes, getDownloadURL } from "./firebase.js";
 
 const form = document.querySelector("#product-form");
-const productImg = document.querySelector("#product-img");
+const productImg = document.querySelector("#product-img"); // file input
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();

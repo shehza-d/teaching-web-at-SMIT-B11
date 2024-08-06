@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .all-products {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .all-products > div {
+        border: 2px solid black;
+        width: 300px;
+        padding: 10px;
+      }
+      .all-products > div > h3 {
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+      .all-products > div > .price {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+      .all-products > div > span {
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+
+      .myImgdiv {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border: 2px solid red;
+      }
+      .myImgdiv > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        object-fit: cover;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Products</h1>
+
+    <p id="user-email"></p>
+
+    <button id="logout-button">Logout</button>
+
+    <form id="product-form">
+      <input type="text" placeholder="productName" id="product-name" />
+      <input type="text" placeholder="productPrice" id="product-price" />
+      <input type="text" placeholder="productDetail" id="product-detail" />
+      <input
+        type="file"
+        accept="image/*"
+        placeholder="productImg"
+        id="product-img"
+      />
+
+      <button type="submit">done</button>
+    </form>
+
+    <div class="all-products"></div>
+
+    <a href="https://wa.me/923033111499">my wp</a>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script>
+  </body>
+</html>
+

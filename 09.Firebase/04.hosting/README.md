@@ -6,6 +6,8 @@ Firebase Hosting provides fast and secure hosting for your web app, static and d
 
 ## Steps
 
+1. Install NodeJs (LTS version) from [here](https://nodejs.org/en/download/prebuilt-installer).
+
 1. Install the Firebase CLI
 
    ```bash

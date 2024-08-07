@@ -1,4 +1,4 @@
-# React
+# [React made easy Playlist](https://youtube.com/playlist?list=PLfeF4MOSc907xpzMBint-NPwmaT-ZSwpp&si=hWLtg_WN33KKd4J0)
 
 <p align="center">
 <img width="120" height="120" src="https://skillicons.dev/icons?i=react" />
@@ -8,25 +8,31 @@
 <img src="https://skillicons.dev/icons?i=ts,tailwind,mui,netlify" />
 </p>
 
-## [React made easy Playlist](https://youtube.com/playlist?list=PLfeF4MOSc907xpzMBint-NPwmaT-ZSwpp&si=hWLtg_WN33KKd4J0)
+If anyone wants to get started with React or is planing to work on `NextJs` This course is designed to take you from a React beginner to an advanced developer, providing you with all the tools and knowledge you need to build dynamic, interactive web applications.
 
-This playlist is designed to take you from a React beginner to an advanced developer, providing you with all the tools and knowledge you need to build dynamic, interactive web applications.
+### Prerequisites
 
-https://react.dev/learn
+- Basic knowledge of HTML, CSS, and JavaScript or TypeScript
+- [NodeJs](https://nodejs.org/en/download/prebuilt-installer) installed on your machine
+- A basic understanding of terminal
 
-https://nextjs.org/learn/react-foundations
+### Resources
+
+- [React Assignment](https://github.com/shehza-d/smit-assignments/blob/main/04.React)
+- [React Docs](https://react.dev/learn)
+- [Vercel React Course](https://nextjs.org/learn/react-foundations)
 
 ## What We'll Learn
 
-- [ ] Introduction to React and its core concepts
-- [ ] How react works and its virtual DOM
-
-- [ ] CRA vs Vite (frameworks for React)
 - [ ] Setting up a React development environment
-- [ ] JSX and how it works
+- [ ] CRA vs [Vite.Js](https://youtu.be/KCrXgy8qtjM?si=ebL1k7MO3jLX_DXK) (Build Tools)
+- [ ] Introduction to React and how is JSX converted to JavaScript
+
 - [ ] Building and deploying/hosting (Netlify, Surge, Firebase)
+- [ ] [JSX](https://react.dev/learn/writing-markup-with-jsx) and {[Curly Braces in JSX](https://react.dev/learn/javascript-in-jsx-with-curly-braces)}
 - [ ] Creating and managing components
 - [ ] Understanding state and props
+- [ ] How react works and its virtual DOM
 - [ ] Conditional rendering
 - [ ] Styling in React with
   - [ ] CSS
@@ -45,3 +51,5 @@ https://nextjs.org/learn/react-foundations
 - [ ] Routing with React Router Dom
 - [ ] Managing global state with ReduxTK
 - [ ] Best practices and advanced techniques
+- [ ] Framework vs Library [(reference)](https://stackoverflow.com/questions/148747/what-is-the-difference-between-a-framework-and-a-library)
+- [ ] Frameworks for React (why they are needed)

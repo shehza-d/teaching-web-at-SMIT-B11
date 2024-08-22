@@ -16,9 +16,9 @@ console.log(fruits);
 
 // primitive data types
 // Number
-// Boolean
+// Boolean 
 // String
-// Null
+// null
 // undefined
 // Symbol
 // bigint

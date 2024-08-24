@@ -2,14 +2,14 @@
 
 ## ✅ Quiz 1 (Chap `1` - `20`)
 
-- [ ] alert, prompt and console
-- [ ] Variables and Data types
-- [ ] Converting strings to numbers (Parsing numbers)
-- [ ] Operators
-  - [ ] Arithmetic operators
-  - [ ] Comparison operators
+- [x] alert, prompt and console
+- [x] Variables and Data types
+- [x] Converting strings to numbers (Parsing numbers)
+- [x] Operators
+  - [x] Arithmetic operators
+  - [x] Comparison operators
   - [ ] Assignment operators
-  - [ ] Logical operators
+  - [x] Logical operators
 - [ ] Precedence (BODMAS)
 - [ ] Concatenating text strings ``
 - [ ] if else statements (ternary)

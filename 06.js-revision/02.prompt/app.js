@@ -30,9 +30,3 @@ a = parseFloat(a); // 13.45
 
 console.log(a);
 
-// precedance
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
-
-// 2 + 3 * 4
-// 14
-// 20

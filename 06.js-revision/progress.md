@@ -8,9 +8,9 @@
 - [x] Operators
   - [x] Arithmetic operators
   - [x] Comparison operators
-  - [ ] Assignment operators
+  - [x] Assignment operators
   - [x] Logical operators
-- [ ] Precedence (BODMAS)
+- [x] Precedence (BODMAS)
 - [ ] Concatenating text strings ``
 - [ ] if else statements (ternary)
   - [ ] else if / nested if else

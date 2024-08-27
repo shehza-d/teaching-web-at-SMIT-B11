@@ -1,10 +1,9 @@
 let number = 10;
 
-number = number + 6 // jo bhi number ki value hogyi usma 6 add ho jaye ga
+number = number + 6; // jo bhi number ki value hogyi usma 6 add ho jaye ga
 
 // same as writing above
 number += 6;
-
 
 number -= 6;
 number /= 6;

@@ -2,7 +2,7 @@ const myName = prompt("what is your name?");
 
 console.log(myName);
 
-const a = [null,"nehal"]
+const a = [null, "nehal"];
 
 console.log(typeof a[3]);
 
@@ -29,4 +29,3 @@ a = parseInt(a); // 13
 a = parseFloat(a); // 13.45
 
 console.log(a);
-

@@ -18,7 +18,6 @@ function Test() {
   );
 }
 
-
 // 1. all tags should be closed
 // 2. class nhi className
 // 3. parent ak hona chiye return element/ Return a single root element
@@ -26,5 +25,5 @@ function Test() {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Test />
-  </StrictMode>
+  </StrictMode>,
 );

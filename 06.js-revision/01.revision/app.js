@@ -16,7 +16,7 @@ console.log(fruits);
 
 // primitive data types
 // Number
-// Boolean 
+// Boolean
 // String
 // null
 // undefined

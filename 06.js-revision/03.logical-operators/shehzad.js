@@ -10,7 +10,6 @@
 // NaN
 // false
 
-
 // Logical Operators
 // console.log(false || true);
 
@@ -60,8 +59,8 @@ let test16 = "hh" || null;
 let test17 = "hh" || "kk";
 // console.log(test17);
 
-const userName = "Shehzad"
-const password = "Shehzad"
+const userName = "Shehzad";
+const password = "Shehzad";
 
 // if (userName === "Shehzad") {
 //     // if(password === "Sehzad"){

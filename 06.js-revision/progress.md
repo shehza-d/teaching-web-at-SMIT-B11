@@ -11,7 +11,7 @@
   - [x] Assignment operators
   - [x] Logical operators
 - [x] Precedence (BODMAS)
-- [ ] Concatenating text strings ``
+- [x] Concatenating text strings ``
 - [ ] if else statements (ternary)
   - [ ] else if / nested if else
 - [ ] Array

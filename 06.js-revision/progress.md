@@ -14,9 +14,9 @@
 - [x] Concatenating text strings ``
 - [ ] if else statements (ternary)
   - [ ] else if / nested if else
-- [ ] Array
-  - [ ] Adding and removing elements
-  - [ ] push, pop, shift, unshift, slice, splice
+- [x] Array
+  - [x] Adding and removing elements
+  - [x] push, pop, shift, unshift, slice, splice
 - [ ] Loops
   - [ ] For loops
   - [ ] Flags, array length, break;

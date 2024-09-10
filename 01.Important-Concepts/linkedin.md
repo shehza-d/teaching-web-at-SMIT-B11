@@ -5,7 +5,7 @@
 </p>
 
 > It’s not just what you know, it’s who you know
-
+ 
 I know some of you might think LinkedIn is just another social media platform, but let me assure you, it’s so much more than that.
 
 LinkedIn is the world’s largest professional network, with over 900 million members. It’s a place where professionals across industries connect, share, and grow together. **If you’re serious about your career, LinkedIn is a tool you can’t afford to ignore.**

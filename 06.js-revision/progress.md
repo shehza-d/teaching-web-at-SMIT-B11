@@ -12,15 +12,15 @@
   - [x] Logical operators
 - [x] Precedence (BODMAS)
 - [x] Concatenating text strings ``
-- [ ] if else statements (ternary)
-  - [ ] else if / nested if else
+- [x] if else statements (ternary)
+  - [x] else if / nested if else
 - [x] Array
   - [x] Adding and removing elements
   - [x] push, pop, shift, unshift, slice, splice
-- [ ] Loops
-  - [ ] For loops
-  - [ ] Flags, array length, break;
-  - [ ] Nested for loops
+- [x] Loops
+  - [x] For loops
+  - [x] Flags, array length, break;
+  - [x] Nested for loops
 
 ## ✅ Quiz 2 (Chap `20` - `40`)
 

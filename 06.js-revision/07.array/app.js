@@ -33,7 +33,23 @@ const a = fruits.toSorted(); // this won't change the original array
 
 // fruits.unshift("shehzad")
 
-const b = fruits.splice(2, 1, "shehzad");
+// const b = fruits.splice(2, 1, "shehzad");
 
-console.log(b);
-console.log(fruits);
+// console.log(b);
+// console.log(fruits);
+
+// const myArr = [3, 1, 1, 3, 100, 6, -200, -1];
+
+// myArr.sort()// sort sorts array in alphabetical order
+// myArr.sort((a, b) => a - b); // sorting number
+// myArr.sort((a, b) => b - a); // sorting number
+
+// console.log(myArr);
+
+const test = new Set([2, 3, 4]);
+
+test.add("shehzad")
+test.add("shehzad")
+
+
+console.log(test.has("shehzad"));

@@ -18,11 +18,19 @@ const matrix2 = [
   [5, 9, 2],
   [1, 0, 19],
 ];
+
+const result = [];
+
 for (let i = 0; i < 3; i++) {
+  result[i] = [];
+
   for (let j = 0; j < 3; j++) {
-    console.log(matrix1[i][j] + matrix2[i][j]);
+    const sum = matrix1[i][j] + matrix2[i][j];
+    // console.log(result[i]);
+    result[i].push(sum);
   }
 }
+// console.log("result ", result);
 
 // ye chiye
 // result = [
@@ -30,3 +38,26 @@ for (let i = 0; i < 3; i++) {
 //   [10, 13, 8],
 //   [2, 0, 109],
 // ];
+
+const arr = [3, 4, 53, 8, 9, 1, 0];
+
+// while (arr.length) {
+//   console.log("length ", arr.length);
+//   console.log(arr.pop());
+// }
+
+let test = true;
+
+// do {
+//   const question = prompt("do you agree? yes or no").toLowerCase();
+
+//   if (question === "yes") {
+//     console.log("permission given");
+//     test = false;
+//   } else if (question === "no") {
+//     console.log("rejected");
+//     test = false;
+//   } else {
+//     console.log("please enter yes or no");
+//   }
+// } while (test);

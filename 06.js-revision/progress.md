@@ -25,24 +25,21 @@
 ## ✅ Quiz 2 (Chap `20` - `40`)
 
 - [ ] Strings manipulation (LeetCode)
-- [ ] Date and time (date-fns)
-- [ ] Functions
-- [ ] Local vs global variables
-- [ ] Switch statement
+- [x] Date and time (date-fns)
+- [x] Functions
+- [x] Local vs global variables
 
 ## ✅ Quiz 3 (Chap `40` - `60`)
 
-- [ ] while/do-while loops
-- [ ] Placing scripts and comments
+- [x] while/do-while loops
+- [x] Placing scripts and comments
 - [ ] Events
 - [ ] DOM
 
 ## ✅ Quiz 4 (Chap `60` - `book end`)
 
-- [ ] Objects {}
+- [x] Objects {}
 - [ ] Local Storage
-- [ ] window.location
-- [ ] history.back();
 - [ ] Exceptions (try / catch / throw)
 
 ### ❎ Other
@@ -51,7 +48,3 @@
 - [ ] Pass by Value and Pass by reference
 - [ ] Async/Await
 - [ ] Modules (db/ require and import)
-- [ ] Promises
-- [ ] Closure
-- [ ] Higher-order function
-- [ ] CallBack

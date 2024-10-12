@@ -33,8 +33,8 @@
 
 - [x] while/do-while loops
 - [x] Placing scripts and comments
-- [ ] Events
-- [ ] DOM
+- [x] Events
+- [x] DOM
 
 ## ✅ Quiz 4 (Chap `60` - `book end`)
 

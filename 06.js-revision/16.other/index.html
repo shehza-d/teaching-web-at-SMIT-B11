@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+        *{
+            user-select: none;
+        }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+
+    
+
+    <div id="para">
+      <p>
+        You can find HTML attribute equivalents for many of the event handler
+        properties; however, you shouldn't use these — they are considered bad
+        practice. It might seem easy to use an event handler attribute if you
+        are doing something really quick, but they quickly become unmanageable
+        and inefficient.
+      </p>
+      <p>
+        For a start, it is not a good idea to mix up your HTML and your
+        JavaScript, as it becomes hard to read. Keeping your JavaScript separate
+        is a good practice, and if it is in a separate file you can apply it to
+        multiple HTML documents.
+      </p>
+      <p>
+        Even in a single file, inline event handlers are not a good idea. One
+        button is OK, but what if you had 100 buttons? You'd have to add 100
+        attributes to the file; it would quickly turn into a maintenance
+        nightmare. With JavaScript, you could easily add an event handler
+        function to all the buttons on the page no matter how many there were,
+        using something like this:
+      </p>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

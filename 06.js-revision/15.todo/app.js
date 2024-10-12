@@ -1,30 +1,34 @@
 // Open Source
 // Good first issue
 
-// const timeOutKiID = setTimeout( () => {
-//   console.log("testing");
-// }, 6000);
+const timeOutKiID = setTimeout(() => {
+  console.log("testing");
+}, 6000);
 
-// clearTimeout(timeOutKiID)
+clearTimeout(timeOutKiID);
 
-// const id = setInterval(() => {
-//   console.count("testing");
-// }, 1000);
+const id = setInterval(() => {
+  console.count("testing");
+}, 1000);
 
-// clearInterval(id);
+clearInterval(id);
 
-// localStorage.setItem("mode", "dark");
+localStorage.setItem("mode", "dark");
 
-// console.log(localStorage.getItem("mode"))
+console.log(localStorage.getItem("mode"));
+
+//
+
+// START OF TODO APP
 
 const form = document.querySelector("#todo-form");
 const list = document.querySelector("#todo-list");
 
-// localStorage.setItem("mylist", JSON.stringify(todoList));
+localStorage.setItem("mylist", JSON.stringify(todoList));
 
-const todoList = JSON.parse(localStorage.getItem("mylist"))
+const todoList = JSON.parse(localStorage.getItem("mylist"));
 
-console.log('todoList ',todoList);
+console.log("todoList ", todoList);
 
 // for (let i = 0; i < todoList.length; i++) {
 //   const value = todoList[i];

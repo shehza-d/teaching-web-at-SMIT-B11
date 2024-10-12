@@ -1,7 +1,7 @@
 // Short circuiting
 // https://www.freecodecamp.org/news/short-circuiting-in-javascript
 
-// precedance
+// precedence
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
 
 console.log((2 + 3) * 4);

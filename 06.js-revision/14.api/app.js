@@ -12,6 +12,7 @@ const messageDiv = document.querySelector("#message");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
+  // getting all the elements
   const imgTag = mainDiv.children[0];
   const name = mainDiv.children[1];
   const repos = mainDiv.children[2];
@@ -25,6 +26,7 @@ form.addEventListener("submit", async (event) => {
 
     console.log(response);
 
+    // setting the values
     imgTag.src = response.data.avatar_url;
     name.innerText = response.data.name;
     repos.innerText = `public repos: ${response.data.public_repos}`;
@@ -32,34 +34,37 @@ form.addEventListener("submit", async (event) => {
   } catch (err) {
     console.log(err.response.data.message);
 
+    // showing the error message
     messageDiv.innerText = err.response.data.message;
 
+    // clearing the values in case of error
     imgTag.src = "";
     name.innerText = "";
     repos.innerText = "";
     link.href = "";
   }
-  //   console.log("form is being submitted", value);
 });
 
 // Top level await
-// async function getData() {
-
-// }
-// test();
+async function getData() {
+  //
+}
+test();
 
 // pending / resolve / reject
 
-// try {
-//     try {
-//       smit;
-//     } catch (meraError) {
-//       console.log("meraError ", meraError);
+try {
+  try {
+    smit;
+  } catch (meraError) {
+    console.log("meraError ", meraError);
 
-//       smit2;
-//     }
-// } catch (error) {
-
-// }
+    // catch ma error aaye tw wo app crash kr sagta hy
+    smit2;
+    // is error ky liye hum ak aur parent try catch laga sagty hyn
+  }
+} catch (error) {
+  //
+}
 
 console.log("last line");

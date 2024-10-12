@@ -1,35 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
+  <body>
+    <h1 onclick="console.log(event.target.style.color='red');">testingg</h1>
 
-<body>
-  <h1 onclick="console.log(event.target.style.color='red');">testingg</h1>
+    <form id="form">
+      <input type="text" placeholder="enter your username" />
+      <button>get data</button>
+    </form>
 
+    <p id="message"></p>
 
-  <form id="form">
-    <input type="text" placeholder="enter your username" />
-    <button>get data</button>
-  </form>
+    <div id="main-div">
+      <img alt="" />
 
-  <p id="message"></p>
+      <p></p>
 
-  <div id="main-div">
-    <img alt="" />
+      <p>public repos: 34</p>
 
-    <p></p>
+      <a href=""> profile link </a>
+    </div>
 
-    <p>public repos: 34</p>
-
-    <a href=""> profile link </a>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script type="module" src="./app.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
 </html>

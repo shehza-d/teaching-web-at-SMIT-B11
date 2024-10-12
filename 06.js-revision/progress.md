@@ -39,12 +39,12 @@
 ## ✅ Quiz 4 (Chap `60` - `book end`)
 
 - [x] Objects {}
-- [ ] Local Storage
-- [ ] Exceptions (try / catch / throw)
+- [x] Local Storage
+- [x] Exceptions (try / catch / throw)
 
 ### ❎ Other
 
-- [ ] Array.Map
-- [ ] Pass by Value and Pass by reference
-- [ ] Async/Await
+- [x] Array.Map
+- [x] Pass by Value and Pass by reference
+- [x] Async/Await
 - [ ] Modules (db/ require and import)

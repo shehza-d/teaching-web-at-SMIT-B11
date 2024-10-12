@@ -1,6 +1,7 @@
 # do you any idea how critical coding skills is
- 
-- chance of being successful can be increased by 
+
+- chance of being successful can be increased by
+
   - prayers/shukar/tawakul
   - growth mindset
   - hard work
@@ -35,12 +36,10 @@ after logic building it would be easier to create projects -->
 
 - understanding that skills and intelligence can be developed through hard work and perseverance. Encourage them to see mistakes as learning opportunities rather than failures.
 
-
 **8. Surround Yourself with Growth-Minded People**
 
 - Your environment affects your mindset.
 - **How to Achieve**: Engage with people who inspire and challenge you to grow.
-
 
 - A growth mindset is the belief that abilities and intelligence can be developed through effort, learning, and persistence.
 

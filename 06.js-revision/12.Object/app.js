@@ -23,7 +23,7 @@ let keyyy = "name";
 console.log(myObj[keyyy]);
 
 // Optional chaining or nullish operator
-console.log(undefined.kuchaur);
+console.log(undefined.kuchaur); // error: Cannot read property 'kuchaur' of undefined
 
 console.log(myObj?.teacher?.name.firstName);
 

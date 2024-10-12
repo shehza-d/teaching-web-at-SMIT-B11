@@ -31,6 +31,8 @@ const date1 = `${days[now.getDay()]} ${
 } ${addAmPm}`;
 
 console.log(date1);
+
+// Miliseconds are used to get the difference between two dates
 // 1727506853502 // first
 // 1727506904526 // second
 
@@ -50,6 +52,6 @@ const test = true ? "Shehzad" : "Nehal";
 
 const newString = `my name is ${5 + 5}`;
 const newString = `my name is ${testingFun()}`;
-const newString = `my name is ${if(3>2){console.log("hello")}}`;//error
+// const newString = `my name is ${if(3>2){console.log("hello")}}`;//error
 
 console.log(newString);

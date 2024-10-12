@@ -11,42 +11,42 @@
 // false
 
 // Logical Operators
-// console.log(false || true);
+console.log(false || true);
 
-// let x = 5
+let x = 5;
 
-// console.log(6 || false);
+console.log(6 || false);
 
-// if ("0") {
-//     console.log("ye truthy hy");
-// }
+if ("0") {
+  console.log("ye truthy hy");
+}
 
-// console.log(Boolean(0));
-// console.log(Boolean(""));
-// console.log(Boolean(1));
-// console.log(Boolean("0"));
-// console.log(Boolean([]));
-// console.log(Boolean({}));
-// console.log(Boolean(-0));
-// console.log(Boolean(15 % 5)); // false
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(1));
+console.log(Boolean("0"));
+console.log(Boolean([]));
+console.log(Boolean({}));
+console.log(Boolean(-0));
+console.log(Boolean(15 % 5)); // false
 
 // last truthy value is returned
-// console.log(1 && true && " " && 1);
-// console.log(false && 0 && true);
-// let test2 = true && "shehzad";
-// let test3 = "shehzad" && true;
-// let test4 = null && "shehzad" && 56;
-// let test = "shehzad" && null && 56;
-// let test5 = true && "shehzad" && 56;
-// let test6 = true && 0 && 56;
-// let test7 = "hh" && null;
-// let test8 = "hh" && "kk";
+console.log(1 && true && " " && 1);
+console.log(false && 0 && true);
+let test2 = true && "shehzad";
+let test3 = "shehzad" && true;
+let test4 = null && "shehzad" && 56;
+let test = "shehzad" && null && 56;
+let test5 = true && "shehzad" && 56;
+let test6 = true && 0 && 56;
+let test7 = "hh" && null;
+let test8 = "hh" && "kk";
 
 // first truthy valus is returned
-// console.log(2 || 1);
-// console.log(null || 1);
-// console.log(null || 0);
-// console.log("shehzad" || 1);
+console.log(2 || 1);
+console.log(null || 1);
+console.log(null || 0);
+console.log("shehzad" || 1);
 
 let test9 = "shehzad" || true;
 let test10 = "" || null;
@@ -57,22 +57,29 @@ let test14 = true || "shehzad" || 56;
 let test15 = false || 0 || 56;
 let test16 = "hh" || null;
 let test17 = "hh" || "kk";
-// console.log(test17);
+console.log(test17);
 
 const userName = "Shehzad";
 const password = "Shehzad";
 
-// if (userName === "Shehzad") {
-//     // if(password === "Sehzad"){
-//     //     console.log("Login");
-//     // }
-// }else {
-//     console.log("invalid user");
-// }
+if (userName === "Shehzad") {
+  if (password === "shehzad") {
+    console.log("Login");
+  }
+} else {
+  console.log("invalid user");
+}
 
-// if (false) { console.log(1); }
-// else if (true) { console.log(2); }
-// else if (true) { console.log(3); }
-// else if (true) { console.log(4); }
-// else if (true) { console.log(5); }
-// else { console.log(6);}
+if (false) {
+  console.log(1);
+} else if (true) {
+  console.log(2);
+} else if (true) {
+  console.log(3);
+} else if (true) {
+  console.log(4);
+} else if (true) {
+  console.log(5);
+} else {
+  console.log(6);
+}

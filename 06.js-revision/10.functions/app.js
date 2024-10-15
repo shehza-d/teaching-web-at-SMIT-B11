@@ -20,7 +20,7 @@ function printName(name, age, ...extra) {
   console.log("arguments ", arguments);
   console.log(extra);
   console.log(name);
-  console.log(name);
+  console.log(age); // kuxh na kuxh tw hy isma
 }
 
 printName("nehal", 23, 6, "test", 5); // invoke

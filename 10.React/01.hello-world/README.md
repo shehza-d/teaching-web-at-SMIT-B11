@@ -1,22 +1,16 @@
 # React Hello World
 
-1. Create a new folder and run the following command:
+1. Create a **new folder** and open terminal in that folder and run the following command:
 
    ```bash
-   npm create vite@latest
+   npm create vite
    ```
 
 1. Select the following options:
 
-   - Project name: `hello-world` (lowercase)
+   - Project name: `./` (lowercase)
    - Select a framework: `react`
    - Select a variant: `JavaScript`
-
-1. Move to the newly created folder:
-
-   ```bash
-   cd folder-name
-   ```
 
 1. Install the dependencies:
 

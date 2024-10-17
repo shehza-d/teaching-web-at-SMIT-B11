@@ -59,7 +59,7 @@ let message = "";
 // Destructuring
 
 // const { age } = { name: "shehzad", age: 22 };
-const [firstName,lastName,age] = ["shehzad", "iqbal", 22];
+const [firstName, lastName, age] = ["shehzad", "iqbal", 22];
 
 // const firstName = myArr[0];
 // const lastName = myArr[1];
@@ -68,5 +68,3 @@ const [firstName,lastName,age] = ["shehzad", "iqbal", 22];
 console.log("firstName=> ", firstName);
 console.log("lastName=> ", lastName);
 console.log("age=> ", age);
-
-

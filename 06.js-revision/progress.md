@@ -47,4 +47,4 @@
 - [x] Array.Map
 - [x] Pass by Value and Pass by reference
 - [x] Async/Await
-- [ ] Modules (db/ require and import)
+- [x] Modules (db/ require and import)

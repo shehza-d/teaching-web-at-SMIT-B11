@@ -1,4 +1,4 @@
-[10/12, 12:18 PM] Anas soomro SMIT B11: 
+[10/12, 12:18 PM] Anas soomro SMIT B11:
 
 - [x] Ternary Operator
 - [ ] Advance GitHub
@@ -8,13 +8,13 @@
 - [x] Default parameters
 - [x] Rest parameter
 
-*Most Important Topics*
+_Most Important Topics_
 
 - [x] Array methods
-- [x] Map 
+- [x] Map
 - [ ] Firebase
 - [ ] TypeScript
-- [x] PWA 
+- [x] PWA
 - [ ] Advance array method
 
 [10/12, 12:19 PM] Anas soomro SMIT B11: Yah sare topic baki ha according to me
@@ -22,4 +22,3 @@
 - website
 - web app
 - native mobile app
-

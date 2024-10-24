@@ -27,15 +27,14 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [x] Setting up a React development environment
 - [x] CRA vs [Vite.Js](https://youtu.be/KCrXgy8qtjM?si=ebL1k7MO3jLX_DXK) (Build Tools)
 - [x] Introduction to React and how is JSX converted to JavaScript
-
+- [x] How react works and its virtual DOM
 - [x] Building and deploying/hosting (Netlify, Surge, Firebase)
-- [ ] [JSX](https://react.dev/learn/writing-markup-with-jsx) and {[Curly Braces in JSX](https://react.dev/learn/javascript-in-jsx-with-curly-braces)}
-- [ ] Creating and managing components
+- [x] [JSX](https://react.dev/learn/writing-markup-with-jsx) and {[Curly Braces in JSX](https://react.dev/learn/javascript-in-jsx-with-curly-braces)}
+- [x] Creating and managing components
 - [ ] Understanding state and props
-- [ ] How react works and its virtual DOM
 - [ ] Conditional rendering
 - [ ] Styling in React with
-  - [ ] CSS
+  - [x] CSS
   - [ ] TailwindCSS (utility-first CSS framework)
   - [ ] Material-UI (React component library)
 - [ ] Handling events and forms in React

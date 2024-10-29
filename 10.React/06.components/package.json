@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "surge ./dist --domain shehzad-testing-b11.surge.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },

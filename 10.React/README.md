@@ -31,7 +31,7 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [x] Building and deploying/hosting (Netlify, Surge, Firebase)
 - [x] [JSX](https://react.dev/learn/writing-markup-with-jsx) and {[Curly Braces in JSX](https://react.dev/learn/javascript-in-jsx-with-curly-braces)}
 - [x] Creating and managing components
-- [ ] Understanding state and props
+- [x] Understanding state and props
 - [ ] Conditional rendering
 - [ ] Styling in React with
   - [x] CSS

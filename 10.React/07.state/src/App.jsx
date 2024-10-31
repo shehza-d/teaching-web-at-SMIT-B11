@@ -38,11 +38,11 @@ import { useState } from "react";
 function App() {
   let isLoggedIn = false;
 
-  if (isLoggedIn) {
-    return <div>welcome to dashboard</div>;
-  } else {
-    return <div>login </div>;
-  }
+  return (
+    <div className="testing">
+      {isLoggedIn ? <>admin side</> : null}
+    </div>
+  );
 }
 
 export default App;

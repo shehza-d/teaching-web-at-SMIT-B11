@@ -35,14 +35,39 @@ import { useState } from "react";
 //   );
 // }
 
-function App() {
-  let isLoggedIn = false;
+// function App() {
+//   let isLoggedIn = false;
 
+//   return (
+//     <div className="testing">
+//       {isLoggedIn ? <>admin side</> : null}
+//     </div>
+//   );
+// }
+// export default App;
+
+function MyButton(Props) {
   return (
-    <div className="testing">
-      {isLoggedIn ? <>admin side</> : null}
-    </div>
+    <button onClick={Props.handleClick}>Clicked {Props.count} times</button>
   );
 }
 
-export default App;
+export default function App() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  console.log("running again");
+
+  return (
+    <div>
+      <h1>Counters that update together</h1>
+      <MyButton count={count} handleClick={handleClick} />
+      <MyButton count={count} handleClick={handleClick} />
+      <MyButton count={count} handleClick={handleClick} />
+      {/* <MyButton count={67} handleClick={()=>{}}/> */}
+    </div>
+  );
+}

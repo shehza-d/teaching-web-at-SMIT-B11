@@ -32,7 +32,7 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [x] [JSX](https://react.dev/learn/writing-markup-with-jsx) and {[Curly Braces in JSX](https://react.dev/learn/javascript-in-jsx-with-curly-braces)}
 - [x] Creating and managing components
 - [x] Understanding state and props
-- [ ] Conditional rendering
+- [x] Conditional rendering
 - [ ] Styling in React with
   - [x] CSS
   - [ ] TailwindCSS (utility-first CSS framework)

@@ -38,9 +38,12 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
   - [ ] TailwindCSS (utility-first CSS framework)
   - [ ] Material-UI (React component library)
 - [ ] Handling events and forms in React
+  - [ ] controlled input
+  - [ ] form submit event
   - [ ] React Hook Forms
+  - [ ] Form validation with Zod
 - [ ] Using hooks for functional components
-  - [ ] UseState
+  - [x] UseState
   - [ ] UseEffect
   - [ ] UseRef
   - [ ] Custom hooks
@@ -52,3 +55,5 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [ ] Best practices and advanced techniques
 - [ ] Framework vs Library [(reference)](https://stackoverflow.com/questions/148747/what-is-the-difference-between-a-framework-and-a-library)
 - [ ] Frameworks for React (why they are needed)
+
+## [E-Commerce Figma Design](https://www.figma.com/design/tFKYEH6oPfC1LVGhqisYgg/E-commerce?node-id=0-1&t=xW7yKnygIVKVxvKr-1)

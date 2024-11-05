@@ -1,11 +1,13 @@
+import ProductCard from "./components/ProductCard";
 
 function App() {
-  
   return (
     <>
-     <h1>Helloworlddd</h1>
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

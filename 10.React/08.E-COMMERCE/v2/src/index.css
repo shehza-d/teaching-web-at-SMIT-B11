@@ -2,6 +2,7 @@
 
 * {
   font-family: "Poppins";
+  --primary: #db4444;
 }
 @tailwind base;
 @tailwind components;
@@ -22,4 +23,15 @@
 
 .bdr {
   border: 2px solid red;
+}
+.bdr2 {
+  border: 2px solid green;
+}
+.center {
+  /* color: var(--primary); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* @apply flex justify-center items-center; */
 }

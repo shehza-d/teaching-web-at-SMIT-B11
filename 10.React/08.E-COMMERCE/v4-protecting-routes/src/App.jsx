@@ -4,21 +4,22 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import { Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
-import Slider from "./components/Slider";
+
+// 404 routes not found after hosting
+// UI responsive
 
 function App() {
-  const isLoggedIn = true;
+  const isLoggedIn = false;
 
   return (
     <>
       <Banner />
       <Navbar />
 
-      <Slider/>
-
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/not-found" element={<div>not foundddd</div>} />
 
         {isLoggedIn ? (
           <>
@@ -28,6 +29,7 @@ function App() {
             />
 
             <Route path="/login" element={<Navigate to="/" />} />
+            <Route path="*" element={<Navigate to="/not-found" />} />
           </>
         ) : (
           <>

@@ -35,3 +35,7 @@
 
   /* @apply flex justify-center items-center; */
 }
+
+.heading {
+  @apply font-semibold text-xl capitalize sm:text-4xl;
+}

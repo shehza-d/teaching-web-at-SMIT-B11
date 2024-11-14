@@ -34,6 +34,7 @@ export default function Navbar() {
         <CiSearch className="text-3xl" />
       </div>
 
+      {/* desktop navbar */}
       <ul className="hidden md:flex gap-3">
         {links.map((item, i) => (
           <li className={navLinkStyle} key={i}>
@@ -55,16 +56,21 @@ export default function Navbar() {
       </button>
 
       {isHamburgerOpen && (
+        // mobile navbar
         <ul className="absolute bg-gray-200 w-full z-10 gap-3 flex flex-col p-6 top-28">
           {links.map((item, i) => (
             <li className={navLinkStyle} key={i}>
-              <Link to={item.link}>{item.title}</Link>
+              <Link onClick={() => setIsHamburgerOpen(false)} to={item.link}>
+                {item.title}
+              </Link>
             </li>
           ))}
 
           {!isLoggedIn ? (
             <li className={navLinkStyle}>
-              <Link to="/login">Login</Link>
+              <Link onClick={() => setIsHamburgerOpen(false)} to="/login">
+                Login
+              </Link>
             </li>
           ) : null}
         </ul>
@@ -78,7 +84,10 @@ export default function Navbar() {
           </>
         ) : null}
 
-        <Link to={'/profile'} className="bg-primary rounded-full overflow-hidden h-8 w-8 center text-base text-white">
+        <Link
+          to={"/profile"}
+          className="bg-primary rounded-full overflow-hidden h-8 w-8 center text-base text-white"
+        >
           {isLoggedIn ? (
             <img
               src="https://avatars.githubusercontent.com/u/93990677?v=4"

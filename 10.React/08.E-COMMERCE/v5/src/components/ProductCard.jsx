@@ -16,7 +16,7 @@ export default function ProductCard(Props) {
       </div>
 
       <h3 className="font-medium group-hover:text-primary transition-all duration-300">
-        HAVIT HV-G92 Gamepad
+       {Props.name}
       </h3>
 
       <p>

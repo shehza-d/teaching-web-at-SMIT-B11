@@ -26,7 +26,7 @@ export default function Products() {
 
       <div className="flex flex-wrap gap-4">
         {products?.map((item) => (
-          <ProductCard key={item.id} image={item.thumbnail} />
+          <ProductCard key={item.id} image={item.thumbnail} name={item.title} />
         ))}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import img from "../assets/images/game.png";
 
-export default function ProductCard() {
+export default function ProductCard(Props) {
   return (
     <div className="group border-2 flex gap-4 flex-col relative bg-[#F5F5F5] w-64 h-[350px]">
       <div className="discount absolute top-3 left-3 bg-primary w-14 h-6 rounded flex items-center text-xs justify-center text-white ">
@@ -9,7 +9,7 @@ export default function ProductCard() {
 
       <div className="">
         <img
-          src={img}
+          src={Props.image}
           alt="product img"
           className="m-auto group-hover:scale-110 transition-all duration-300"
         />

@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import { Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
 import Footer from "./components/Footer";
+import Products from "./pages/Products";
 
 // 404 routes not found after hosting
 // UI responsive
@@ -21,8 +22,9 @@ function App() {
         <Route path="/" index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/not-found" element={<div>not foundddd</div>} />
+        <Route path="/products" element={<Products />} />
 
-
+        
 
         {isLoggedIn ? (
           <>

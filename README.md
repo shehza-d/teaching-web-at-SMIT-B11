@@ -8,6 +8,8 @@ Code Your Way to Success: Join Our Web Dev Journey!
 
 ![Class Poster](./students/imgs/class-poster.jpeg)
 
+WhatsApp Channel 💻: https://whatsapp.com/channel/0029Va8AsRW0wajyhNcx4T1Y
+
 [Faces of some students (video)](https://youtu.be/NCSYLLUiSWk?si=DA_autG-yWdAbjFP)
 
 Bahadurabad campus 11 to 1 | DEC 2023

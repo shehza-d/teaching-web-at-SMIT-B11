@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins";
+  --primary: #db4444;
+  scroll-behavior: smooth;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-x {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 50px;
+}
+
+.S_Underline:after {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 2px;
+  height: 0.125rem;
+  width: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.4s;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+.my-custom-class {
+  /* height: 120vh; */
+  /* border-radius: 50%;
+  border-radius: 50%;
+  border-radius: 50%;
+  border-radius: 50%;
+  border-radius: 50%; */
+  /* height: 80vh; */
+}
+.my-custom-class {
+  /* height: 70vh; */
+}
+
+.bdr {
+  border: 2px solid red;
+}
+.bdr2 {
+  border: 2px solid green;
+}
+.center {
+  /* color: var(--primary); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* @apply flex justify-center items-center; */
+}
+
+.heading {
+  @apply font-semibold text-xl capitalize sm:text-4xl;
+}

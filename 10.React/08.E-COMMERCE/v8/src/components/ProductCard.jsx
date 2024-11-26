@@ -8,14 +8,17 @@ export default function ProductCard(Props) {
   ).toFixed(2);
 
   return (
-    <div className="group p-3 drop-shadow-md border-2 flex gap-4 flex-col relative bg-[#F5F5F5] w-64 min-h-[350px]">
+    <a
+      href={`/product/${Props.id}`}
+      className="group p-3 drop-shadow-md border-2 flex gap-4 flex-col relative bg-[#F5F5F5] w-64 min-h-[350px]"
+    >
       <div className="discount absolute top-3 left-3 bg-primary w-14 h-6 rounded flex items-center text-xs justify-center text-white ">
-        -40%
+        -{Math.round(Props.discountPercentage)}%
       </div>
 
       <div className="">
         <img
-          src={Props.image}
+          src={Props.image || img}
           alt="product img"
           className="m-auto group-hover:scale-110 transition-all duration-300"
         />
@@ -40,6 +43,6 @@ export default function ProductCard(Props) {
           edit={false}
         />
       </div>
-    </div>
+    </a>
   );
 }

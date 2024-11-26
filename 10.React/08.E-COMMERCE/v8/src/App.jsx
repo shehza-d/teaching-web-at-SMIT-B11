@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import { Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
 import Footer from "./components/Footer";
 import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
 
 // 404 routes not found after hosting
 // UI responsive
@@ -23,15 +24,14 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/not-found" element={<div>not foundddd</div>} />
         <Route path="/products" element={<Products />} />
-
-        
+        <Route path="/product/:id" element={<ProductDetail />} />
 
         {isLoggedIn ? (
           <>
             <Route
               path="/profile"
               element={<div>this is my profile page</div>}
-              />
+            />
 
             <Route path="/login" element={<Navigate to="/" />} />
             <Route path="*" element={<Navigate to="/not-found" />} />
@@ -43,7 +43,7 @@ function App() {
           </>
         )}
       </Routes>
-      {<Footer/>}
+      {<Footer />}
     </>
   );
 }

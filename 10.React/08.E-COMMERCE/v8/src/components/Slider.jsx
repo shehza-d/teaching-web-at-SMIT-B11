@@ -12,10 +12,16 @@ import {
   Autoplay,
 } from "swiper/modules";
 import ProductCard from "./ProductCard";
+import useProducts from "../hooks/useProducts";
 
 export default function Slider() {
+  const { products, isLoading, error } = useProducts("limit=5&skip=30");
+
   return (
     <div>
+      {isLoading ? "loading..." : ""}
+      {error}
+
       <Swiper
         spaceBetween={50}
         slidesPerView={3}
@@ -27,24 +33,18 @@ export default function Slider() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
+        {products?.slice(0, 6)?.map((item) => (
+          <SwiperSlide key={item.id}>
+            <ProductCard
+              id={item.id}
+              image={item.thumbnail}
+              name={item.title}
+              price={item.price}
+              discountPercentage={item.discountPercentage}
+              rating={item.rating}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

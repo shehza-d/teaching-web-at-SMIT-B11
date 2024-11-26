@@ -35,10 +35,10 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [x] Conditional rendering
 - [ ] Styling in React with
   - [x] CSS
-  - [ ] TailwindCSS (utility-first CSS framework)
+  - [x] TailwindCSS (utility-first CSS framework)
   - [ ] Material-UI (React component library)
 - [ ] Handling events and forms in React
-  - [ ] controlled input
+  - [x] controlled input
   - [ ] form submit event
   - [ ] React Hook Forms
   - [ ] Form validation with Zod
@@ -46,11 +46,11 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
   - [x] UseState
   - [ ] UseEffect
   - [ ] UseRef
-  - [ ] Custom hooks
+  - [x] Custom hooks
   - [ ] UseMemo
   - [ ] UseCallback
 - [ ] Working with APIs (useSWR, Axios)
-- [ ] Routing with React Router Dom
+- [x] Routing with React Router Dom
 - [ ] Managing global state with ReduxTK
 - [ ] Best practices and advanced techniques
 - [ ] Framework vs Library [(reference)](https://stackoverflow.com/questions/148747/what-is-the-difference-between-a-framework-and-a-library)

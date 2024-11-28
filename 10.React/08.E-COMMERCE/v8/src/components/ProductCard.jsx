@@ -1,5 +1,7 @@
 import img from "../assets/images/game.png";
 import ReactStars from "react-stars";
+import {Link} from 'react-router-dom'
+
 
 export default function ProductCard(Props) {
   const discountPrice = (
@@ -8,8 +10,8 @@ export default function ProductCard(Props) {
   ).toFixed(2);
 
   return (
-    <a
-      href={`/product/${Props.id}`}
+    <Link
+      to={`/product/${Props.id}`}
       className="group p-3 drop-shadow-md border-2 flex gap-4 flex-col relative bg-[#F5F5F5] w-64 min-h-[350px]"
     >
       <div className="discount absolute top-3 left-3 bg-primary w-14 h-6 rounded flex items-center text-xs justify-center text-white ">
@@ -43,6 +45,6 @@ export default function ProductCard(Props) {
           edit={false}
         />
       </div>
-    </a>
+    </Link>
   );
 }

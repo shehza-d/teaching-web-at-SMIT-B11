@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import { store } from "./store/store.js";
 
 // https://github.com/shehza-d/redux-toolkit/blob/main/todo-with-react-redux
+// https://excalidraw.com/#json=JSbE6Sa2YsQfznlmtpp70,SHv2r5vUnc0CQC4ESQHVKw
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

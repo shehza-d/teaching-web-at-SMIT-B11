@@ -1,8 +1,11 @@
 import { useState } from "react";
 import ProductCard from "../components/ProductCard";
 import useProducts from "../hooks/useProducts";
+import { useSelector } from "react-redux";
 
 export default function Products() {
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
+
   const { products, isLoading, error } = useProducts();
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,7 +29,11 @@ export default function Products() {
   const searchKaResult = searchProducts();
 
   return (
-    <div className="container-x">
+    <div
+      className={`container-x transition-colors duration-300 ${
+        darkMode ? "bg-slate-900" : ""
+      } `}
+    >
       <input
         type="search"
         name="price"
@@ -45,6 +52,7 @@ export default function Products() {
 
         {searchKaResult?.map((item) => (
           <ProductCard
+            darkMode={darkMode}
             id={item.id}
             key={item.id}
             image={item.thumbnail}

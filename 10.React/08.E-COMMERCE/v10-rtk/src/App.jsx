@@ -7,6 +7,7 @@ import { Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
 import Footer from "./components/Footer";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
+import { useState } from "react";
 
 // 404 routes not found after hosting
 // UI responsive

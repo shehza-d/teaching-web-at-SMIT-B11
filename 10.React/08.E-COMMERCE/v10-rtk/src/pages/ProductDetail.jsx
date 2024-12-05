@@ -21,6 +21,14 @@ export default function ProductDetail() {
     setQuantity(product?.minimumOrderQuantity);
   }, [data]);
 
+  console.log("error", error);
+
+  if (error)
+    return (
+      <div className="w-full h-screen center ">
+        {JSON.stringify(error?.response?.data?.message)}
+      </div>
+    );
   if (isLoading) return "loading...";
 
   return (

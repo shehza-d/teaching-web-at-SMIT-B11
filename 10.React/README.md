@@ -39,20 +39,20 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
   - [ ] Material-UI (React component library)
 - [ ] Handling events and forms in React
   - [x] controlled input
-  - [ ] form submit event
+  - [x] form submit event
   - [ ] React Hook Forms
   - [ ] Form validation with Zod
 - [ ] Using hooks for functional components
   - [x] UseState
-  - [ ] UseEffect
+  - [x] UseEffect
   - [ ] UseRef
   - [x] Custom hooks
   - [ ] UseMemo
   - [ ] UseCallback
-- [ ] Working with APIs (useSWR, Axios)
+- [x] Working with APIs (useSWR, Axios)
 - [x] Routing with React Router Dom
 - [ ] Managing global state with ReduxTK
-- [ ] Best practices and advanced techniques
+- [x] Best practices and advanced techniques
 - [ ] Framework vs Library [(reference)](https://stackoverflow.com/questions/148747/what-is-the-difference-between-a-framework-and-a-library)
 - [ ] Frameworks for React (why they are needed)
 

@@ -1,3 +1,5 @@
+import { BsFillMoonFill } from "react-icons/bs";
+import { AiOutlineSun } from "react-icons/ai";
 import logo from "../assets/logo/logo.svg";
 import logoMobile from "../assets/logo/logo-mobile.svg";
 import { CiSearch } from "react-icons/ci";
@@ -8,6 +10,8 @@ import { IoMenu } from "react-icons/io5";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleDarkMode } from "../store/darkModeSlice";
 
 const links = [
   { title: "home", link: "/" },
@@ -16,13 +20,24 @@ const links = [
 ];
 
 export default function Navbar() {
+  const dispatch = useDispatch();
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
+
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   const navLinkStyle =
     "capitalize hover:underline cursor-pointer hover:text-primary";
+
+  console.log("uper wala dark mode ", darkMode);
+
   return (
-    <div id="top" className="container-x h-28 relative flex justify-between items-center">
+    <div
+      id="top"
+      className={`container-x ${
+        darkMode ? "bg-slate-900" : ""
+      } h-28 transition-colors duration-300 relative flex justify-between items-center`}
+    >
       <img src={logoMobile} alt="" width={60} height={60} />
 
       <div className="w-60 px-2 h-10 rounded center bg-[#F5F5F5]">
@@ -35,7 +50,7 @@ export default function Navbar() {
       </div>
 
       {/* desktop navbar */}
-      <ul className="hidden md:flex gap-3">
+      <ul className={`hidden md:flex gap-3 ${darkMode ? "text-white" : ""}`}>
         {links.map((item, i) => (
           <li className={navLinkStyle} key={i}>
             <Link to={item.link}>{item.title}</Link>
@@ -76,7 +91,19 @@ export default function Navbar() {
         </ul>
       )}
 
-      <div className="icons center text-2xl gap-3">
+      <div
+        className={`${
+          darkMode ? "text-white" : ""
+        } icons center text-2xl gap-3`}
+      >
+        <button
+          onClick={() => {
+            dispatch(toggleDarkMode());
+          }}
+        >
+          {darkMode ? <AiOutlineSun /> : <BsFillMoonFill />}
+        </button>
+
         {isLoggedIn ? (
           <>
             <IoMdHeart className="" />

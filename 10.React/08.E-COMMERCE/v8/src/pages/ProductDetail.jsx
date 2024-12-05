@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useSWR from "swr";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { formatDistanceToNow, set } from "date-fns";
+import { formatDistanceToNow } from "date-fns";
 
 export default function ProductDetail() {
   const params = useParams();

@@ -52,6 +52,7 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [x] Working with APIs (useSWR, Axios)
 - [x] Routing with React Router Dom
 - [ ] Managing global state with ReduxTK
+- [ ] Progressive Web App
 - [x] Best practices and advanced techniques
 - [ ] Framework vs Library [(reference)](https://stackoverflow.com/questions/148747/what-is-the-difference-between-a-framework-and-a-library)
 - [ ] Frameworks for React (why they are needed)

@@ -40,7 +40,7 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [ ] Handling events and forms in React
   - [x] controlled input
   - [x] form submit event
-  - [ ] React Hook Forms
+  - [x] React Hook Forms
   - [ ] Form validation with Zod
 - [ ] Using hooks for functional components
   - [x] UseState

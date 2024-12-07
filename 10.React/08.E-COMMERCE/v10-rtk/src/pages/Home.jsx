@@ -9,12 +9,9 @@ import useProducts from "../hooks/useProducts";
 import { useSelector } from "react-redux";
 
 export default function Home() {
-  
   const darkMode = useSelector((state) => state.darkMode.darkMode);
 
-
   const { products, isLoading, error } = useProducts("limit=15&skip=35");
-
 
   return (
     <div
@@ -55,6 +52,7 @@ export default function Home() {
       <div className="flex gap-7">
         {products?.slice(0, 4)?.map((item) => (
           <ProductCard
+            key={item.id}
             id={item.id}
             image={item.thumbnail}
             name={item.title}

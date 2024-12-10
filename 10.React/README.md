@@ -36,7 +36,7 @@ If anyone wants to get started with React or is planing to work on `NextJs` This
 - [ ] Styling in React with
   - [x] CSS
   - [x] TailwindCSS (utility-first CSS framework)
-  - [ ] Material-UI (React component library)
+  - [x] Material-UI (React component library)
 - [ ] Handling events and forms in React
   - [x] controlled input
   - [x] form submit event

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@hookform/resolvers": "^3.9.1",
     "@reduxjs/toolkit": "^2.4.0",
     "axios": "^1.7.7",
     "date-fns": "^4.1.0",
@@ -24,7 +25,8 @@
     "react-router-dom": "^6.28.0",
     "react-stars": "^2.2.5",
     "swiper": "^11.1.14",
-    "swr": "^2.2.5"
+    "swr": "^2.2.5",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

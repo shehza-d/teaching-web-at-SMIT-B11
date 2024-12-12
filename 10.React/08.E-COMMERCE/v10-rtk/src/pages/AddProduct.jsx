@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { schema } from "../lib/formSchema";
+
 
 export default function AddProduct() {
   // watch,
@@ -15,7 +18,8 @@ export default function AddProduct() {
     // defaultValues: {
     //   price: 20,
     // },
-    mode: "onBlur",
+    mode: "onTouched",
+    resolver: zodResolver(schema),
   });
 
   console.log("errors ", errors);
@@ -23,6 +27,8 @@ export default function AddProduct() {
   const formSubmitHandler = async (formValues) => {
     try {
       console.log("formValues ka object ", formValues);
+
+
 
       const response = await axios.post(
         "https://dummyjson.com/products/add",
@@ -52,32 +58,31 @@ export default function AddProduct() {
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-4">
               <label
-                htmlFor="product-name"
+                htmlFor="productName"
                 className="block text-sm/6 font-medium text-gray-900"
               >
                 Product name
               </label>
               <div className="mt-2">
                 <div
-                  className={`"flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${
-                    errors["product-name"]
-                      ? "outline-red-300"
-                      : "outline-gray-300"
-                  }  focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}
+                  className={`"flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${errors.productName
+                    ? "outline-red-300"
+                    : "outline-gray-300"
+                    }  focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}
                 >
                   {/* <div className="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">
                     workcation.com/
                   </div> */}
                   <input
-                    {...register("product-name", { required: true })}
+                    {...register("productName", { required: true })}
                     type="text"
                     placeholder="enter your product name"
                     className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
                   />
                 </div>
-                {errors["product-name"] ? (
+                {errors.productName ? (
                   <span className="text-xs text-red-400">
-                    This input field is required
+                    {errors.productName.message}
                   </span>
                 ) : (
                   ""
@@ -100,6 +105,11 @@ export default function AddProduct() {
                   defaultValue={""}
                 />
               </div>
+              {errors.description && (
+                <span className="text-xs text-red-400">
+                  {errors.description.message}
+                </span>
+              )}
               <p className="mt-3 text-sm/6 text-gray-600">
                 Write a few sentences about product.
               </p>
@@ -208,7 +218,7 @@ export default function AddProduct() {
 
               {errors.price && (
                 <span className="text-xs text-red-400">
-                  This input field is required
+                  {errors.price.message}
                 </span>
               )}
             </div>
@@ -227,6 +237,11 @@ export default function AddProduct() {
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
                 />
               </div>
+              {errors.stock && (
+                <span className="text-xs text-red-400">
+                  {errors.stock.message}
+                </span>
+              )}
             </div>
 
             <div className="sm:col-span-3">

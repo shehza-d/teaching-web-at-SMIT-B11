@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #db4444;
+  --secondary: #f5f5f5;
+}
+body {
+  font-family: "Poppins";
+}
+.nav_input::placeholder {
+  font-size: 12px;
+  color: rgb(153, 149, 149);
+}
+.arrow_mobile {
+  background-color: var(--secondary);
+  color: black;
+  padding: 5px;
+  font-size: 35px;
+  border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+  .sm\:arrow_desktop {
+    background-color: var(--secondary);
+    color: black;
+    padding: 7px;
+    font-size: 45px;
+    border-radius: 50%;
+  }
+}
+
+.card_icon_mobile {
+  background-color: white;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 25px;
+}
+@media (min-width: 640px) {
+  .sm\:card_icon_desktop {
+    background-color: white;
+    font-weight: bolder;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 34px;
+  }
+}
+/* react stars */
+.react-stars {
+  font-size: 15px;
+}
+
+@media (min-width: 640px) {
+  .react-stars {
+    font-size: 20px;
+  }
+}
+.footer_text_mobile{
+  font-size: 12px;
+  font-weight: 300;
+}
+@media (min-width:1024px){
+ .lg\:footer_text_desktop {
+  font-size: 15px;
+  font-weight: 300;
+}}
+  
+.container-x {
+  margin-left: 92px;
+  margin-right: 92px;
+  /* max-width: 1200px; */
+}
+
+.link_hover {
+  position: relative;
+  color: black;
+}
+.link_hover:hover {
+  color: var(--primary);
+}
+.link_hover::before {
+  content: "";
+  position: absolute;
+  top: 94%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: 0.3s;
+  text-align: center;
+}
+.link_hover:hover::before {
+  width: 100%;
+}
+.icons:hover {
+  background-color: rgb(236, 234, 234);
+  border-radius: 50%;
+}
+
+ /* {contact} */
+ .contact_input_mobile{
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+ @media(min-width:640px){
+   .sm\:contact_input{
+     outline: none;
+     border-bottom: 1px solid black;
+     width: 50%;
+     padding-bottom: 1rem;
+   }
+ }
+.contact_input{
+  width: 100%;
+}
+.contact_input::placeholder{
+  color: rgb(61, 60, 60);
+  font-size: 15px;
+}

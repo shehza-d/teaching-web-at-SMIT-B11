@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary:#f15757;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .custom-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+        }
+        .nav-ul{
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav-ul .nav-item{
+            padding: 0 1rem;
+        }
+        .nav-ul .nav-link{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-ul .nav-link:hover{
+            color: var(--primary);
+        }
+        .nav-bar{
+            display: flex;
+            align-items: center ;
+        }
+        .btn-wrapper{
+            display: flex;
+            margin-left: 4rem;
+            gap: 5px;
+        }
+        .button{
+            text-decoration: none;
+            /* display: block; */
+            padding: 0.5rem 1.3rem;
+            background-color: var(--primary);
+            border-radius: 5px;
+            color: white;
+        }
+        @media (min-width: 640px) {
+            .nav-ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-header">
+        <div class="logo-wrapper">
+            <img src="http://127.0.0.1:5173/src/assets/images/logo_desktop.svg" alt="">
+        </div>
+        <div class="nav-bar">
+            <ul class="nav-ul">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="btn-wrapper">
+                <a href="" class="button">Login</a>
+                <a href="" class="button">Signup</a>
+            </div>
+        </div>
+        <div class="search-wrapper">
+            <div class="input-wrapper">
+                <input type="text">
+            </div>
+        </div>
+    </header>
+</body>
+</html>

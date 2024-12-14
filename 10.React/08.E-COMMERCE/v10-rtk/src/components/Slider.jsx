@@ -15,7 +15,7 @@ import ProductCard from "./ProductCard";
 import useProducts from "../hooks/useProducts";
 
 export default function Slider() {
-  const { products, isLoading, error } = useProducts("limit=5&skip=30");
+  const { products, isLoading, error } = useProducts("?limit=5&skip=30");
 
   return (
     <div>
@@ -30,8 +30,8 @@ export default function Slider() {
         pagination={{ clickable: true }}
         navigation
         scrollbar={{ draggable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
       >
         {products?.slice(0, 6)?.map((item) => (
           <SwiperSlide key={item.id}>

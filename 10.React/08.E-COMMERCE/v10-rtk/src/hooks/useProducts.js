@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // hooks function returns state
-export default function useProducts(query) {
-    // memoization 
-  const API_KEY = `https://dummyjson.com/products?${query}`;
+export default function useProducts(query = "") {
+  // memoization
+  const API_KEY = `https://dummyjson.com/products${query}`;
 
   const [products, setProducts] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -19,7 +19,7 @@ export default function useProducts(query) {
       setProducts(response?.data?.products);
     } catch (error) {
       setError(
-        error?.response?.statusText || "Unknown error, please try again"
+        error?.response?.statusText || "Unknown error, please try again",
       );
     } finally {
       setIsLoading(false);
@@ -29,9 +29,9 @@ export default function useProducts(query) {
   // useEffect ak bar call hoga (in this case)
   useEffect(() => {
     getProductData();
-  }, []);
+  }, [query]);
 
-  console.log("slider products ", products);
+  // console.log("slider products ", products);
 
   return {
     products: products,

@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
-import { zodResolver } from '@hookform/resolvers/zod';
+import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "../lib/formSchema";
-
 
 export default function AddProduct() {
   // watch,
@@ -28,11 +27,9 @@ export default function AddProduct() {
     try {
       console.log("formValues ka object ", formValues);
 
-
-
       const response = await axios.post(
         "https://dummyjson.com/products/add",
-        formValues
+        formValues,
         // { withCredentials: true }
       );
       toast.success("Your product has been added successfully");
@@ -65,10 +62,9 @@ export default function AddProduct() {
               </label>
               <div className="mt-2">
                 <div
-                  className={`"flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${errors.productName
-                    ? "outline-red-300"
-                    : "outline-gray-300"
-                    }  focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}
+                  className={`"flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${
+                    errors.productName ? "outline-red-300" : "outline-gray-300"
+                  }  focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}
                 >
                   {/* <div className="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">
                     workcation.com/

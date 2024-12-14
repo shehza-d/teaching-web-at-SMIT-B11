@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import AddProduct from "./pages/AddProduct";
+import Search from "./pages/Search";
 
 // 404 routes not found after hosting
 // UI responsive
@@ -27,6 +28,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/product/add" element={<AddProduct />} />
+        <Route path="/search" element={<Search />} />
 
         {isLoggedIn ? (
           <>

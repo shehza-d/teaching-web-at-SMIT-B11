@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 export default function Home() {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
 
-  const { products, isLoading, error } = useProducts("limit=15&skip=35");
+  const { products, isLoading, error } = useProducts("?limit=15&skip=35");
 
   return (
     <div

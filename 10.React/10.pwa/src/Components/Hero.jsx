@@ -16,7 +16,7 @@ export default function Hero() {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
 
   return (
-    <div className={`h-[calc(100vh-133px)] ${darkMode ? "bg-slate-900" : ""}`}>
+    <div className={`mb-6 ${darkMode ? "bg-slate-900" : ""}`}>
       <div
         className={`flex flex-col lg:flex-row justify-between  lg:mx-[92px] items-center ${
           darkMode ? "bg-slate-900" : ""
@@ -41,6 +41,7 @@ export default function Hero() {
           />
         </div>
       </div>
+      <p className="text-center">Shehzad</p>
     </div>
   );
 }

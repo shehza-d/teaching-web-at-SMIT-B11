@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "sh.surge.e_commerce_by_shehzad.twa",
+      "sha256_cert_fingerprints": [
+        "86:30:05:4E:B7:E8:E8:54:50:EC:D9:AC:37:F7:DE:AC:C9:90:8F:DB:62:48:6C:A8:39:4B:4B:B5:11:6F:56:A6"
+      ]
+    }
+  }
+]

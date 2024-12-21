@@ -4,7 +4,8 @@ import axios from "axios";
 // hooks function returns state
 export default function useProducts(query = "") {
   // memoization
-  const API_KEY = `https://dummyjson.com/products${query}`;
+  // const API_KEY = `https://dummyjson.com/products${query}`;
+  const API_KEY = `http://localhost:3000/product`
 
   const [products, setProducts] = useState(null);
   const [isLoading, setIsLoading] = useState(false);

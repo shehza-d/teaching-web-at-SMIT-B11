@@ -29,7 +29,7 @@ export default function AddProduct() {
       console.log("formValues ka object ", formValues);
 
       const response = await axios.post(
-        `${API_KEY}/products/add`,
+        `${API_KEY}/product`,
         formValues,
         // { withCredentials: true }
       );
@@ -63,9 +63,8 @@ export default function AddProduct() {
               </label>
               <div className="mt-2">
                 <div
-                  className={`"flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${
-                    errors.productName ? "outline-red-300" : "outline-gray-300"
-                  }  focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}
+                  className={`"flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${errors.productName ? "outline-red-300" : "outline-gray-300"
+                    }  focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}
                 >
                   {/* <div className="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">
                     workcation.com/

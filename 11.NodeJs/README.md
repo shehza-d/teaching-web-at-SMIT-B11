@@ -2,10 +2,29 @@
 
 ## What We'll Learn
 
-- [x] Setting up a React development environment
-- [x] CRA vs [Vite.Js](https://youtu.be/KCrXgy8qtjM?si=ebL1k7MO3jLX_DXK) (Build Tools)
-- [x] Introduction to React and how is JSX converted to JavaScript
-- [x] How react works and its virtual DOM
-- [x] Building and deploying/hosting (Netlify, Surge, Firebase)
-- [x] [JSX](https://react.dev/learn/writing-markup-with-jsx) and {[Curly Braces in JSX](https://react.dev/learn/javascript-in-jsx-with-curly-braces)}
-- [x] Creating and managing components
+### Basics
+
+- [x] Intro to Backend and APIs
+
+- [ ] Postman
+- [ ] Query and URL Parameters (body (secure), header)
+- [ ] Deploying web server on cloud (mongodb)
+- [ ] Integrating server with client
+  - [ ] CORS
+  - [ ] Fetch API
+  - [ ] Axios
+  - [ ] CRUD Operations
+
+### Theory
+
+- [ ] [Principles of REST APIs](https://youtu.be/yj6uKSuo3R8?si=p5FjqAL-XMvTXILQ)
+- [ ] HTTP Methods
+- [ ] Status Codes
+
+
+
+### Database
+
+- [ ] Why is Database needed
+- [ ] d/b SQL and NoSQL
+- [ ] How to server [ReactJS Static files with ExpressJS](https://www.youtube.com/watch?v=gRL7joH9jPs&list=PLaZSdijfCCJDZbokvns94Gy3ojNPWQHxl&index=70&pp=iAQB)

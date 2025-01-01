@@ -3,7 +3,7 @@ import express from 'express'
 const app = express()
 const port = 5001
 
-app.get('/**', (request, response) => {
+app.get('/', (request, response) => {
     // overwrite nhi hota phale wala phale jata hy
     // response.send('<h1>Hello World 2!</h1>')
 

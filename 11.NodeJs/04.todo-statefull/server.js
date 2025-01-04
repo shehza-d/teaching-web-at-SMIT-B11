@@ -1,20 +1,23 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5002;
 
 const todos = [];
 
 app.use(express.json()); // To convert body into JSON
+app.use(cors({ origin: ['http://localhost:5173', 'https://frontend.surge.sh'] }))
 
-app.get("/get-all-todos", (request, response) => {
+
+app.get("/api/v1/todos", (request, response) => {
   const message = !todos.length ? "todos empty" : "ye lo sab todos";
 
   response.send({ data: todos, message: message });
 });
 
 // naya todo bannae ko
-app.post("/add-todo", (request, response) => {
+app.post("/api/v1/todo", (request, response) => {
   const obj = {
     todoContent: request.body.todo,
     id: String(new Date().getTime()),
@@ -26,7 +29,7 @@ app.post("/add-todo", (request, response) => {
 });
 
 // ye todo ko update ya edit karne ki api ki
-app.patch("/edit-todo/:id", (request, response) => {
+app.patch("/api/v1/todo/:id", (request, response) => {
   const id = request.params.id;
 
   let isFound = false;
@@ -50,7 +53,7 @@ app.patch("/edit-todo/:id", (request, response) => {
   }
 });
 
-app.delete("/delete-todo/:id", (request, response) => {
+app.delete("/api/v1/todo/:id", (request, response) => {
   const id = request.params.id;
 
   let isFound = false;

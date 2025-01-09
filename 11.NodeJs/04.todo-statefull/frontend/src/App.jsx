@@ -7,19 +7,21 @@ export default function App() {
 
   const [todos, setTodos] = useState([]);
 
-  console.log("todo", todos);
-
-  // const [isEditing, setIsEditing] = useState()
-
   const getTodo = async () => {
-    const res = await axios(`${BASE_URL}/api/v1/todos`);
-    const todosFromServer = res?.data?.data;
-    console.log("todosFromServer ", todosFromServer);
+    try {
+      const res = await axios(`${BASE_URL}/api/v1/todos`);
+      const todosFromServer = res?.data?.data;
+      console.log("todosFromServer ", todosFromServer);
 
-    // const newnew = todosFromServer.map((todo) => {
-    //   return { ...todo, isEditing: false };
-    // });
-    setTodos(todosFromServer);
+      // const newnew = todosFromServer.map((todo) => {
+      //   return { ...todo, isEditing: false };
+      // });
+
+      setTodos(todosFromServer);
+    } catch (err) {
+      toast.dismiss()
+      toast.error(err?.response?.data?.message || "unknown errorrr");
+    }
   };
 
   useEffect(() => {
@@ -38,7 +40,28 @@ export default function App() {
       getTodo();
 
       event.target.reset();
-    } catch (err) {}
+    } catch (err) {
+      toast.dismiss()
+      toast.error(err?.response?.data?.message || "unknown errorrr");
+    }
+  };
+
+  const editTodo = async (event, todoId) => {
+    try {
+      event.preventDefault();
+
+      const todoValue = event.target.children[0].value;
+
+      await axios.patch(`${BASE_URL}/api/v1/todo/${todoId}`, {
+        todoContent: todoValue,
+      });
+      getTodo();
+
+      event.target.reset();
+    } catch (err) {
+      toast.dismiss()
+      toast.error(err?.response?.data?.message || "unknown errorrr");
+    }
   };
 
   const deleteTodo = async (todoId) => {
@@ -90,11 +113,28 @@ export default function App() {
               {!todo.isEditing ? (
                 <span className="text-gray-700">{todo.todoContent}</span>
               ) : (
-                <input
-                  type="text"
-                  value={todo.todoContent}
-                  className="border border-gray-400"
-                />
+                <form
+                  onSubmit={(e) => editTodo(e, todo.id)}
+                >
+                  <input
+                    type="text"
+                    defaultValue={todo.todoContent}
+                    className="border border-gray-400"
+                  />
+                  <button
+                    onClick={() => {
+                      const newTodos = todos.map((todo, i) => {
+                        todo.isEditing = false;
+                        return todo;
+                      });
+                      setTodos([...newTodos]);
+                    }}
+                    type="button"
+                  >
+                    cancel
+                  </button>
+                  <button type="submit">Save</button>
+                </form>
               )}
 
               <div className="space-x-3">
@@ -117,19 +157,8 @@ export default function App() {
                   >
                     Edit
                   </button>
-                ) : (
-                  <button
-                    onClick={() => {
-                      const newTodos = todos.map((todo, i) => {
-                        todo.isEditing = false;
-                        return todo;
-                      });
-                      setTodos([...newTodos]);
-                    }}
-                  >
-                    cancel
-                  </button>
-                )}
+                ) : null}
+
                 {!todo.isEditing ? (
                   <button
                     onClick={() => deleteTodo(todo.id)}
@@ -137,9 +166,7 @@ export default function App() {
                   >
                     Delete
                   </button>
-                ) : (
-                  <button>Save</button>
-                )}
+                ) : null}
               </div>
             </li>
           ))}

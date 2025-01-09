@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "8baa27c8-5a76-477c-959e-53fb24147e6b",
+    "name": "todo-app-shehzad",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40725362"
+  },
+  "item": [
+    {
+      "name": "get all todos api",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/get-all-todos",
+          "host": ["{{BASE_URL}}"],
+          "path": ["api", "v1", "get-all-todos"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add-todo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"todo\": \"class time per aaya karo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/todo",
+          "host": ["{{BASE_URL}}"],
+          "path": ["api", "v1", "todo"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "edit todo",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"todoContent\": \"ye edit hogya hy\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/edit-todo/1735800534975",
+          "host": ["{{BASE_URL}}"],
+          "path": ["api", "v1", "edit-todo", "1735800534975"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete-todo",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/delete-todo/456",
+          "host": ["{{BASE_URL}}"],
+          "path": ["api", "v1", "delete-todo", "456"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "http://localhost:5002",
+      "type": "string"
+    }
+  ]
+}

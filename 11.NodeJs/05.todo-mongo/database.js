@@ -1,0 +1,1 @@
+const mongodbUri = "mongodb+srv://usama-admin:Ii0rk3YAOblQHMQ6@cluster0.pdjdv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"

@@ -1,54 +1,66 @@
 import express from "express";
 import cors from "cors";
+import './database.js'
+import { Todo } from "./models/index.js";
+
 
 // https://github.com/ahadsts9901/express-rate-lmiter
 
 const app = express();
 const port = process.env.PORT || 5002;
 
-const todos = [];
+// 
 
 app.use(express.json()); // To convert body into JSON
 app.use(
   cors({ origin: ["http://localhost:5173", "https://frontend.surge.sh"] }),
 );
 
-app.get("/api/v1/todos", (request, response) => {
-  const message = !todos.length ? "todos empty" : "ye lo sab todos";
+app.get("/api/v1/todos", async (request, response) => {
+  try {
 
-  response.send({ data: todos, message: message });
+    const todos = await Todo.find({},
+      { ip: 0, __v: 0, updatedAt: 0 } // projection (0 wale front per nhi aaye)
+
+
+      // { todoContent: 1 } saruf todoContent show hoga frontend per aur kuxh show nhi hoga
+      // { todoContent: 1, _id: 0 } // advance saruf id ma different keys use ho sagti hy like 0 and 1 
+
+    )
+
+    const message = !todos.length ? "todos empty" : "ye lo sab todos";
+
+    response.send({ data: todos, message: message });
+  } catch (err) {
+    response.status(500).send("Internal server error")
+  }
 });
 
 // naya todo bannae ko
-app.post("/api/v1/todo", (request, response) => {
+app.post("/api/v1/todo", async (request, response) => {
   const obj = {
     todoContent: request.body.todo,
-    id: String(new Date().getTime()),
+    ip: request.ip,
   };
 
-  todos.push(obj);
+  const result = await Todo.create(obj)
 
-  response.send({ message: "todo add hogya hy", data: obj });
+  response.send({ message: "todo add hogya hy", data: result });
 });
 
 // ye todo ko update ya edit karne ki api ki
-app.patch("/api/v1/todo/:id", (request, response) => {
+app.patch("/api/v1/todo/:id", async (request, response) => {
   const id = request.params.id;
 
-  let isFound = false;
-  for (let i = 0; i < todos.length; i++) {
-    if (todos[i].id === id) {
-      // idher product mil chuka hy (ab us product ko edit karna hy)
+  const result = await Todo.findByIdAndUpdate(id,
+    { todoContent: request.body.todoContent }
+  )
 
-      todos[i].todoContent = request.body.todoContent;
-      isFound = true;
-      break;
-    }
-  }
+  console.log('result=>', result);
 
-  if (isFound) {
+  if (result) {
     response.status(201).send({
-      data: { todoContent: request.body.todoContent, id: id },
+      data: result,
       message: "todo updated successfully!",
     });
   } else {
@@ -56,22 +68,12 @@ app.patch("/api/v1/todo/:id", (request, response) => {
   }
 });
 
-app.delete("/api/v1/todo/:id", (request, response) => {
+app.delete("/api/v1/todo/:id", async (request, response) => {
   const id = request.params.id;
 
-  let isFound = false;
-  for (let i = 0; i < todos.length; i++) {
-    if (todos[i].id === id) {
-      // idher product mil chuka hy (ab us product ko delete karna hy)
+  const result = await Todo.findByIdAndDelete(id)
 
-      todos.splice(i, 1);
-
-      isFound = true;
-      break;
-    }
-  }
-
-  if (isFound) {
+  if (result) {
     response.status(201).send({
       // data: { todoContent: request.body.todoContent, id: id, },
       message: "todo deleted successfully!",

@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
+import 'dotenv/config'
 import './database.js'
 import { Todo } from "./models/index.js";
-
 
 // https://github.com/ahadsts9901/express-rate-lmiter
 
@@ -13,7 +13,7 @@ const port = process.env.PORT || 5002;
 
 app.use(express.json()); // To convert body into JSON
 app.use(
-  cors({ origin: ["http://localhost:5173", "https://frontend.surge.sh"] }),
+  cors({ origin: ["http://localhost:5173", "https://frontend.surge.sh", 'https://marvelous-capybara-0bee09.netlify.app'] }),
 );
 
 app.get("/api/v1/todos", async (request, response) => {
@@ -21,12 +21,9 @@ app.get("/api/v1/todos", async (request, response) => {
 
     const todos = await Todo.find({},
       { ip: 0, __v: 0, updatedAt: 0 } // projection (0 wale front per nhi aaye)
-
-
       // { todoContent: 1 } saruf todoContent show hoga frontend per aur kuxh show nhi hoga
       // { todoContent: 1, _id: 0 } // advance saruf id ma different keys use ho sagti hy like 0 and 1 
-
-    )
+    ).sort({ _id: -1 })
 
     const message = !todos.length ? "todos empty" : "ye lo sab todos";
 

@@ -2,14 +2,25 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
+export const getUrl = () => {
+  const isHosted = window.location.href.includes("https");
+
+  const baseUrl = isHosted
+    ? "https://smit-backend-batch-11.vercel.app"
+    : "http://localhost:5002";
+  return baseUrl;
+};
+
+
 export default function App() {
-  const BASE_URL = "http://localhost:5002";
+
+
 
   const [todos, setTodos] = useState([]);
 
   const getTodo = async () => {
     try {
-      const res = await axios(`${BASE_URL}/api/v1/todos`);
+      const res = await axios(`${getUrl()}/api/v1/todos`);
       const todosFromServer = res?.data?.data;
       console.log("todosFromServer ", todosFromServer);
 
@@ -34,13 +45,15 @@ export default function App() {
 
       const todoValue = event.target.children[0].value;
 
-      await axios.post(`${BASE_URL}/api/v1/todo`, {
+      await axios.post(`${getUrl()}/api/v1/todo`, {
         todo: todoValue,
       });
       getTodo();
 
       event.target.reset();
     } catch (err) {
+      console.log('err:', err);
+
       toast.dismiss()
       toast.error(err?.response?.data?.message || "unknown errorrr");
     }
@@ -52,7 +65,7 @@ export default function App() {
 
       const todoValue = event.target.children[0].value;
 
-      await axios.patch(`${BASE_URL}/api/v1/todo/${todoId}`, {
+      await axios.patch(`${getUrl()}/api/v1/todo/${todoId}`, {
         todoContent: todoValue,
       });
       getTodo();
@@ -68,7 +81,7 @@ export default function App() {
     try {
       console.log("todoId ", todoId);
 
-      const res = await axios.delete(`${BASE_URL}/api/v1/todo/${todoId}`);
+      const res = await axios.delete(`${getUrl()}/api/v1/todo/${todoId}`);
 
       console.log("data ", res.data);
 
@@ -107,14 +120,14 @@ export default function App() {
         <ul className="mt-6 space-y-4">
           {todos?.map((todo, index) => (
             <li
-              key={todo.id}
+              key={todo._id}
               className="flex justify-between items-center p-4 bg-gray-50 rounded-md shadow-sm hover:bg-gray-100 transition-all duration-200"
             >
               {!todo.isEditing ? (
                 <span className="text-gray-700">{todo.todoContent}</span>
               ) : (
                 <form
-                  onSubmit={(e) => editTodo(e, todo.id)}
+                  onSubmit={(e) => editTodo(e, todo._id)}
                 >
                   <input
                     type="text"
@@ -161,7 +174,7 @@ export default function App() {
 
                 {!todo.isEditing ? (
                   <button
-                    onClick={() => deleteTodo(todo.id)}
+                    onClick={() => deleteTodo(todo._id)}
                     className="text-red-600 hover:text-red-700 focus:outline-none"
                   >
                     Delete

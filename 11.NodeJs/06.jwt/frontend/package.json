@@ -1,0 +1,44 @@
+{
+  "name": "v2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "deploy": "surge ./dist --domain shehzad-ecommerce-b11.surge.sh",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@hookform/resolvers": "^3.9.1",
+    "@reduxjs/toolkit": "^2.4.0",
+    "axios": "^1.7.7",
+    "date-fns": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.54.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.3.0",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.28.0",
+    "react-stars": "^2.2.5",
+    "swiper": "^11.1.14",
+    "swr": "^2.2.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.2.0"
+  }
+}

@@ -46,10 +46,6 @@ app.post("/api/v1/signup", async (request, response) => {
 });
 
 app.post("/api/v1/login", async (request, response) => {
-  // const obj = {
-  //   email: request.body.email,
-  //   password: request.body.password,
-  // };
 
   const result = await User.findOne({ email: request.body.email })
   // console.log('result:', result);

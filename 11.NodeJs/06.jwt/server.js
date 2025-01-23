@@ -4,6 +4,7 @@ import bcrypt from "bcrypt";
 import 'dotenv/config'
 import './database.js'
 import { User } from "./models/index.js";
+import jwt from "jsonwebtoken";
 
 // https://github.com/ahadsts9901/express-rate-lmiter
 
@@ -14,7 +15,10 @@ const port = process.env.PORT || 5002;
 
 app.use(express.json()); // To convert body into JSON
 app.use(
-  cors({ origin: ["http://localhost:5173", "https://frontend.surge.sh", 'https://marvelous-capybara-0bee09.netlify.app'] }),
+  cors({
+    credentials: true,
+    origin: ["http://localhost:5173", "https://frontend.surge.sh", 'https://marvelous-capybara-0bee09.netlify.app']
+  }),
 );
 
 // creating new account
@@ -65,7 +69,23 @@ app.post("/api/v1/login", async (request, response) => {
     return;
   }
 
-  response.send({ message: "login successfully", });
+  // npm i jsonwebtoken
+  const token = jwt.sign(
+    {
+      _id: result._id,
+      email: result.email,
+    },
+    "SECRET@!@#$549583ufdf",// ye env ma save hoga
+    { expiresIn: "7d" }
+  );
+
+
+
+  response.cookie("my-token", token, {
+    expires:
+      new Date(Date.now() + 86400000 * 7)
+    , secure: true, httpOnly: true
+  }).send({ message: "login successfully", });
 });
 
 //

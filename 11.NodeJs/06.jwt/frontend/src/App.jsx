@@ -9,6 +9,7 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import AddProduct from "./pages/AddProduct";
 import Search from "./pages/Search";
+import Signup from "./pages/Signup";
 
 // 404 routes not found after hosting
 // UI responsive
@@ -43,6 +44,7 @@ function App() {
         ) : (
           <>
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="*" element={<Navigate to="/login" />} />
           </>
         )}

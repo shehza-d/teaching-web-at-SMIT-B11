@@ -1,7 +1,10 @@
-let myName = "Ali";
+let trafficLight;
 
-myName = "Ahmed";
+trafficLight = "red";
+trafficLight = "shehzad";
+trafficLight = "green";
 
-myName = 77;
-
-console.log(myName);
+if (trafficLight === 'red' || trafficLight === "green") {
+	trafficLight
+  console.log("stop");
+}

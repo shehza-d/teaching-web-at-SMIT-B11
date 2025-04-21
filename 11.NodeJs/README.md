@@ -6,20 +6,20 @@
 
 - [x] Intro to Backend and APIs
 
-- [ ] Postman
-- [ ] Query and URL Parameters (body (secure), header)
-- [ ] Deploying web server on cloud (mongodb)
-- [ ] CRUD Operations
+- [x] Postman
+- [x] Query and URL Parameters (body (secure), header)
+- [x] Deploying web server on cloud (mongodb)
+- [x] CRUD Operations
 - [ ] Integrating server with client
 
-  - [ ] CORS
-  - [ ] Fetch API
-  - [ ] Axios
+  - [x] CORS
+  - [x] Fetch API
+  - [x] Axios
 
 - [ ] Encryptions
 
-  - [ ] Hashing
-  - [ ] [Bcrypt](https://www.npmjs.com/package/bcrypt)
+  - [x] Hashing
+  - [x] [Bcrypt](https://www.npmjs.com/package/bcrypt)
   - [ ] [JWT](https://jwt.io/)
   - [ ] [Cookies vs LocalStorage](https://www.geeksforgeeks.org/local-storage-vs-cookies/)
 
@@ -28,8 +28,8 @@
 ### Theory
 
 - [ ] [Principles of REST APIs](https://youtu.be/yj6uKSuo3R8?si=p5FjqAL-XMvTXILQ)
-- [ ] HTTP Methods
-- [ ] Status Codes
+- [x] HTTP Methods
+- [x] Status Codes
 
 ### Database
 
@@ -50,15 +50,11 @@
 - [ ] CI/CD
 - [ ] NestJs
 
-
 What we learnt today Docker Revision, Docker Hun, AWS Deployment
-
 
 as per our commitment, jo bhi topics reh jaeyngey.. me inshaAllah online sessions arrange karlunga.. every friday night after hackathon.. to us main remaining topics cover karlengey hum..
 
-
-In Backend what topics we have covered 
-
+In Backend what topics we have covered
 
 Nodejs Express JS Introduction
 Rest apis with mvc and routing
@@ -69,7 +65,7 @@ Jwt
 Nodemailer emails sending
 PM2 - load balancing
 TTL
-Multer 
+Multer
 Cloudinary
 Mongo Sanitize
 Helmet, XSS
@@ -83,16 +79,13 @@ Aws deployment using dockers
 Messaging Queue - Scalable systems
 Web Sockets
 
-
 Upcoming topics online
-
 
 Cookie
 Picture uploading from frontend
-Github advance 
+Github advance
 Postgres basics
 Integration of AI with our Mern Stack projects
-
 
 Recently we learnt about
 Dockers
@@ -103,15 +96,11 @@ Connecting through local machine
 Pulling image from Docker Hub
 running container on aws machine
 
-
 What we learnt today Docker Revision, Docker Hun, AWS Deployment
-
 
 as per our commitment, jo bhi topics reh jaeyngey.. me inshaAllah online sessions arrange karlunga.. every friday night after hackathon.. to us main remaining topics cover karlengey hum..
 
-
-In Backend what topics we have covered 
-
+In Backend what topics we have covered
 
 Nodejs Express JS Introduction
 Rest apis with mvc and routing
@@ -122,7 +111,7 @@ Jwt
 Nodemailer emails sending
 PM2 - load balancing
 TTL
-Multer 
+Multer
 Cloudinary
 Mongo Sanitize
 Helmet, XSS
@@ -134,15 +123,11 @@ Redis - Caching
 Deployment of frontend and backend (Vercel and Railway)
 Aws deployment using dockers
 
-
-
-
 Upcoming topics
-
 
 Messaging Queue - Scalable systems
 Web Sockets
 Cookie
 Picture uploading from frontend
-Github advance 
+Github advance
 Postgres basics

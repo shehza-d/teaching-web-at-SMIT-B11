@@ -16,13 +16,15 @@ const port = process.env.PORT || 5002;
 app.use(express.json()); // To convert body into JSON
 app.use(
   cors({
-    credentials: true,
+    // credentials: true, // cookies
+    // this is not security 
     origin: ["http://localhost:5173", "https://frontend.surge.sh", 'https://marvelous-capybara-0bee09.netlify.app']
   }),
 );
 
 // creating new account
 app.post("/api/v1/signup", async (request, response) => {
+
   if (!request.body.name || !request.body.email || !request.body.password) {
     response.status(400).send({ message: "Parameters missing", });
     return
@@ -34,11 +36,8 @@ app.post("/api/v1/signup", async (request, response) => {
     response.status(400).send({ message: "Email already exist", });
     return
   }
-
   // hashing is 1 way encryption
   const encryptedPassword = await bcrypt.hash(request.body.password, 10)
-
-  // console.log('encryptedPassword:', encryptedPassword);
 
   const result = await User.create({
     name: request.body.name,

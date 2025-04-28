@@ -14,11 +14,11 @@ import ProductAdd from "./Pages/ProductAdd";
 
 export default function App() {
   const { pathname } = useLocation();
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
- 
+
   return (
     <>
       <Banner />
@@ -30,8 +30,8 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/api-product" element={<ApiProduct />} />
-        <Route path="/product/:id" element={<ProductDetail/>} />
-        <Route path="/product/add" element={<ProductAdd/>} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/product/add" element={<ProductAdd />} />
       </Routes>
 
       <Footer />

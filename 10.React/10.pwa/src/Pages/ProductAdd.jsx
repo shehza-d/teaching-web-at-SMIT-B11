@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
-import { zodResolver } from '@hookform/resolvers/zod';
+import { zodResolver } from "@hookform/resolvers/zod";
 import schema from "../lib/formSchema";
 
 export default function ProductAdd() {
@@ -16,7 +16,7 @@ export default function ProductAdd() {
     handleSubmit,
     formState: { errors },
   } = useForm({
-    mode:"onBlur",
+    mode: "onBlur",
     resolver: zodResolver(schema),
   });
 
@@ -59,18 +59,24 @@ export default function ProductAdd() {
                 Product name
               </label>
               <div className="mt-2">
-                <div className={`flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${errors['product-name'] ?"outline-primary":"outline-gray-300"} focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}>
+                <div
+                  className={`flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 ${errors["product-name"] ? "outline-primary" : "outline-gray-300"} focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-primary`}
+                >
                   <div className="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">
                     {" "}
                   </div>
                   <input
-                    {...register("product-name",{required:true})}
+                    {...register("product-name", { required: true })}
                     type="text"
                     placeholder="enter your product name"
                     className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
                   />
                 </div>
-                {errors['product-name'] && <span className="text-xs text-primary">This input field is required</span>}
+                {errors["product-name"] && (
+                  <span className="text-xs text-primary">
+                    This input field is required
+                  </span>
+                )}
               </div>
             </div>
 
@@ -157,14 +163,17 @@ export default function ProductAdd() {
               </label>
               <div className="mt-2">
                 <input
-                  {...register("price",{required:true})}
+                  {...register("price", { required: true })}
                   type="number"
                   autoComplete="family-name"
-                  className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors['product-name'] ?"outline-primary":"outline-gray-300"} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6`}
+                  className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors["product-name"] ? "outline-primary" : "outline-gray-300"} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6`}
                 />
               </div>
-              {errors['price'] && <span className="text-xs text-primary">This input field is required</span>}
-
+              {errors["price"] && (
+                <span className="text-xs text-primary">
+                  This input field is required
+                </span>
+              )}
             </div>
 
             <div className="sm:col-span-4">
@@ -176,13 +185,16 @@ export default function ProductAdd() {
               </label>
               <div className="mt-2">
                 <input
-                  {...register("stock",{required:true})}
+                  {...register("stock", { required: true })}
                   type="number"
-                  className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors['product-name'] ?"outline-primary":"outline-gray-300"} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6`}
+                  className={`block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 ${errors["product-name"] ? "outline-primary" : "outline-gray-300"} placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6`}
                 />
               </div>
-              {errors['stock'] && <span className="text-xs text-primary">This input field is required</span>}
-
+              {errors["stock"] && (
+                <span className="text-xs text-primary">
+                  This input field is required
+                </span>
+              )}
             </div>
 
             <div className="sm:col-span-3">

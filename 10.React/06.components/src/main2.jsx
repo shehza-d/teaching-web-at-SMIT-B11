@@ -101,7 +101,7 @@ function App() {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );
 
 // time wala saruf kaberr kare ga

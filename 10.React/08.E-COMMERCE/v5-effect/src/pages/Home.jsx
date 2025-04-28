@@ -38,7 +38,10 @@ export default function Home() {
 
       <NewArrivalGrid />
 
-      <a href="#top" className="my-5 w-12 h-12 bg-gray-200 rounded-full block center text-2xl ml-auto">
+      <a
+        href="#top"
+        className="my-5 w-12 h-12 bg-gray-200 rounded-full block center text-2xl ml-auto"
+      >
         <FaArrowUp />
       </a>
     </div>

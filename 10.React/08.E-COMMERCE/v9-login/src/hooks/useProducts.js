@@ -3,7 +3,7 @@ import axios from "axios";
 
 // hooks function returns state
 export default function useProducts(query) {
-    // memoization 
+  // memoization
   const API_KEY = `https://dummyjson.com/products?${query}`;
 
   const [products, setProducts] = useState(null);
@@ -19,7 +19,7 @@ export default function useProducts(query) {
       setProducts(response?.data?.products);
     } catch (error) {
       setError(
-        error?.response?.statusText || "Unknown error, please try again"
+        error?.response?.statusText || "Unknown error, please try again",
       );
     } finally {
       setIsLoading(false);

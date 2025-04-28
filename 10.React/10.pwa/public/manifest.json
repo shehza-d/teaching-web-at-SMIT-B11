@@ -7,10 +7,7 @@
   "display": "fullscreen",
   "description": "DukaanHub is an e-commerce store by shehzad for SMIT batch 11 class",
   "id": "DukaanHub",
-  "categories": [
-    "education",
-    "shopping"
-  ],
+  "categories": ["education", "shopping"],
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",

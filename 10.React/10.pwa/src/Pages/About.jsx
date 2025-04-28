@@ -11,12 +11,16 @@ export default function About() {
       <div className="mx-4 md:mx-16 xl:mx-[92px]">
         {/* about us */}
         <div className="flex flex-col md:flex-row justify-between gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-14 items-start pt-6 sm:pt-8 md:pt-10 lg:pt-12 xl:pt-16  md:h-[calc(100vh-133px)]">
-          <div className={`${darkMode ? "text-white" : ""} flex flex-col  md:w-[50%] lg:w-[53%] gap-3 md:gap-2 lg:gap-3 xl:gap-4 text-sm items-start`}>
-            <h1 className="text-3xl lg:text-4xl font-semibold mb-2 md:mb-[6px] lg:mb-3 xl:mb-6">About Us</h1>
+          <div
+            className={`${darkMode ? "text-white" : ""} flex flex-col  md:w-[50%] lg:w-[53%] gap-3 md:gap-2 lg:gap-3 xl:gap-4 text-sm items-start`}
+          >
+            <h1 className="text-3xl lg:text-4xl font-semibold mb-2 md:mb-[6px] lg:mb-3 xl:mb-6">
+              About Us
+            </h1>
             <p className="text-sm">
-              Shoptimized™ is a community of likeminded e-commerce entrepreneurs
-              who have come together to learn how to upscale their businesses
-              and outmaneuver their competition at every turn.
+              Shoptimized™ is a community of likeminded e-commerce
+              entrepreneurs who have come together to learn how to upscale their
+              businesses and outmaneuver their competition at every turn.
             </p>
             <p className="text-sm">
               Founded by Conversion Rate Expert, Bradley Long – Shoptimized™
@@ -41,16 +45,32 @@ export default function About() {
         </div>
         {/* our mission */}
 
-        <div className={`${darkMode ? "text-white" : ""} flex flex-col md:flex-row justify-between gap-10 py-12 sm:pt-16 pb-11 sm:pb-16 md:pb-24 lg:pb-28`}>
+        <div
+          className={`${darkMode ? "text-white" : ""} flex flex-col md:flex-row justify-between gap-10 py-12 sm:pt-16 pb-11 sm:pb-16 md:pb-24 lg:pb-28`}
+        >
           <div className="w-[100%] md:w-[50%] lg:w-[40%] relative">
-            <img src={second_img} alt="" className="w-full md:w-96 md:h-96 object-cover lg:h-72 rounded-xl" />
+            <img
+              src={second_img}
+              alt=""
+              className="w-full md:w-96 md:h-96 object-cover lg:h-72 rounded-xl"
+            />
             <div className="bg-white shadow-xl  absolute sm:right-0 md:-right-8 sm:-bottom-12 md:-bottom-12 lg:-right-8 xl:right-0 lg:-bottom-12 sm:w-32 sm:h-[105px] md:h-24 lg:w-36 lg:h-28 xl:w-44 xl:h-36 rounded-[15px] hidden sm:flex flex-col justify-center items-center text-center">
-              <img src={mobileLogo} alt="" className="sm:w-11 lg:w-12 xl:w-16" />
-              <p className={`${darkMode ? "text-black" : ""} text-base lg:text-lg font-semibold`}>Logoipsum</p>
+              <img
+                src={mobileLogo}
+                alt=""
+                className="sm:w-11 lg:w-12 xl:w-16"
+              />
+              <p
+                className={`${darkMode ? "text-black" : ""} text-base lg:text-lg font-semibold`}
+              >
+                Logoipsum
+              </p>
             </div>
           </div>
           <div className=" md:w-[50%] lg:w-[60%] ">
-            <h1 className="text-3xl lg:text-4xl font-semibold mb-4 md:mb-3 lg:mb-3 xl:mb-6">Our Mission</h1>
+            <h1 className="text-3xl lg:text-4xl font-semibold mb-4 md:mb-3 lg:mb-3 xl:mb-6">
+              Our Mission
+            </h1>
             <div className="text-sm flex flex-col gap-3 lg:gap-4">
               <p>
                 At Logoipsum, we aim to transform online shopping into an

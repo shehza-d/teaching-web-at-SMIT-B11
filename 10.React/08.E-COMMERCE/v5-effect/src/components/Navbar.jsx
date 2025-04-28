@@ -22,7 +22,10 @@ export default function Navbar() {
   const navLinkStyle =
     "capitalize hover:underline cursor-pointer hover:text-primary";
   return (
-    <div id="top" className="container-x h-28 relative flex justify-between items-center">
+    <div
+      id="top"
+      className="container-x h-28 relative flex justify-between items-center"
+    >
       <img src={logoMobile} alt="" width={60} height={60} />
 
       <div className="w-60 px-2 h-10 rounded center bg-[#F5F5F5]">

@@ -53,7 +53,6 @@ export default function Products() {
         placeholder="Search your product"
       />
 
-
       <div className="flex flex-wrap justify-center gap-4">
         {searchKaResult?.length === 0 ? "product not found" : ""}
 

@@ -8,8 +8,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "../components/ui/AlertDialog"
-
+} from "../components/ui/AlertDialog";
 
 export default function About() {
   return (
@@ -20,19 +19,18 @@ export default function About() {
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
-              This action cannot be undone. This will permanently delete your account
-              and remove your data from our servers.
+              This action cannot be undone. This will permanently delete your
+              account and remove your data from our servers.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction className="!text-red-500">Continue</AlertDialogAction>
+            <AlertDialogAction className="!text-red-500">
+              Continue
+            </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-
-
-
     </div>
-  )
+  );
 }

@@ -2,8 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 export default function Signup() {
-
-  const BASE_URL = 'http://localhost:5002'
+  const BASE_URL = "http://localhost:5002";
 
   const formSubmitHua = async (event) => {
     try {
@@ -28,7 +27,7 @@ export default function Signup() {
       console.log("response ", response);
     } catch (error) {
       console.log("error ", error);
-      toast.error(error.response?.data?.message || "unknown error")
+      toast.error(error.response?.data?.message || "unknown error");
     }
   };
 

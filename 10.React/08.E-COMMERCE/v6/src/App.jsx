@@ -24,14 +24,12 @@ function App() {
         <Route path="/not-found" element={<div>not foundddd</div>} />
         <Route path="/products" element={<Products />} />
 
-        
-
         {isLoggedIn ? (
           <>
             <Route
               path="/profile"
               element={<div>this is my profile page</div>}
-              />
+            />
 
             <Route path="/login" element={<Navigate to="/" />} />
             <Route path="*" element={<Navigate to="/not-found" />} />
@@ -43,7 +41,7 @@ function App() {
           </>
         )}
       </Routes>
-      {<Footer/>}
+      {<Footer />}
     </>
   );
 }

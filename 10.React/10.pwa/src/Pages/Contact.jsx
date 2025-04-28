@@ -11,7 +11,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 export default function Contact() {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
   const onChange = (value) => {
-    console.log("value=>",value);
+    console.log("value=>", value);
   };
   return (
     <div className={`${darkMode ? "bg-slate-900" : ""}`}>

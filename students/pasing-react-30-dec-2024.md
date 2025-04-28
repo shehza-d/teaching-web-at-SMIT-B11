@@ -1,15 +1,15 @@
 # List of Students
 
-1. students 
+1. students
 
 - 222619
 - 223296
 - 174629
 - 203719
 - usman khatri 217695
-- Arslan Ali	186548
-- Muhammad Yasir	203283
-- Shayan haq	210469
+- Arslan Ali 186548
+- Muhammad Yasir 203283
+- Shayan haq 210469
 
 2. students
 
@@ -19,21 +19,22 @@
 - 174995
 - 230511
 - 197480
-muhammad ahmed	210762
+  muhammad ahmed 210762
 - ANAS 194313
 - qadir 233542
 
-
 3.
+
 - 173327
 - 200681
-- Abdul Hadi	227946
+- Abdul Hadi 227946
 - 174434
 - 214559
 - 176603
 - 184534
 
-4. 
+4.
+
 - 243552
 - 250317
 - 176632

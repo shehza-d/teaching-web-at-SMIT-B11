@@ -1,4 +1,3 @@
-
 ### **🔍 _Exploring Backend_ – (free sessions)**
 
 **🚀 _I’m not a backend expert, but together we’ll explore `advanced backend` topics every Sunday!_** (Node.js/MERN)
@@ -31,6 +30,5 @@
 🔗 **Join the [WhatsApp Channel](https://whatsapp.com/channel/0029Va8AsRW0wajyhNcx4T1Y)**
 
 _(All updates/resources will be shared here!)_
-
 
 _👋🏻 Contact me on [Signal App](https://signal.org/install/) → [@shehzad.313](https://signal.me/#eu/PsVq1CrIHYBiLDgHUK7j5HdoJ7YxetzY3gRvrV769WiXfHfApNFMarvmx4S99zu5)_

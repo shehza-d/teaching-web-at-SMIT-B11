@@ -33,5 +33,5 @@ function Test() {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Test />
-  </StrictMode>
+  </StrictMode>,
 );

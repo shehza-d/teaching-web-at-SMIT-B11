@@ -19,7 +19,7 @@ export default function Login() {
           username: "emilys",
           password: "emilyspass",
         },
-        { withCredentials: true }
+        { withCredentials: true },
       );
 
       console.log("response ", response);

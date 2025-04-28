@@ -11,11 +11,7 @@ export const getUrl = () => {
   return baseUrl;
 };
 
-
 export default function App() {
-
-
-
   const [todos, setTodos] = useState([]);
 
   const getTodo = async () => {
@@ -30,7 +26,7 @@ export default function App() {
 
       setTodos(todosFromServer);
     } catch (err) {
-      toast.dismiss()
+      toast.dismiss();
       toast.error(err?.response?.data?.message || "unknown errorrr");
     }
   };
@@ -52,9 +48,9 @@ export default function App() {
 
       event.target.reset();
     } catch (err) {
-      console.log('err:', err);
+      console.log("err:", err);
 
-      toast.dismiss()
+      toast.dismiss();
       toast.error(err?.response?.data?.message || "unknown errorrr");
     }
   };
@@ -72,7 +68,7 @@ export default function App() {
 
       event.target.reset();
     } catch (err) {
-      toast.dismiss()
+      toast.dismiss();
       toast.error(err?.response?.data?.message || "unknown errorrr");
     }
   };
@@ -126,9 +122,7 @@ export default function App() {
               {!todo.isEditing ? (
                 <span className="text-gray-700">{todo.todoContent}</span>
               ) : (
-                <form
-                  onSubmit={(e) => editTodo(e, todo._id)}
-                >
+                <form onSubmit={(e) => editTodo(e, todo._id)}>
                   <input
                     type="text"
                     defaultValue={todo.todoContent}

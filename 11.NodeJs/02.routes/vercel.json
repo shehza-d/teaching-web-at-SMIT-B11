@@ -1,16 +1,16 @@
 {
-    "version": 2,
-    "name": "AI Chat-bot",
-    "builds": [
-        {
-            "src": "index.mjs",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/index.mjs"
-        }
-    ]
+  "version": 2,
+  "name": "AI Chat-bot",
+  "builds": [
+    {
+      "src": "index.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.mjs"
+    }
+  ]
 }

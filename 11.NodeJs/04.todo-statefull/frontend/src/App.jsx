@@ -19,7 +19,7 @@ export default function App() {
 
       setTodos(todosFromServer);
     } catch (err) {
-      toast.dismiss()
+      toast.dismiss();
       toast.error(err?.response?.data?.message || "unknown errorrr");
     }
   };
@@ -41,7 +41,7 @@ export default function App() {
 
       event.target.reset();
     } catch (err) {
-      toast.dismiss()
+      toast.dismiss();
       toast.error(err?.response?.data?.message || "unknown errorrr");
     }
   };
@@ -59,7 +59,7 @@ export default function App() {
 
       event.target.reset();
     } catch (err) {
-      toast.dismiss()
+      toast.dismiss();
       toast.error(err?.response?.data?.message || "unknown errorrr");
     }
   };
@@ -113,9 +113,7 @@ export default function App() {
               {!todo.isEditing ? (
                 <span className="text-gray-700">{todo.todoContent}</span>
               ) : (
-                <form
-                  onSubmit={(e) => editTodo(e, todo.id)}
-                >
+                <form onSubmit={(e) => editTodo(e, todo.id)}>
                   <input
                     type="text"
                     defaultValue={todo.todoContent}

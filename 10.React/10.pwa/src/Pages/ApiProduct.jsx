@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 export default function ApiProduct() {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
 
-  const {products,isLoading,error} = useProducts("limit=30&skip=4")
+  const { products, isLoading, error } = useProducts("limit=30&skip=4");
 
   // console.log("products=>", products);
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,7 +38,6 @@ export default function ApiProduct() {
         <CiSearch className="text-xl sm:text-2xl font-extrabold text-black" />
       </div>
       <div className="flex flex-wrap gap-2 sm:gap-2 xl:gap-7 justify-center items-center text-center  mx-4 md:mx-16 lg:mx-[92px]  sm:py-4 md:py-6 lg:py-10">
-
         {searchResult.length === 0 ? "product not found..." : ""}
 
         {searchResult?.map((item) => {
@@ -53,8 +52,6 @@ export default function ApiProduct() {
               percent={item.rating}
               rating={item.rating}
             />
-
-            
           );
         })}
       </div>

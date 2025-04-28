@@ -39,7 +39,7 @@ export default function Home() {
       <div className="flex gap-7">
         {products?.slice(0, 4)?.map((item) => (
           <ProductCard
-          id={item.id}
+            id={item.id}
             image={item.thumbnail}
             name={item.title}
             price={item.price}
@@ -53,7 +53,7 @@ export default function Home() {
       <div className="flex gap-7">
         {products?.slice(4, 8)?.map((item) => (
           <ProductCard
-          id={item.id}
+            id={item.id}
             image={item.thumbnail}
             name={item.title}
             price={item.price}

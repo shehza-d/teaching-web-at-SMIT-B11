@@ -9,7 +9,7 @@ export default function ProductDetail() {
 
   const { data, error, isLoading } = useSWR(
     `https://dummyjson.com/products/${params.id}`,
-    axios
+    axios,
   );
   const product = data?.data;
 

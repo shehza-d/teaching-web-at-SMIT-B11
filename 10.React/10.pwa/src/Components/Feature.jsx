@@ -15,7 +15,9 @@ export default function Feature() {
               Featured
             </span>
           </div>
-          <h3 className={`flex  text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold mt-3 sm:mt-5 ${darkMode ? 'text-white':''}`}>
+          <h3
+            className={`flex  text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold mt-3 sm:mt-5 ${darkMode ? "text-white" : ""}`}
+          >
             New Arrival
           </h3>
         </div>

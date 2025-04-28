@@ -2,8 +2,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export default function Login() {
-  const BASE_URL = 'http://localhost:5002'
-
+  const BASE_URL = "http://localhost:5002";
 
   const formSubmitHua = async (event) => {
     try {
@@ -67,7 +66,7 @@ export default function Login() {
         </button>
         <p className="text-xs text-gray-500 mt-3">
           {/* Alread have an account?  */}
-          Not have an account? <Link to='/signup'>Signup</Link>
+          Not have an account? <Link to="/signup">Signup</Link>
         </p>
       </form>
     </div>

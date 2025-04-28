@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import category_img from "../assets/images/category.png";
 
 export default function Categories() {
-    const darkMode = useSelector((state) => state.darkMode.darkMode);
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
 
   return (
     <div className={`${darkMode ? "bg-slate-900" : ""}`}>

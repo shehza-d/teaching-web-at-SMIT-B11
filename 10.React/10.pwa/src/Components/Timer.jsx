@@ -14,17 +14,23 @@ export default function Timer() {
             Today’s
           </span>
         </div>
-        
-        <h3 className={`flex sm:hidden  text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold mt-3 ${darkMode ? 'text-white':''}`}>
+
+        <h3
+          className={`flex sm:hidden  text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold mt-3 ${darkMode ? "text-white" : ""}`}
+        >
           Flash Sales
         </h3>
         <div className="flex   justify-between items-center text-center mt-5 ">
           <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 mt-2">
-            <h3 className={`hidden sm:flex text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold ${darkMode ? 'text-white':''}` }>
+            <h3
+              className={`hidden sm:flex text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold ${darkMode ? "text-white" : ""}`}
+            >
               Flash Sales
             </h3>
 
-            <div className={`flex flex-col items-start sm:ml-8 md:ml-10 lg:ml-16 ${darkMode ? 'text-white':''} `}>
+            <div
+              className={`flex flex-col items-start sm:ml-8 md:ml-10 lg:ml-16 ${darkMode ? "text-white" : ""} `}
+            >
               <p className="text-xs font-medium -mt-3">Days</p>
               <p className="text-xl sm:text-3xl md:text-3xl lg:text-[32px] font-semibold sm:font-semibold md:font-bold lg:font-bold">
                 03
@@ -32,7 +38,9 @@ export default function Timer() {
             </div>
             <span className="text-primary text-lg font-bold">:</span>
 
-            <div className={`flex flex-col items-start ${darkMode ? 'text-white':''} `}>
+            <div
+              className={`flex flex-col items-start ${darkMode ? "text-white" : ""} `}
+            >
               <p className="text-xs font-medium -mt-3">Hours</p>
               <p className="text-xl sm:text-3xl md:text-3xl lg:text-[32px] font-semibold sm:font-semibold md:font-bold lg:font-bold">
                 23
@@ -40,7 +48,9 @@ export default function Timer() {
             </div>
             <span className="text-primary text-lg font-bold">:</span>
 
-            <div className={`flex flex-col items-start ${darkMode ? 'text-white':''} `}>
+            <div
+              className={`flex flex-col items-start ${darkMode ? "text-white" : ""} `}
+            >
               <p className="text-xs font-medium -mt-3">Minutes</p>
               <p className="text-xl sm:text-3xl md:text-3xl lg:text-[32px] font-semibold sm:font-semibold md:font-bold lg:font-bold">
                 19
@@ -48,7 +58,9 @@ export default function Timer() {
             </div>
             <span className="text-primary text-lg font-bold">:</span>
 
-            <div className={`flex flex-col items-start ${darkMode ? 'text-white':''} `}>
+            <div
+              className={`flex flex-col items-start ${darkMode ? "text-white" : ""} `}
+            >
               <p className="text-xs font-medium -mt-3">Seconds</p>
               <p className="text-xl sm:text-3xl md:text-3xl lg:text-[32px] font-semibold sm:font-semibold md:font-bold lg:font-bold">
                 56

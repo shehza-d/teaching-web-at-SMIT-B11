@@ -24,7 +24,9 @@ export default function SellingProduct() {
 
         <div className="flex justify-between items-center text-center mt-3 sm:mt-5 ">
           <div className="flex items-center gap-5 ">
-            <h3 className={`flex  text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold ${darkMode ? 'text-white':''} `}>
+            <h3
+              className={`flex  text-lg sm:text-3xl md:text-3xl lg:text-4xl font-semibold ${darkMode ? "text-white" : ""} `}
+            >
               Best Selling Products
             </h3>
           </div>

@@ -39,18 +39,15 @@ function Post(Props) {
         praesentium impedit itaque enim fugit? Iure explicabo molestiae
         asperiores exercitationem minus.
       </p>
-    
-    {
-    
-    Props.postImage ?   <img
-        src={Props.postImage}
-        alt="post image"
-        className="post-photo"
-        id="my-id"
-      /> : null 
-    
-    
-    }
+
+      {Props.postImage ? (
+        <img
+          src={Props.postImage}
+          alt="post image"
+          className="post-photo"
+          id="my-id"
+        />
+      ) : null}
 
       {/* <video src={Props.postImage} height={400} width={400} muted autoPlay controls loop></video> */}
 
@@ -113,17 +110,16 @@ function App() {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );
 
-
 // time wala saruf kaberr kare ga
-// kabeer/usama video bhi lagaye ga 
+// kabeer/usama video bhi lagaye ga
 
 // 10 post
 // DP sab ma change hogyi
 // user name sabma change hoga
-// post ki image 5 ya 7 
-// description 5 se 7 
+// post ki image 5 ya 7
+// description 5 se 7
 // kisi ma img aur description dono
 // kisi ma saruf description aur kisi ma saruf image

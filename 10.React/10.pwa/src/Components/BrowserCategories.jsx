@@ -11,7 +11,9 @@ import { useSelector } from "react-redux";
 function Test(Props) {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
   return (
-    <div className={`${darkMode ? 'bg-gray-300':""} border  border-[#0000004D] w-[calc(50%-15px)] sm:w-[calc(33.33%-18px)] md:w-[calc(25%-19px)] lg:w-[calc(16.66%-14px)] xl:w-[calc(16.66%-27px)] h-36  md:h-32 lg:h-[130px] xl:h-36 rounded flex flex-col text-center items-center justify-center lg:pt-3  xl:pt-6 gap-4`}>
+    <div
+      className={`${darkMode ? "bg-gray-300" : ""} border  border-[#0000004D] w-[calc(50%-15px)] sm:w-[calc(33.33%-18px)] md:w-[calc(25%-19px)] lg:w-[calc(16.66%-14px)] xl:w-[calc(16.66%-27px)] h-36  md:h-32 lg:h-[130px] xl:h-36 rounded flex flex-col text-center items-center justify-center lg:pt-3  xl:pt-6 gap-4`}
+    >
       <span className="text-6xl">{Props.CategoriesIcon}</span>
       <p className="font-medium">{Props.CategoriesName}</p>
     </div>
@@ -19,7 +21,7 @@ function Test(Props) {
 }
 
 export default function BrowserCategories() {
-const darkMode = useSelector((state) => state.darkMode.darkMode);
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
 
   return (
     <div className={`${darkMode ? "bg-slate-900" : ""}`}>

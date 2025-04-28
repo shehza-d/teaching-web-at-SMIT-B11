@@ -9,8 +9,13 @@ export default function ProductCard(Props) {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
 
   return (
-    <Link to={`/product/${Props.id}`} className={`w-[calc(50%-8px)] sm:w-[calc(32%)] lg:w-[calc(25%-10px)] xl:w-[calc(25%-28px)] h-auto mt-5 rounded mx-auto ${darkMode ? "bg-gray-300":""}`}>
-      <div className={`w-full ${darkMode ? "bg-gray-300":"bg-secondary"}  rounded flex items-center justify-center `}>
+    <Link
+      to={`/product/${Props.id}`}
+      className={`w-[calc(50%-8px)] sm:w-[calc(32%)] lg:w-[calc(25%-10px)] xl:w-[calc(25%-28px)] h-auto mt-5 rounded mx-auto ${darkMode ? "bg-gray-300" : ""}`}
+    >
+      <div
+        className={`w-full ${darkMode ? "bg-gray-300" : "bg-secondary"}  rounded flex items-center justify-center `}
+      >
         <div className="relative  w-full p-2 sm:p-3">
           <div className="absolute top-2 sm:top-3">
             {Props.cardDiscount ? (
@@ -32,7 +37,7 @@ export default function ProductCard(Props) {
           </div>
         </div>
       </div>
-      <div className={`flex flex-col ${darkMode ? "px-3":""}`}>
+      <div className={`flex flex-col ${darkMode ? "px-3" : ""}`}>
         <p className=" pt-3 sm:pt-4 font-normal  sm:font-medium text-sm sm:text-base text-start">
           {Props.cardName}
         </p>

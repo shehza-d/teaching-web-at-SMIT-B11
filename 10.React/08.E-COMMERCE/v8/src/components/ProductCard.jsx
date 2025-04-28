@@ -1,7 +1,6 @@
 import img from "../assets/images/game.png";
 import ReactStars from "react-stars";
-import {Link} from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 
 export default function ProductCard(Props) {
   const discountPrice = (

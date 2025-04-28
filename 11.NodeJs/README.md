@@ -13,29 +13,29 @@
 
 - [x] Handling Routes and Requests (GET, POST, PUT, DELETE)
 - [x] CRUD Operations
-- [ ] CORS
-- [ ] Fetch API and Axios Integration
-- [ ] Integrating Server with Client (React, Next.js)
+- [x] CORS
+- [x] Fetch API and Axios Integration
+- [x] Integrating Server with Client (React, Next.js)
 
 ---
 
 ## 3. 🔒 Authentication & Authorization
 
-- [ ] Hashing (Concepts + Bcrypt)
-- [ ] Encryption & Decryption (Node.js Crypto)
+- [x] Hashing (Concepts + Bcrypt)
+- [x] Cookies vs LocalStorage (Sessions vs Tokens)
 - [ ] JWT (JSON Web Tokens) Authentication
-- [ ] OAuth 2.0 (Google, GitHub login)
-- [ ] Cookies vs LocalStorage (Sessions vs Tokens)
+- [ ] Encryption & Decryption (Node.js Crypto)
 - [ ] Middleware for Authorization
 - [ ] Role-Based Access Control (RBAC) (Admin, User, Guest)
+- [ ] OAuth 2.0 (Google, GitHub login)
 - [ ] Rate Limiting and Throttling (Helmet, Express-rate-limit)
 
 ---
 
 ## 4. 🧠 API Best Practices
 
-- [ ] REST Principles
-- [ ] API Versioning
+- [x] REST Principles
+- [x] API Versioning
 - [x] HTTP Methods, Status Codes, Error Handling
 - [x] Resource Naming
 - [ ] Pagination, Filtering, Sorting
@@ -73,8 +73,8 @@
 
 - [ ] Multer for File Uploads
 - [ ] Cloudinary Integration
-- [ ] AWS S3 for Image/File Storage
 - [ ] Handling File Uploads from Frontend
+- [ ] AWS S3 for Image/File Storage
 
 ---
 
@@ -84,7 +84,7 @@
 - [x] Railway/Render for Server Hosting
 - [ ] Digital Ocean Server Deployment
 - [ ] AWS EC2 Instance Deployment
-- [ ] Docker Deployment
+- [ ] Docker Image Deployment
 - [ ] Deploy React App with Express Server
 - [ ] PM2 for Process Management and Load Balancing
 

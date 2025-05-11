@@ -22,7 +22,7 @@
 ## 3. 🔒 Authentication & Authorization
 
 - [x] Hashing (Concepts + Bcrypt)
-- [x] Cookies vs LocalStorage (Sessions vs Tokens)
+- [ ] Cookies vs LocalStorage (Sessions vs Tokens)
 - [ ] JWT (JSON Web Tokens) Authentication
 - [ ] Encryption & Decryption (Node.js Crypto)
 - [ ] Middleware for Authorization
@@ -54,7 +54,7 @@
 
 - [x] MongoDB Atlas vs Local Setup (Compass)
 - [x] CRUD Operations
-- [x] Indexing
+- [ ] Indexing
 - [ ] MongoDB Schemas & Mongoose ODM
 - [ ] Relationships (Refs & Population)
 - [ ] Aggregation Framework

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "AI Chat-bot",
+  "name": "my backend",
   "builds": [
     {
       "src": "server.js",

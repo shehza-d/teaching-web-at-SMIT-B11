@@ -6,7 +6,7 @@ export const getUrl = () => {
   const isHosted = window.location.href.includes("https");
 
   const baseUrl = isHosted
-    ? "https://smit-backend-batch-11.vercel.app"
+    ? "https://tesitng-server-hosting.vercel.app"
     : "http://localhost:5002";
   return baseUrl;
 };
@@ -18,11 +18,6 @@ export default function App() {
     try {
       const res = await axios(`${getUrl()}/api/v1/todos`);
       const todosFromServer = res?.data?.data;
-      console.log("todosFromServer ", todosFromServer);
-
-      // const newnew = todosFromServer.map((todo) => {
-      //   return { ...todo, isEditing: false };
-      // });
 
       setTodos(todosFromServer);
     } catch (err) {

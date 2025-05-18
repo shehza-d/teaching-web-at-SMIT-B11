@@ -23,8 +23,48 @@ app.use(
       "https://frontend.surge.sh",
       "https://marvelous-capybara-0bee09.netlify.app",
     ],
-  }),
+    credentials: true,
+  })
 );
+
+// middleware
+
+app.use(async (req, res, next) => {
+  const token = req.cookies;
+  console.log("🚀 ~this >>> tokenVerification ~ token:", token);
+
+  // console.log("req.cookies: ", token); //it's a security vulnerability to print token in production
+
+  if (!token) {
+    res
+      .status(401)
+      .send({ message: "Include http-only credentials with every request!" });
+    return;
+  }
+
+  try {
+    const decodedData = jwt.verify(token, "SECRET@!@#$549583ufdf"); // ye env ma save hoga
+
+    console.log("token approved");
+
+    req.body.decodedData = decodedData;
+
+    next();
+  } catch (err) {
+    res
+      .cookie("tokenName", "", {
+        maxAge: 1, // try only clear cookie here // remove
+        httpOnly: true,
+        secure: true,
+        sameSite: "none",
+      })
+      .status(401)
+      .send({ message: "Invalid token!" });
+
+    console.log("🚀 ~ tokenVerification.ts:22 ~ ~ err:", err);
+  }
+});
+// middleware
 
 // creating new account
 app.post("/api/v1/signup", async (request, response) => {
@@ -39,6 +79,7 @@ app.post("/api/v1/signup", async (request, response) => {
     response.status(400).send({ message: "Email already exist" });
     return;
   }
+
   // hashing is 1 way encryption
   const encryptedPassword = await bcrypt.hash(request.body.password, 10);
 
@@ -53,7 +94,6 @@ app.post("/api/v1/signup", async (request, response) => {
 
 app.post("/api/v1/login", async (request, response) => {
   const result = await User.findOne({ email: request.body.email });
-  // console.log('result:', result);
 
   if (!result) {
     response.status(404).send({ message: "user not found" });
@@ -77,7 +117,7 @@ app.post("/api/v1/login", async (request, response) => {
       email: result.email,
     },
     "SECRET@!@#$549583ufdf", // ye env ma save hoga
-    { expiresIn: "7d" },
+    { expiresIn: "7d" }
   );
 
   response
